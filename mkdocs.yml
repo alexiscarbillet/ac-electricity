@@ -1,0 +1,67 @@
+site_name: AC-Electricity
+site_url: https://ac-electricity.com/
+
+nav:
+  - Home: index.md
+  - Physical signals:
+    - Quasistatic: physical_signals/quasistatic.md
+  - Hardware:
+    - Battery: hardware/battery.md
+    - GPU: hardware/gpu.md
+    - Keyboard: hardware/keyboard.md
+    - Motherboard: hardware/motherboard.md
+    - Processor: hardware/processor.md
+    - RAM: hardware/ram.md
+  - Home appliances:
+    - Freezer: home_appliances/freezer.md
+    - Microwave: home_appliances/microwave.md
+    - Oven: home_appliances/oven.md
+    - Television: home_appliances/television.md
+    - Toaster: home_appliances/toaster.md
+    - Speaker: home_appliances/speaker.md
+    - Stove: home_appliances/stove.md
+    - Vacuum: home_appliances/vacuum.md
+  - Tags: tags/tags.md
+
+copyright: Copyright &copy; 2024 Alexis Carbillet
+
+theme: 
+  name: material
+  logo: assets/logo.png
+  favicon: assets/logo.png
+  palette:
+  - media: "(prefers-color-scheme: dark)"
+    scheme: default
+    primary: black
+    accent: indigo
+    toggle:
+      icon: material/toggle-switch-off
+      name: Switch to light mode
+  - media: "(prefers-color-scheme: light)"
+    scheme: slate
+    primary: indigo
+    accent: indigo
+    toggle:
+      icon: material/toggle-switch
+      name: Switch to dark mode
+
+plugins:
+  - blog:
+      authors_file: blog/.authors.yml
+  - search:
+      lang: en
+      pipeline:
+        - stemmer
+        - stopWordFilter
+        - trimmer
+  - tags:
+      tags_file: tags/tags.md
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/alexiscarbillet
+    - icon: fontawesome/brands/android
+      link: https://play.google.com/store/apps/developer?id=alexiscarbillet
+    - icon: fontawesome/solid/house
+      link: https://alexis-carbillet.com/
