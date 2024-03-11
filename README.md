@@ -8,4 +8,4 @@ So far, there are 3 main categories:
 
 - **hardware**: explains how the different pieces of a computer work
 
-- **home appliances**: explains how the different devices we use everyday work
+- **home appliances**: explains how the different devices one use everyday work
