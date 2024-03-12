@@ -35,7 +35,7 @@ which passes through a section of the wire per unit of time:
 with i the intensity in amperes (A), dq the elementary charge in coulombs (C) and dt
 the elementary duration in second (s).
 
-    Note: in the case of a steady state, we will note I = Q/T.
+<u>Note</u>: in the case of a steady state, we will note I = Q/T.
 
 <u>Measurement of electric current intensity:</u>
 
@@ -111,3 +111,134 @@ By using this, you obtain:
 
 ![](img/quasistatic/6.png)
 
+### Orientation conventions
+
+Two conventions exist for studying a dipole:
+
+- receiver agreement
+
+![](img/quasistatic/8.png)
+
+- generator convention
+
+![](img/quasistatic/9.png)
+
+A dipole is entirely specified by its characteristic, i.e. the relation
+<span style="color: #008080">u<sub>AB</sub> = u<sub>AB</sub>(i)</span> for a given convention.
+
+### Electrical power received
+
+![](img/quasistatic/7.png)
+
+A dipole in receiver convention traversed by a current of intensity i and subjected
+at a voltage u receives an electric power:
+
+<span style="color: #008080">P = u x i</span>
+
+Power is expressed in watts (W).
+
+## Electric dipoles
+
+In electricity, a dipole is an element which has two terminals, the current between
+through one terminal and exits through the other.
+
+### The ohmic conductor
+
+An ohmic conductor is a dipole for which the applied voltage is proportional
+to the intensity of the current passing through it.
+
+![](img/quasistatic/10.png)
+
+<span style="color: #008080">u<sub>AB</sub> = R x i</span>
+
+R is the resistance of the ohmic conductor and is expressed in ohm (Ω).
+
+Power received: <span style="color: #008080">P = R x i<sup>2</sup></span>
+
+Indeed, with <span style="color: #008080">u = R x i</span> in receiver convention, <span style="color: #008080">P = u x i = R x i x i = R x i<sup>2</sup></span>. This power, always positive, is dissipated by the Joule effect.
+
+<u>Note</u>: an electric wire can be compared to an ohmic resistance conductor
+zero, consequently the voltage across a wire is zero.
+
+### Ideal voltage generator
+
+The ideal voltage generator maintains a constant voltage at its terminals and
+this regardless of the intensity delivered.
+
+![](img/quasistatic/11.png)
+
+<u>Power received</u>: we must return to a receiver convention
+<span style="color: #008080">P = u<sub>BA</sub> x i = - u<sub>AB</sub> x i = - U<sub>0</sub> x i </span> < 0 for i > 0
+
+The ideal voltage generator provides power <span style="color: #008080">P<sub>p</sub> = U<sub>0</sub> x i </span>.
+
+### Real voltage generator, Thévenin model
+
+The Thévenin model corresponds to the series association of an ideal generator of
+voltage and an ohmic conductor of resistance r, called internal resistance.
+
+![](img/quasistatic/12.png)
+
+<span style="color: #008080">u<sub>AB</sub> = U<sub>0</sub> - r x i </span>
+
+### The capacitor
+
+The capacitor is made up of two metal plates separated by an insulator
+electric.
+
+![](img/quasistatic/13.png)
+
+With i the intensity, q the charge of the capacitor in coulomb (C), u<sub>c</sub> the voltage at
+terminals of the capacitor, and C the capacitance of the capacitor in farad (F), the laws
+electrical are written:
+
+<span style="color: #008080">q = C x u<sub>c</sub></span> 
+
+and
+ 
+![\Large\color{Teal} i=\frac{dq}{dt}](https://latex.codecogs.com/svg.latex?\Large\color{Teal}&space;i=\frac{dq}{dt})
+
+so
+
+![\Large\color{Teal} i=C\frac{du_{c}}{dt}](https://latex.codecogs.com/svg.latex?\Large\color{Teal}&space;i=C\frac{du_{c}}{dt})
+
+The capacitance C of a capacitor represents its ability to store charges
+for a given voltage across its terminals.
+The farad is a “huge” unit. Commonly used abilities are often
+closer to F, 1 mF already being a significant capacity.
+
+<u>Electrostatic energy stored in a capacitor</u>:
+
+![\Large\color{Teal} E_{c}=\frac{1}{2}Cu_{c}^{2}](https://latex.codecogs.com/svg.latex?\Large\color{Teal}&space;E_{c}=\frac{1}{2}Cu_{c}^{2})
+
+<u>Consequence</u>: energy cannot appear or disappear spontaneously,
+The voltage across a capacitor is a continuous quantity.
+
+### The electrical coil
+
+A coil is created using a coiled electrical wire. This winding gives
+the coil's magnetic properties.
+
+![](img/quasistatic/14.png)
+
+In receiver convention, the voltage across a coil and the intensity of the
+current circulating in the coil are connected by the following law:
+
+![\Large\color{Teal} u_{L}=L\frac{di}{dt}](https://latex.codecogs.com/svg.latex?\Large\color{Teal}&space;u_{L}=L\frac{di}{dt})
+
+L, the inductance of the coil, is expressed in henry (H). It represents the ability of the coil to resist current variations.
+
+<u>Real coil</u>: the long winding length gives the coil character
+resistive, a real coil is therefore represented by the series association of a
+inductance L and a resistance r:
+
+![](img/quasistatic/15.png)
+
+![\Large\color{Teal} u=L\frac{di}{dt}+ri](https://latex.codecogs.com/svg.latex?\Large\color{Teal}&space;u_{L}=L\frac{di}{dt}+ri)
+
+<u>Magnetic energy stored in a coil</u>:
+
+![\Large\color{Teal} E_{L}=\frac{1}{2}Li^{2}](https://latex.codecogs.com/svg.latex?\Large\color{Teal}&space;E_{L}=\frac{1}{2}Li^{2})
+
+<u>Consequence</u>: energy cannot appear or disappear spontaneously,
+The current flowing through a coil is a continuous quantity.
