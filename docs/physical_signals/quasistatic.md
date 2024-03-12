@@ -242,3 +242,18 @@ inductance L and a resistance r:
 
 <u>Consequence</u>: energy cannot appear or disappear spontaneously,
 The current flowing through a coil is a continuous quantity.
+
+## Association of dipoles
+
+### Resistance association
+
+Two resistors associated in series (the resistors carry the same current) are equivalent to a single resistor Req
+whose value is the sum of the individual resistances:
+<span style="color: #008080">R<sub>eq</sub> = R<sub>1</sub> + R<sub>2</sub></span>
+
+<u>Proof</u>: u = R<sub>1</sub>i + R<sub>2</sub>i = (R<sub>1</sub> + R<sub>2</sub>)i
+
+Two resistors associated in parallel are equivalent to a single resistor
+R<sub>eq</sub>, such that:
+
+![\Large\color{Teal} \frac{1}{R_{eq}}=\frac{1}{R_{1}}+\frac{1}{R_{2}}](https://latex.codecogs.com/svg.latex?\Large\color{Teal}&space;\frac{1}{R_{eq}}=\frac{1}{R_{1}}+\frac{1}{R_{2}})
