@@ -257,3 +257,31 @@ Two resistors associated in parallel are equivalent to a single resistor
 R<sub>eq</sub>, such that:
 
 ![\Large\color{Teal} \frac{1}{R_{eq}}=\frac{1}{R_{1}}+\frac{1}{R_{2}}](https://latex.codecogs.com/svg.latex?\Large\color{Teal}&space;\frac{1}{R_{eq}}=\frac{1}{R_{1}}+\frac{1}{R_{2}})
+
+### Generator Association
+
+![](img/quasistatic/16.png)
+
+Two Thévenin generators associated in series are equivalent to a single one
+Thévenin generator such that:
+<span style="color: #008080">U<sub>eq</sub> = U<sub>0,1</sub> + U<sub>0,2</sub></span> and <span style="color: #008080">r<sub>eq</sub> = r<sub>1</sub> + r<sub>2</sub></span>
+
+### Voltage divider
+
+![](img/quasistatic/17.png)
+
+In the case of a series association of two resistances, the bridge formula
+voltage divider specifies how the voltage is shared between the two resistors.
+
+![\Large\color{Teal} u_{2}=\frac{R_{2}}{R_{2}&plus;R_{1}}\times&space;u](https://latex.codecogs.com/svg.latex?\Large\color{Teal}&space;u_{2}=\frac{R_{2}}{R_{2}&plus;R_{1}}\times&space;u)
+
+<u>Proof</u>: u = u<sub>1</sub> + u<sub>2</sub> = R<sub>1</sub>i + R<sub>2</sub>i = (R<sub>1</sub> + R<sub>2</sub>)i with i = u<sub>2</sub>/R<sub>2</sub>
+
+### Current divider
+
+![](img/quasistatic/18.png)
+
+In the case of a parallel association of two resistances, the bridge formula
+current divider specifies how the current is shared between the two resistors.
+
+![\Large\color{Teal} i_{1}=\frac{\frac{1}{R_{1}}}{\frac{1}{R_{1}}&plus;\frac{1}{R_{2}}}](https://latex.codecogs.com/svg.latex?\Large\color{Teal}&space;i_{1}=\frac{\frac{1}{R_{1}}}{\frac{1}{R_{1}}&plus;\frac{1}{R_{2}}})
