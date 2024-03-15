@@ -5,6 +5,7 @@ nav:
   - Home: index.md
   - Physical signals:
     - Quasistatic: physical_signals/quasistatic.md
+    - 1st order: physical_signals/1st_order.md
   - Hardware:
     - Battery: hardware/battery.md
     - GPU: hardware/gpu.md
