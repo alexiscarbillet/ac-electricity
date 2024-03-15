@@ -72,3 +72,29 @@ plt.show()
 ```
 
 ![](img/1st_order/2.png)
+
+The voltage u<sub>c</sub> is continuous at t = 0, the capacitor charges, the voltage
+increases until reaching a constant value equal to E.
+
+The intensity of the current i is discontinuous at t = 0; starting from a maximum value
+at t = 0<sup>+</sup>, the intensity decreases to zero once the capacitor is charged.
+
+We distinguish the steady state, once the quantities do not depend
+plus time (here for t > 0.5 s) and the transient regime between the initial instant
+and the steady state.
+
+### Differential equation verified by uc(t)
+
+We are interested in the evolution of the circuit, once the switch is closed, ∀t > 0.
+
+- Loi d’additivité des tensions : <span style="color: #008080">u = E = u<sub>R</sub> + u<sub>c</sub></span>
+
+- Caractéristiques des dipôles : <span style="color: #008080">u<sub>R</sub> = Ri</span>
+
+and 
+
+![\Large\color{Teal} i=C\frac{du_{c}}{dt}](https://latex.codecogs.com/svg.latex?\Large\color{Teal}&space;i=C\frac{du_{c}}{dt})
+
+So, ∀t > 0, 
+
+![\Large\color{Teal} E=RC\frac{du_{c}}{dt}+u_{c}](https://latex.codecogs.com/svg.latex?\Large\color{Teal}&space; E=RC\frac{du_{c}}{dt}+u_{c})
