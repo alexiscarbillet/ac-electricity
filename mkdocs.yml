@@ -3,6 +3,7 @@ site_url: https://ac-electricity.com/
 
 nav:
   - Home: index.md
+  - History of electricity: history.md
   - Physical signals:
     - Quasistatic: physical_signals/quasistatic.md
     - 1st order: physical_signals/1st_order.md
