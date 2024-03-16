@@ -5,7 +5,6 @@ tags:
 
 # RAM
 
-
 ## History
 
 Random Access Memory (RAM) is a crucial component of computers and other electronic devices, providing temporary storage for data and instructions that the CPU needs to access quickly.

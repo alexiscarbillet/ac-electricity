@@ -5,6 +5,26 @@ tags:
 
 # Oven
 
+## History
+
+The history of the oven is a fascinating journey that spans thousands of years and reflects the evolution of cooking techniques and technology. Here's an overview:
+
+**Early Hearth Ovens (Ancient Times)**: The earliest known ovens date back to ancient civilizations such as the Egyptians, Greeks, and Romans. These early ovens were typically constructed from clay or stone and used open fires or heated stones to cook food. Hearth ovens, built into the walls of homes or outdoor structures, were common for baking bread, roasting meat, and other culinary tasks.
+
+**Roman Empire (1st Century BCE - 5th Century CE)**: The ancient Romans made significant advancements in oven technology, developing large communal ovens known as furnaces or bakehouses. These ovens were used to bake bread on a large scale to feed the population of cities like Rome. The Romans also invented the domed brick oven, which provided even heat distribution and efficient baking.
+
+**Medieval Period (5th Century - 15th Century)**: During the Middle Ages, ovens continued to be an essential part of cooking in Europe. Brick or stone ovens were built in the kitchens of castles, monasteries, and wealthy households. These ovens were often heated with wood or charcoal and used for baking bread, pies, and other foods.
+
+**Industrial Revolution (18th Century)**: The Industrial Revolution brought significant advancements in oven technology, particularly with the invention of cast iron stoves and ranges. Cast iron stoves provided more efficient and controlled cooking compared to open hearths, and they became common in households across Europe and North America.
+
+**Gas and Electric Ovens (19th Century - 20th Century)**: The 19th and 20th centuries saw the development of gas and electric ovens, which provided cleaner and more convenient alternatives to wood and coal-fired ovens. Gas ovens, fueled by natural gas or propane, became popular in urban areas with access to gas pipelines. Electric ovens, powered by electricity, gained popularity in the early 20th century as electricity became more widely available.
+
+**Modern Oven Technology**: In the late 20th and early 21st centuries, oven technology continued to evolve with the introduction of features such as convection cooking, self-cleaning ovens, programmable settings, and digital controls. Microwave ovens, invented in the mid-20th century, revolutionized cooking by using microwave radiation to heat food quickly and efficiently.
+
+**Specialized Ovens**: In addition to traditional ovens, specialized ovens have been developed for specific cooking tasks and cuisines. Examples include pizza ovens, tandoor ovens for Indian cuisine, wood-fired ovens for artisanal baking, and convection steam ovens for professional kitchens.
+
+## How it works
+
 An electric oven operates by using electrical energy to generate heat for cooking and baking. Here's how it works:
 
 1. **Power Supply**: The electric oven is connected to a power source, typically a dedicated electrical circuit in a household, with higher voltage and current capacity compared to regular outlets.
