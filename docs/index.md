@@ -12,6 +12,8 @@ So far, there are 3 main categories:
 
 - **home appliances**: explains how the different devices we use everyday transform electricity into different actions.
 
+You can find some explanations about [how electricity was discovered and then used through time](history.md).
+
 ## About the author
 
 Hello, I am Alexis Carbillet and this is my second website, I thought it would be fun to talk about electricity while using mkdocs.
