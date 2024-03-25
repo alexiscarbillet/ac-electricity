@@ -15,6 +15,7 @@ nav:
     - Processor: hardware/processor.md
     - RAM: hardware/ram.md
   - Home appliances:
+    - Air conditioner: home_appliances/air_conditioner.md
     - Freezer: home_appliances/freezer.md
     - Microwave: home_appliances/microwave.md
     - Oven: home_appliances/oven.md
