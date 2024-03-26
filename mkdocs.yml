@@ -17,6 +17,7 @@ nav:
   - Home appliances:
     - Air conditioner: home_appliances/air_conditioner.md
     - Bulb: home_appliances/bulb.md
+    - CFL Bulb: home_appliances/cfl_bulb.md
     - Freezer: home_appliances/freezer.md
     - LED: home_appliances/led.md
     - Microwave: home_appliances/microwave.md
