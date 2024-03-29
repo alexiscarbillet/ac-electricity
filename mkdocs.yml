@@ -19,6 +19,7 @@ nav:
     - Bulb: home_appliances/bulb.md
     - CFL Bulb: home_appliances/cfl_bulb.md
     - Freezer: home_appliances/freezer.md
+    - Fridge: home_appliances/fridge.md
     - LED: home_appliances/led.md
     - Microwave: home_appliances/microwave.md
     - Oven: home_appliances/oven.md
@@ -27,6 +28,7 @@ nav:
     - Speaker: home_appliances/speaker.md
     - Stove: home_appliances/stove.md
     - Vacuum cleaner: home_appliances/vacuum.md
+    - Washing machine: home_appliances/washing_machine.md
   - Tags: tags/tags.md
 
 copyright: Copyright &copy; 2024 Alexis Carbillet
