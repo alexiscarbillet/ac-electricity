@@ -10,6 +10,7 @@ nav:
     - Natural gas: energy_source/natural_gas.md
     - Nuclear: energy_source/nuclear.md
     - Oil: energy_source/oil.md
+    - Tydal energy: energy_source/tydal.md
   - Hardware:
     - Battery: hardware/battery.md
     - GPU: hardware/gpu.md
