@@ -18,7 +18,7 @@ You can find some explanations about [how electricity was discovered and then us
 
 Hello, I am Alexis Carbillet and this is my second website, I thought it would be fun to talk about electricity while using mkdocs.
 
-I coded from scratch my first one, [alexis-carbillet.com](https://alexis-carbillet.com/), which is related to different fields of IT and contains most of my personnal projects.
+I coded from scratch my first one, [alexis-carbillet.com](https://alexis-carbillet.com/), which is related to different fields of IT and contains most of my personnal projects in this field.
 
 I think IT is based on electricity, which pushes me to create this website and deepen my knowledge about this field. I hope you will find it interesting and perhaps learn a thing or two about it.
 

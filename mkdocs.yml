@@ -6,7 +6,10 @@ nav:
   - History of electricity: history.md
   - Energy sources:
     - Coal: energy_source/coal.md
+    - Hydropower: energy_source/hydropower.md
     - Natural gas: energy_source/natural_gas.md
+    - Nuclear: energy_source/nuclear.md
+    - Oil: energy_source/oil.md
   - Hardware:
     - Battery: hardware/battery.md
     - GPU: hardware/gpu.md
