@@ -4,9 +4,9 @@ site_url: https://ac-electricity.com/
 nav:
   - Home: index.md
   - History of electricity: history.md
-  - Physical signals:
-    - Quasistatic: physical_signals/quasistatic.md
-    - 1st order: physical_signals/1st_order.md
+  - Energy sources:
+    - Coal: energy_source/coal.md
+    - Natural gas: energy_source/natural_gas.md
   - Hardware:
     - Battery: hardware/battery.md
     - GPU: hardware/gpu.md
@@ -14,6 +14,8 @@ nav:
     - Motherboard: hardware/motherboard.md
     - Processor: hardware/processor.md
     - RAM: hardware/ram.md
+    - Storage: hardware/storage.md
+    - Touchpad: hardware/touchpad.md
   - Home appliances:
     - Air conditioner: home_appliances/air_conditioner.md
     - Bulb: home_appliances/bulb.md
@@ -31,6 +33,9 @@ nav:
     - Stove: home_appliances/stove.md
     - Vacuum cleaner: home_appliances/vacuum.md
     - Washing machine: home_appliances/washing_machine.md
+  - Physical signals:
+    - Quasistatic: physical_signals/quasistatic.md
+    - 1st order: physical_signals/1st_order.md
   - Tags: tags/tags.md
 
 copyright: Copyright &copy; 2024 Alexis Carbillet
