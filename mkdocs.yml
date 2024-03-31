@@ -5,7 +5,9 @@ nav:
   - Home: index.md
   - History of electricity: history.md
   - Energy sources:
+    - Biomass: energy_source/biomass.md
     - Coal: energy_source/coal.md
+    - Geothermal: energy_source/geothermal.md
     - Hydropower: energy_source/hydropower.md
     - Natural gas: energy_source/natural_gas.md
     - Nuclear: energy_source/nuclear.md
