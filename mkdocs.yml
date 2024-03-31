@@ -45,6 +45,9 @@ nav:
   - Physical signals:
     - Quasistatic: physical_signals/quasistatic.md
     - 1st order: physical_signals/1st_order.md
+  - Semi conductors:
+    - Germanium: semi_conductors/germanium.md
+    - Silicon: semi_conductors/silicon.md
   - Tags: tags/tags.md
 
 copyright: Copyright &copy; 2024 Alexis Carbillet
