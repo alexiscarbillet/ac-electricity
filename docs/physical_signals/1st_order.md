@@ -118,3 +118,28 @@ The law of additivity of tensions leads to:
 
 In particular for t = 0<sup>+</sup>, the capacitor is discharged, i is maximum and is worth
 i(0<sup>+</sup>) = E/R; once the steady state is reached, the intensity is canceled.
+
+### Solving the differential equation
+
+The capacitor is initially discharged u<sub>c</sub>(0<sup>—</sup>) = 0, the continuity of the voltage
+across a capacitor ensures that: u<sub>c</sub>(0<sup>+</sup>) = u<sub>c</sub>(0<sup>—</sup>) = 0.
+
+The problem to solve is therefore the following: we are looking for u<sub>c</sub> which verifies:
+
+∀t > 0, 
+
+![\Large\color{Teal} E=\tau\frac{du_{c}}{dt}+u_{c}](https://latex.codecogs.com/svg.latex?\Large\color{Teal}&space; E=\tau\frac{du_{c}}{dt}+u_{c})
+
+and u<sub>c</sub>(0<sup>+</sup>) = 0
+
+The general solution is of the form:
+
+∀t > 0,
+
+![\Large\color{Teal} u_{c}(t)=Ae^\frac{-dt}{\tau}+E](https://latex.codecogs.com/svg.latex?\Large\color{Teal}&space; u_{c}(t)=Ae^\frac{-dt}{\tau}+E)
+
+The initial condition imposes: u<sub>c</sub>(0<sup>+</sup>) = 0 = E+A  => A = -E, we deduce:
+
+∀t > 0,
+
+![\Large\color{Teal} u_{c}(t)=E(1 - e^\frac{-dt}{\tau})](https://latex.codecogs.com/svg.latex?\Large\color{Teal}&space; u_{c}(t)=E(1 - e^\frac{-dt}{\tau}))
