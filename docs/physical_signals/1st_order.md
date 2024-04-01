@@ -87,9 +87,9 @@ and the steady state.
 
 We are interested in the evolution of the circuit, once the switch is closed, ∀t > 0.
 
-- Loi d’additivité des tensions : <span style="color: #008080">u = E = u<sub>R</sub> + u<sub>c</sub></span>
+- Law of additivity of tensions : <span style="color: #008080">u = E = u<sub>R</sub> + u<sub>c</sub></span>
 
-- Caractéristiques des dipôles : <span style="color: #008080">u<sub>R</sub> = Ri</span>
+- Characteristics of dipoles : <span style="color: #008080">u<sub>R</sub> = Ri</span>
 
 and 
 
@@ -98,3 +98,23 @@ and
 So, ∀t > 0, 
 
 ![\Large\color{Teal} E=RC\frac{du_{c}}{dt}+u_{c}](https://latex.codecogs.com/svg.latex?\Large\color{Teal}&space; E=RC\frac{du_{c}}{dt}+u_{c})
+
+### Analysis of the differential equation
+
+The differential equation shows 𝜏 = RC, the time constant of the
+circuit.
+
+Once the steady state is reached : 
+
+![\Large\color{Teal} \frac{du_{c}}{dt}=0](https://latex.codecogs.com/svg.latex?\Large\color{Teal}&space;\frac{du_{c}}{dt}=0)
+
+we conclude that <span style="color: #008080">u<sub>c</sub> = E</span> in regime permanent.
+
+The law of additivity of tensions leads to:
+
+∀t > 0, 
+
+![\Large\color{Teal} i(t)=\frac{E-u_{c}(t)}{R}](https://latex.codecogs.com/svg.latex?\Large\color{Teal}&space; i(t)=\frac{E-u_{c}(t)}{R})
+
+In particular for t = 0<sup>+</sup>, the capacitor is discharged, i is maximum and is worth
+i(0<sup>+</sup>) = E/R; once the steady state is reached, the intensity is canceled.
