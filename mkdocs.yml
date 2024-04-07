@@ -48,6 +48,7 @@ nav:
   - Semi conductors:
     - Cadmium Telluride: semi_conductors/cadmium.md
     - Galium Arsenide: semi_conductors/galium_arsenide.md
+    - Galium Arsenide: semi_conductors/galium_nitride.md
     - Germanium: semi_conductors/germanium.md
     - Organic: semi_conductors/organic.md
     - Perovskite: semi_conductors/perovskite.md
