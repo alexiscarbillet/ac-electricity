@@ -50,6 +50,7 @@ Organic semiconductors are a class of materials that exhibit semiconducting beha
    - **Tunable Properties**: The properties of organic semiconductors can be tuned through chemical synthesis, allowing for the optimization of device performance and functionality.
 
 **Challenges**:
+
    - **Limited Charge Mobility**: Organic semiconductors typically exhibit lower charge carrier mobility compared to inorganic semiconductors, which can limit the performance of organic electronic devices.
 
    - **Stability**: Organic semiconductors are often susceptible to degradation when exposed to oxygen, moisture, and light, necessitating the development of encapsulation techniques and stable materials.
