@@ -47,7 +47,9 @@ nav:
     - 1st order: physical_signals/1st_order.md
   - Semi conductors:
     - Cadmium Telluride: semi_conductors/cadmium.md
+    - Galium Arsenide: semi_conductors/galium_arsenide.md
     - Germanium: semi_conductors/germanium.md
+    - Organic: semi_conductors/organic.md
     - Perovskite: semi_conductors/perovskite.md
     - Silicon: semi_conductors/silicon.md
   - Tags: tags/tags.md
