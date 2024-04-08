@@ -9,6 +9,10 @@ nav:
       - Brass: conductors/alloys/brass.md
       - Bronze: conductors/alloys/bronze.md
       - Nichrome: conductors/alloys/nichrome.md
+    - Ionic: 
+      - Liquids: conductors/ionic/liquids.md
+      - Electrolyte solutions: conductors/ionic/electrolyte_solutions.md
+      - Solid-state Electrolyte: conductors/ionic/solid-state_electrolytes.md
     - Graphite: conductors/graphite.md
     - Plasma: conductors/plasma.md
   - Energy sources:
