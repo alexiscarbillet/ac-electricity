@@ -1,6 +1,7 @@
 ---
 tags:
   - Conductor
+  - Alloy
 ---
 
 # Brass
