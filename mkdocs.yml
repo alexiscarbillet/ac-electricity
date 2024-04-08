@@ -10,6 +10,7 @@ nav:
       - Bronze: conductors/alloys/bronze.md
       - Nichrome: conductors/alloys/nichrome.md
     - Graphite: conductors/graphite.md
+    - Plasma: conductors/plasma.md
   - Energy sources:
     - Biomass: energy_source/biomass.md
     - Coal: energy_source/coal.md
