@@ -48,8 +48,10 @@ nav:
   - Semi conductors:
     - Cadmium Telluride: semi_conductors/cadmium.md
     - Galium Arsenide: semi_conductors/galium_arsenide.md
-    - Galium Arsenide: semi_conductors/galium_nitride.md
+    - Galium Nitride: semi_conductors/galium_nitride.md
+    - Galium Nitride on Silicon: semi_conductors/galium_nitride_on_silicon.md
     - Germanium: semi_conductors/germanium.md
+    - Indium Phosphide: semi_conductors/indium.md
     - Organic: semi_conductors/organic.md
     - Perovskite: semi_conductors/perovskite.md
     - Silicon: semi_conductors/silicon.md
