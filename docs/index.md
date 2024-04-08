@@ -4,13 +4,19 @@
 
 This website will contains different topics about electricity and the science behind it.
 
-So far, there are 3 main categories:
+So far, there are 6 main categories:
 
-- **physical signals**: explains the science behind electricity.
+- **conductors**: about the different conductors of electricity.
+
+- **energy source**: about how electricity is produced.
 
 - **hardware**: explains how the different pieces of a computer work.
 
 - **home appliances**: explains how the different devices we use everyday transform electricity into different actions.
+
+- **physical signals**: explains the science behind electricity.
+
+- **semi-conductors**: about their proprieties and how they are used.
 
 You can find some explanations about [how electricity was discovered and then used through time](history.md).
 

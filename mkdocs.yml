@@ -56,7 +56,7 @@ nav:
   - Physical signals:
     - Quasistatic: physical_signals/quasistatic.md
     - 1st order: physical_signals/1st_order.md
-  - Semi conductors:
+  - Semi-conductors:
     - Cadmium Telluride: semi_conductors/cadmium.md
     - Galium Arsenide: semi_conductors/galium_arsenide.md
     - Galium Nitride: semi_conductors/galium_nitride.md
