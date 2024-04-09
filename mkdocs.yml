@@ -17,6 +17,8 @@ nav:
     - Metals: 
       - conductors/metals/aluminium.md
       - conductors/metals/copper.md
+      - conductors/metals/gold.md
+      - conductors/metals/silver.md
     - Plasma: conductors/plasma.md
   - Energy sources:
     - Biomass: energy_source/biomass.md
