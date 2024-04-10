@@ -15,10 +15,12 @@ nav:
       - Electrolyte solutions: conductors/ionic/electrolyte_solutions.md
       - Solid-state Electrolyte: conductors/ionic/solid-state_electrolytes.md
     - Metals: 
-      - conductors/metals/aluminium.md
-      - conductors/metals/copper.md
-      - conductors/metals/gold.md
-      - conductors/metals/silver.md
+      - Aluminium: conductors/metals/aluminium.md
+      - Copper: conductors/metals/copper.md
+      - Gold: conductors/metals/gold.md
+      - Iron: conductors/metals/iron.md
+      - Tin: conductors/metals/tin.md
+      - Silver: conductors/metals/silver.md
     - Plasma: conductors/plasma.md
   - Energy sources:
     - Biomass: energy_source/biomass.md
