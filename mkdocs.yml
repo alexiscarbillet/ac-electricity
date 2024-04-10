@@ -60,6 +60,9 @@ nav:
     - Stove: home_appliances/stove.md
     - Vacuum cleaner: home_appliances/vacuum.md
     - Washing machine: home_appliances/washing_machine.md
+  - Insulators:
+    - Polyethylene: insulators/polyethylene.md
+    - Silicon rubber: insulators/silicon_rubber.md
   - Physical signals:
     - Quasistatic: physical_signals/quasistatic.md
     - 1st order: physical_signals/1st_order.md

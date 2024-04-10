@@ -4,7 +4,7 @@
 
 This website will contains different topics about electricity and the science behind it.
 
-So far, there are 6 main categories:
+So far, there are several main categories:
 
 - **conductors**: about the different conductors of electricity.
 
@@ -13,6 +13,8 @@ So far, there are 6 main categories:
 - **hardware**: explains how the different pieces of a computer work.
 
 - **home appliances**: explains how the different devices we use everyday transform electricity into different actions.
+
+- **insulators**: explains which materials are used as electrical insulators (dielectrics) and why.
 
 - **physical signals**: explains the science behind electricity.
 
