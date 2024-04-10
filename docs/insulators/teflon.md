@@ -43,4 +43,4 @@ Teflon, also known as polytetrafluoroethylene (PTFE), is highly regarded as an e
 
 7. **Mechanical Strength**: While Teflon is relatively soft and flexible compared to some other insulating materials, it still exhibits sufficient mechanical strength to withstand handling and installation stresses. Its flexibility allows it to conform to irregular shapes and provides reliable insulation for electrical components and systems.
 
-8. **Non-Stick Surface**: Teflon's non-stick surface reduces the adhesion of contaminants and foreign particles, ensuring long-term electrical performance and reliability. This property minimizes surface contamination, which can otherwise degrade insulating materials and compromise their effectiveness over t
+8. **Non-Stick Surface**: Teflon's non-stick surface reduces the adhesion of contaminants and foreign particles, ensuring long-term electrical performance and reliability. This property minimizes surface contamination, which can otherwise degrade insulating materials and compromise their effectiveness over time.
