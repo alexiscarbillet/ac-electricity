@@ -63,8 +63,10 @@ nav:
   - Insulators:
     - Ceramic: insulators/ceramic.md
     - Glass: insulators/glass.md
+    - Mica: insulators/mica.md
     - Polyethylene: insulators/polyethylene.md
     - Silicon rubber: insulators/silicon_rubber.md
+    - Teflon: insulators/teflon.md
   - Physical signals:
     - Quasistatic: physical_signals/quasistatic.md
     - 1st order: physical_signals/1st_order.md
