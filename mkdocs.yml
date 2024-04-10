@@ -61,6 +61,8 @@ nav:
     - Vacuum cleaner: home_appliances/vacuum.md
     - Washing machine: home_appliances/washing_machine.md
   - Insulators:
+    - Ceramic: insulators/ceramic.md
+    - Glass: insulators/glass.md
     - Polyethylene: insulators/polyethylene.md
     - Silicon rubber: insulators/silicon_rubber.md
   - Physical signals:
