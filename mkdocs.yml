@@ -65,6 +65,7 @@ nav:
     - Glass: insulators/glass.md
     - Mica: insulators/mica.md
     - Polyethylene: insulators/polyethylene.md
+    - Polypropylene: insulators/polypropylene.md
     - Silicon rubber: insulators/silicon_rubber.md
     - Teflon: insulators/teflon.md
   - Physical signals:
