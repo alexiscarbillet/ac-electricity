@@ -75,6 +75,7 @@ nav:
     - Quasistatic: physical_signals/quasistatic.md
     - 1st order: physical_signals/1st_order.md
   - Resistors:
+    - Fusible: resistors/fusible.md
     - Wirewound: resistors/wirewound.md
   - Semi-conductors:
     - Cadmium Telluride: semi_conductors/cadmium.md
