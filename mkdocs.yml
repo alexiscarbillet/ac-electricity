@@ -62,15 +62,20 @@ nav:
     - Washing machine: home_appliances/washing_machine.md
   - Insulators:
     - Ceramic: insulators/ceramic.md
+    - Cross-linked Polyethylene: insulators/cross-linked_polyethylene.md
+    - Epoxy resine: insulators/epoxy_resine.md
     - Glass: insulators/glass.md
     - Mica: insulators/mica.md
     - Polyethylene: insulators/polyethylene.md
     - Polypropylene: insulators/polypropylene.md
+    - Polyvinyl chloride: insulators/polyvinyl_chloride.md
     - Silicon rubber: insulators/silicon_rubber.md
     - Teflon: insulators/teflon.md
   - Physical signals:
     - Quasistatic: physical_signals/quasistatic.md
     - 1st order: physical_signals/1st_order.md
+  - Resistors:
+    - Wirewound: resistors/wirewound.md
   - Semi-conductors:
     - Cadmium Telluride: semi_conductors/cadmium.md
     - Galium Arsenide: semi_conductors/galium_arsenide.md

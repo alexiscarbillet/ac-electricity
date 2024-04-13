@@ -18,6 +18,8 @@ So far, there are several main categories:
 
 - **physical signals**: explains the science behind electricity.
 
+- **resistors**: explains the different kind electrical resistors and their use.
+
 - **semi-conductors**: about their proprieties and how they are used.
 
 You can find some explanations about [how electricity was discovered and then used through time](history.md).
