@@ -131,8 +131,6 @@ extra:
   social:
     - icon: fontawesome/brands/github
       link: https://github.com/alexiscarbillet
-    - icon: fontawesome/solid/envelope
-      link: mailto:alexis.carbillet@mines-ales.org
     - icon: fontawesome/brands/android
       link: https://play.google.com/store/apps/developer?id=alexiscarbillet
     - icon: fontawesome/solid/house
