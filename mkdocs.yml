@@ -78,6 +78,7 @@ nav:
     - Fixed: resistors/fixed.md
     - Fusible: resistors/fusible.md
     - Hybrid: resistors/hybrid.md
+    - Metal film: resistors/metal_film.md
     - Photoresistor: resistors/photoresistor.md
     - Thermistor: resistors/thermistor.md
     - Variable: resistors/variable.md
