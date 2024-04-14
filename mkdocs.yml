@@ -76,6 +76,8 @@ nav:
     - 1st order: physical_signals/1st_order.md
   - Resistors:
     - Fusible: resistors/fusible.md
+    - Photoresistor: resistors/photoresistor.md
+    - Thermistor: resistors/thermistor.md
     - Varistor: resistors/varistor.md
     - Wirewound: resistors/wirewound.md
   - Semi-conductors:
