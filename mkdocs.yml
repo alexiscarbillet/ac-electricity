@@ -75,6 +75,7 @@ nav:
     - Quasistatic: physical_signals/quasistatic.md
     - 1st order: physical_signals/1st_order.md
   - Resistors:
+    - Carbon composition: resistors/carbon_composition.md
     - Fixed: resistors/fixed.md
     - Fusible: resistors/fusible.md
     - Hybrid: resistors/hybrid.md
