@@ -1,6 +1,7 @@
 ---
 tags:
   - Home appliances
+  - Diodes
 ---
 
 # LED

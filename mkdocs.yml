@@ -4,6 +4,17 @@ site_url: https://ac-electricity.com/
 nav:
   - Home: index.md
   - History of electricity: history.md
+  - Capacitors:
+    - Ceramic: capacitors/ceramic.md
+    - Electrolytic: capacitors/electrolytic.md
+    - Film: capacitors/film.md
+    - Glass: capacitors/glass.md
+    - Mica: capacitors/mica.md
+    - Paper: capacitors/paper.md
+    - Polymer: capacitors/polymer.md
+    - Supercapacitors: capacitors/supercapacitors.md
+    - Tantalum: capacitors/tantalum.md
+    - Variable: capacitors/variable.md
   - Conductors:
     - Alloys:
       - Brass: conductors/alloys/brass.md
@@ -22,6 +33,18 @@ nav:
       - Tin: conductors/metals/tin.md
       - Silver: conductors/metals/silver.md
     - Plasma: conductors/plasma.md
+  - Diodes:
+    - Avalanche: diodes/avalanche.md
+    - Gold-doped: diodes/gold-doped.md
+    - Gunn: diodes/gunn.md
+    - Photodiode: diodes/photodiode.md
+    - PIN: diodes/pin.md
+    - Rectifier: diodes/rectifier.md
+    - Schottky: diodes/schottky.md
+    - Step recovery: diodes/step-recovery.md
+    - Tunnel: diodes/tunnel.md
+    - Varactor: diodes/varactor.md
+    - Zener: diodes/zener.md
   - Energy sources:
     - Biomass: energy_source/biomass.md
     - Coal: energy_source/coal.md
@@ -60,6 +83,17 @@ nav:
     - Stove: home_appliances/stove.md
     - Vacuum cleaner: home_appliances/vacuum.md
     - Washing machine: home_appliances/washing_machine.md
+  - Inductors:
+    - Air core: inductors/air_core.md
+    - Coupled: inductors/coupled.md
+    - Ferrite core: inductors/ferrite_core.md
+    - Iron core: inductors/iron_core.md
+    - Molded: inductors/molded.md
+    - Multilayer chip: inductors/multilayer_chip.md
+    - RF coil: inductors/rf_coil.md
+    - Shielded: inductors/shielded.md
+    - Toroidal: inductors/toroidal.md
+    - Variable: inductors/variable.md
   - Insulators:
     - Ceramic: insulators/ceramic.md
     - Cross-linked Polyethylene: insulators/cross-linked_polyethylene.md
@@ -139,3 +173,5 @@ extra:
       link: https://play.google.com/store/apps/developer?id=alexiscarbillet
     - icon: fontawesome/solid/house
       link: https://alexis-carbillet.com/
+    - icon: fontawesome/solid/code
+      link: https://ac-coding.com/

@@ -143,3 +143,45 @@ The initial condition imposes: u<sub>c</sub>(0<sup>+</sup>) = 0 = E+A  => A = -E
 ∀t > 0,
 
 ![\Large\color{Teal} u_{c}(t)=E(1 - e^\frac{-dt}{\tau})](https://latex.codecogs.com/svg.latex?\Large\color{Teal}&space; u_{c}(t)=E(1 - e^\frac{-dt}{\tau}))
+
+### Plot and time constant
+
+The theoretical curve below represents the evolution of the voltage across the
+capacitor as a function of the dimensionless variable t/𝜏.
+
+```
+import numpy as np
+import matplotlib.pyplot as plt
+
+# Define the function
+def func(t, tau):
+    return 1 - np.exp(-t/tau)
+
+# Define the value of tau
+tau = 1  # You can adjust this value as needed
+
+# Generate t values
+t_values = np.linspace(0, 5*tau, 100)  # You can adjust the range and density of points
+
+# Calculate corresponding y values
+y_values = func(t_values, tau)
+
+# Plot
+plt.figure(figsize=(8, 6))
+plt.plot(t_values, y_values, label='1 - e^(-t/tau)', color='blue')
+plt.title('Plot of 1 - e^(-t/tau)')
+plt.xlabel('t/tau')
+plt.ylabel('y')
+plt.grid(True)
+plt.legend()
+plt.show()
+```
+![](img/1st_order/3.png)
+
+For t/𝜏 = 5, 1 - e<sup>-t/𝜏</sup> = 0.99
+
+The steady state is reached after a duration of around t=5𝜏.
+
+The time constant can be determined graphically:
+
+The voltage uc reaches 63% of its final value for t = 𝜏; indeed 1 - e<sup>-1</sup> = 0.63
