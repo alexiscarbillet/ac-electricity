@@ -38,7 +38,7 @@ I coded from scratch my other two websites.
 
 - The first one is [alexis-carbillet.com](https://alexis-carbillet.com/), which is a website about my professional work. It also linked all my projects available online.
 
-- The second one is [ac-coding.com](https://ac-coding.com/), which is related to different fields of IT and contains most of my personnal projects in this field.
+- The second one is [ac-programming.com](https://ac-programming.com/), which is related to different fields of IT and contains most of my personnal projects in this field.
 
 I think IT is based on electricity, which pushed me to create this website and deepen my knowledge about it. I hope you will find it interesting and perhaps learn a thing or two.
 
