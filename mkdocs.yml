@@ -169,8 +169,8 @@ extra:
   social:
     - icon: fontawesome/brands/github
       link: https://github.com/alexiscarbillet
-    - icon: fontawesome/brands/android
-      link: https://play.google.com/store/apps/developer?id=alexiscarbillet
+    - icon: fontawesome/solid/puzzle-piece
+      link: https://addons.mozilla.org/fr/firefox/user/18481871/
     - icon: fontawesome/solid/house
       link: https://alexis-carbillet.com/
     - icon: fontawesome/solid/code
