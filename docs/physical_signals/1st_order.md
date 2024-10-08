@@ -7,181 +7,383 @@ tags:
 
 ## Response of a series RC circuit to a voltage step
 
-We will consider the response of a series association {ohmic conductor, capacitor}
-which is “suddenly” subjected to a constant voltage E.
-The capacitor is initially discharged, and the switch is closed at t = 0.
+### 1. **Differential Equation for \( u_c(t) \) (Capacitor Voltage)**
 
-### Electrical assembly
+In an RC series circuit, the total voltage \( u(t) \) across the circuit is split between the resistor and the capacitor. If a step voltage \( U_0 \) is applied at \( t = 0 \), the circuit can be described by Kirchhoff's Voltage Law (KVL):
 
-![](img/1st_order/1.png)
+u(t) = u_R(t) + u_C(t)
 
-### Experimental results
+where:
 
-We carry out a first experiment with R = 1.0 kΩ, C = 100 μF and E = 6.0V.
+- \( u_R(t) = R \cdot i(t) \) is the voltage across the resistor,
 
-We simulate the results using a python script:
+- \( u_C(t) = \frac{1}{C} \int_0^t i(t) \, dt \) is the voltage across the capacitor.
 
-```
-import numpy as np
-import matplotlib.pyplot as plt
+For a series RC circuit, we use the relation \( i(t) = \frac{du_C(t)}{R dt} \), giving us:
 
-# Define the functions
-def U(x):
-    return np.where(x < 0, 0, 6)
+\[
+U_0 = R \cdot i(t) + u_C(t)
+\]
 
-def UC(x):
-    return np.where(x < 0, 0, 6*(1-np.exp(-x/0.1)))
+Substitute \( i(t) = C \frac{du_C(t)}{dt} \) into this equation:
 
-def i(x):
-    return np.where(x < 0, 0, 6*np.exp(-x/0.1))
+\[
+U_0 = R C \frac{du_C(t)}{dt} + u_C(t)
+\]
 
-# Generate x values
-t = np.linspace(-0.1, 0.6, 500)
+This is the **differential equation** governing the behavior of \( u_C(t) \):
 
-# Generate y values for each function
-y_U = U(t)
-y_UC = UC(t)
-y_i = i(t)
+\[
+R C \frac{du_C(t)}{dt} + u_C(t) = U_0
+\]
 
-# Create subplots
-fig, axes = plt.subplots(3, 1, figsize=(8, 10))
+### 2. **Analysis of the Differential Equation**
 
-# Plot U(x)
-axes[0].plot(t, y_U, label='U(t)', color='blue')
-axes[0].set_title('Plot of U(t)')
-axes[0].grid(True)
-axes[0].legend()
+This is a first-order linear differential equation. The left side represents the combination of the resistor-capacitor response to the applied step voltage \( U_0 \), while the right side is the constant voltage \( U_0 \).
 
-# Plot UC(x)
-axes[1].plot(t, y_UC, label='UC(t)', color='red')
-axes[1].set_title('Plot of UC(t)')
-axes[1].grid(True)
-axes[1].legend()
+- The equation suggests that the voltage across the capacitor does not instantaneously reach \( U_0 \) but instead evolves over time.
+- The solution will involve an exponential function because of the first-order time derivative.
 
-# Plot i(x)
-axes[2].plot(t, y_i, label='i(t)', color='green')
-axes[2].set_title('Plot of i(t)')
-axes[2].grid(True)
-axes[2].legend()
+### 3. **Solution of the Differential Equation**
 
-# Adjust layout
-plt.tight_layout()
+To solve this, we recognize that this is a standard first-order linear differential equation of the form:
 
-# Show plot
-plt.show()
-```
+\[
+\tau \frac{du_C(t)}{dt} + u_C(t) = U_0
+\]
 
-![](img/1st_order/2.png)
+where \( \tau = RC \) is called the **time constant** of the circuit. The general solution to such equations is:
 
-The voltage u<sub>c</sub> is continuous at t = 0, the capacitor charges, the voltage
-increases until reaching a constant value equal to E.
+\[
+u_C(t) = A e^{-t/\tau} + U_0
+\]
 
-The intensity of the current i is discontinuous at t = 0; starting from a maximum value
-at t = 0<sup>+</sup>, the intensity decreases to zero once the capacitor is charged.
+We apply the initial condition \( u_C(0) = 0 \) (assuming the capacitor starts with no charge):
 
-We distinguish the steady state, once the quantities do not depend
-plus time (here for t > 0.5 s) and the transient regime between the initial instant
-and the steady state.
+\[
+0 = A e^{0} + U_0 \implies A = -U_0
+\]
 
-### Differential equation verified by uc(t)
+Thus, the complete solution is:
 
-We are interested in the evolution of the circuit, once the switch is closed, ∀t > 0.
+\[
+u_C(t) = U_0 (1 - e^{-t/\tau})
+\]
 
-- Law of additivity of tensions : <span style="color: #008080">u = E = u<sub>R</sub> + u<sub>c</sub></span>
+This shows that \( u_C(t) \) increases exponentially from 0 and asymptotically approaches \( U_0 \).
 
-- Characteristics of dipoles : <span style="color: #008080">u<sub>R</sub> = Ri</span>
+### 4. **Plot and Time Constant**
 
-and 
+The **time constant** \( \tau = RC \) determines how quickly the capacitor charges. After a time equal to \( \tau \), the capacitor reaches approximately 63% of the final voltage \( U_0 \). After \( 5\tau \), the capacitor is considered almost fully charged, as it reaches over 99% of the final voltage.
 
-![\Large\color{Teal} i=C\frac{du_{c}}{dt}](https://latex.codecogs.com/svg.latex?\Large\color{Teal}&space;i=C\frac{du_{c}}{dt})
+If we plot \( u_C(t) \), it will show an exponential rise, starting from 0 and approaching \( U_0 \) asymptotically.
 
-So, ∀t > 0, 
+### 5. **Current During Charging**
 
-![\Large\color{Teal} E=RC\frac{du_{c}}{dt}+u_{c}](https://latex.codecogs.com/svg.latex?\Large\color{Teal}&space; E=RC\frac{du_{c}}{dt}+u_{c})
+The current \( i(t) \) in the circuit is related to the derivative of the capacitor voltage. Using \( i(t) = C \frac{du_C(t)}{dt} \), we differentiate the capacitor voltage solution:
 
-### Analysis of the differential equation
+\[
+i(t) = C \cdot \frac{d}{dt} \left( U_0 (1 - e^{-t/\tau}) \right)
+\]
 
-The differential equation shows 𝜏 = RC, the time constant of the
-circuit.
+This simplifies to:
 
-Once the steady state is reached : 
+\[
+i(t) = C \cdot U_0 \cdot \frac{1}{\tau} \cdot e^{-t/\tau} = \frac{U_0}{R} e^{-t/\tau}
+\]
 
-![\Large\color{Teal} \frac{du_{c}}{dt}=0](https://latex.codecogs.com/svg.latex?\Large\color{Teal}&space;\frac{du_{c}}{dt}=0)
+The current \( i(t) \) starts at a maximum value \( i(0) = \frac{U_0}{R} \) and decreases exponentially to 0 as the capacitor charges.
 
-we conclude that <span style="color: #008080">u<sub>c</sub> = E</span> in regime permanent.
+### 6. **Energy Balance**
 
-The law of additivity of tensions leads to:
+The **energy** stored in the capacitor at any time \( t \) is:
 
-∀t > 0, 
+\[
+E_C(t) = \frac{1}{2} C u_C(t)^2 = \frac{1}{2} C \left( U_0 (1 - e^{-t/\tau}) \right)^2
+\]
 
-![\Large\color{Teal} i(t)=\frac{E-u_{c}(t)}{R}](https://latex.codecogs.com/svg.latex?\Large\color{Teal}&space; i(t)=\frac{E-u_{c}(t)}{R})
+Initially, the capacitor has no energy, but as it charges, the energy stored increases and asymptotically approaches \( \frac{1}{2} C U_0^2 \), which is the maximum energy the capacitor can store.
 
-In particular for t = 0<sup>+</sup>, the capacitor is discharged, i is maximum and is worth
-i(0<sup>+</sup>) = E/R; once the steady state is reached, the intensity is canceled.
+The total energy provided by the voltage source is \( U_0 \cdot Q \), where \( Q = CU_0 \). Only half of this energy is stored in the capacitor. The rest is dissipated as heat in the resistor.
 
-### Solving the differential equation
+The **power dissipated** in the resistor is:
 
-The capacitor is initially discharged u<sub>c</sub>(0<sup>—</sup>) = 0, the continuity of the voltage
-across a capacitor ensures that: u<sub>c</sub>(0<sup>+</sup>) = u<sub>c</sub>(0<sup>—</sup>) = 0.
+\[
+P_R(t) = i(t)^2 R = \left( \frac{U_0}{R} e^{-t/\tau} \right)^2 R = \frac{U_0^2}{R} e^{-2t/\tau}
+\]
 
-The problem to solve is therefore the following: we are looking for u<sub>c</sub> which verifies:
+This shows that the energy lost to heat diminishes over time as the current decreases.
 
-∀t > 0, 
+## Discharge of a capacitor
 
-![\Large\color{Teal} E=\tau\frac{du_{c}}{dt}+u_{c}](https://latex.codecogs.com/svg.latex?\Large\color{Teal}&space; E=\tau\frac{du_{c}}{dt}+u_{c})
+The discharge of a capacitor is a fundamental concept in circuits involving resistors and capacitors (RC circuits). When a charged capacitor is connected to a resistor, the energy stored in the capacitor is gradually dissipated as heat in the resistor.
 
-and u<sub>c</sub>(0<sup>+</sup>) = 0
+### 1. **Differential Equation for \( u_C(t) \) (Capacitor Voltage During Discharge)**
 
-The general solution is of the form:
+In an RC circuit, when a capacitor discharges through a resistor, we can use Kirchhoff's Voltage Law (KVL) to describe the relationship between the voltage across the resistor and the capacitor. When the capacitor discharges, there is no external power source, and the total voltage in the loop must sum to zero. The equation governing the circuit is:
 
-∀t > 0,
+\[
+u_R(t) + u_C(t) = 0
+\]
 
-![\Large\color{Teal} u_{c}(t)=Ae^\frac{-dt}{\tau}+E](https://latex.codecogs.com/svg.latex?\Large\color{Teal}&space; u_{c}(t)=Ae^\frac{-dt}{\tau}+E)
+where:
+- \( u_R(t) = R \cdot i(t) \) is the voltage across the resistor,
+- \( u_C(t) = \frac{1}{C} \int_0^t i(t) \, dt \) is the voltage across the capacitor.
 
-The initial condition imposes: u<sub>c</sub>(0<sup>+</sup>) = 0 = E+A  => A = -E, we deduce:
+Now, since the current in the circuit is related to the rate of change of the charge on the capacitor, we use the relation:
 
-∀t > 0,
+\[
+i(t) = -C \frac{du_C(t)}{dt}
+\]
 
-![\Large\color{Teal} u_{c}(t)=E(1 - e^\frac{-dt}{\tau})](https://latex.codecogs.com/svg.latex?\Large\color{Teal}&space; u_{c}(t)=E(1 - e^\frac{-dt}{\tau}))
+This equation indicates that the current flows in the opposite direction to the increasing charge on the capacitor (discharge). Substituting this expression into the voltage drop across the resistor:
 
-### Plot and time constant
+\[
+u_R(t) = R \cdot \left(-C \frac{du_C(t)}{dt}\right)
+\]
 
-The theoretical curve below represents the evolution of the voltage across the
-capacitor as a function of the dimensionless variable t/𝜏.
+Using \( u_R(t) + u_C(t) = 0 \), we now have:
 
-```
-import numpy as np
-import matplotlib.pyplot as plt
+\[
+R C \frac{du_C(t)}{dt} + u_C(t) = 0
+\]
 
-# Define the function
-def func(t, tau):
-    return 1 - np.exp(-t/tau)
+This is the **differential equation** governing the capacitor voltage during discharge.
 
-# Define the value of tau
-tau = 1  # You can adjust this value as needed
+### 2. **Solving the Differential Equation**
 
-# Generate t values
-t_values = np.linspace(0, 5*tau, 100)  # You can adjust the range and density of points
+The differential equation is a first-order linear equation:
 
-# Calculate corresponding y values
-y_values = func(t_values, tau)
+\[
+R C \frac{du_C(t)}{dt} + u_C(t) = 0
+\]
 
-# Plot
-plt.figure(figsize=(8, 6))
-plt.plot(t_values, y_values, label='1 - e^(-t/tau)', color='blue')
-plt.title('Plot of 1 - e^(-t/tau)')
-plt.xlabel('t/tau')
-plt.ylabel('y')
-plt.grid(True)
-plt.legend()
-plt.show()
-```
-![](img/1st_order/3.png)
+We can rewrite this as:
 
-For t/𝜏 = 5, 1 - e<sup>-t/𝜏</sup> = 0.99
+\[
+\frac{du_C(t)}{dt} = -\frac{u_C(t)}{RC}
+\]
 
-The steady state is reached after a duration of around t=5𝜏.
+This is a separable differential equation, and we can solve it by separating variables:
 
-The time constant can be determined graphically:
+\[
+\frac{du_C(t)}{u_C(t)} = -\frac{dt}{RC}
+\]
 
-The voltage uc reaches 63% of its final value for t = 𝜏; indeed 1 - e<sup>-1</sup> = 0.63
+Now integrate both sides:
+
+\[
+\int \frac{1}{u_C(t)} \, du_C(t) = -\frac{1}{RC} \int dt
+\]
+
+This gives:
+
+\[
+\ln(u_C(t)) = -\frac{t}{RC} + \text{constant}
+\]
+
+We exponentiate both sides to get rid of the logarithm:
+
+\[
+u_C(t) = A e^{-t/RC}
+\]
+
+where \( A \) is a constant determined by the initial conditions. If the initial voltage across the capacitor at \( t = 0 \) is \( u_C(0) = U_0 \), we find that:
+
+\[
+u_C(0) = A e^{0} = A = U_0
+\]
+
+Thus, the solution is:
+
+\[
+u_C(t) = U_0 e^{-t/RC}
+\]
+
+This equation describes how the voltage across the capacitor decreases exponentially over time as the capacitor discharges through the resistor.
+
+### Summary of Key Results
+
+- The **differential equation** governing the discharge is:
+
+\[
+R C \frac{du_C(t)}{dt} + u_C(t) = 0
+\]
+
+- The **solution** of the differential equation (voltage across the capacitor during discharge) is:
+
+\[
+u_C(t) = U_0 e^{-t/\tau}
+\]
+
+  where \( \tau = RC \) is the **time constant** of the circuit.
+
+### Interpretation
+
+- The time constant \( \tau = RC \) controls how quickly the capacitor discharges. After a time \( t = \tau \), the voltage across the capacitor will have dropped to about 37% of its initial value \( U_0 \).
+- After \( 5\tau \), the voltage is considered effectively zero (less than 1% of \( U_0 \)).
+
+## Response of a series RL circuit to a voltage step
+
+### 1. **Differential Equation for \( i(t) \)**
+
+For a series RL circuit with a resistor \( R \) and an inductor \( L \), Kirchhoff's Voltage Law (KVL) gives the following relationship:
+
+\[
+u(t) = u_R(t) + u_L(t)
+\]
+
+where:
+- \( u(t) = U_0 \) is the applied step voltage,
+- \( u_R(t) = R \cdot i(t) \) is the voltage across the resistor,
+- \( u_L(t) = L \frac{di(t)}{dt} \) is the voltage across the inductor.
+
+Substituting these expressions into the KVL equation:
+
+\[
+U_0 = R \cdot i(t) + L \frac{di(t)}{dt}
+\]
+
+This is the **differential equation** that governs the current \( i(t) \) in the RL circuit.
+
+### 2. **Analysis of the Differential Equation**
+
+The differential equation is:
+
+\[
+L \frac{di(t)}{dt} + R \cdot i(t) = U_0
+\]
+
+This is a first-order linear differential equation. The two terms on the left side represent:
+- \( L \frac{di(t)}{dt} \): the opposition to changes in current caused by the inductor (inductive reactance),
+- \( R \cdot i(t) \): the opposition to current caused by the resistor (resistive load).
+
+The right side is the applied step voltage \( U_0 \). This equation shows that when the voltage step is applied, the current does not immediately reach its maximum value due to the inductor's tendency to resist changes in current (known as **inductive kick**). Instead, the current increases gradually over time.
+
+### 3. **Solving the Differential Equation**
+
+We can solve this differential equation for \( i(t) \). First, rewrite it as:
+
+\[
+L \frac{di(t)}{dt} = U_0 - R \cdot i(t)
+\]
+
+Dividing both sides by \( L \):
+
+\[
+\frac{di(t)}{dt} = \frac{U_0}{L} - \frac{R}{L} \cdot i(t)
+\]
+
+This is a first-order linear differential equation with a standard form. To solve it, we use an integrating factor approach.
+
+1. **Homogeneous Solution**: First, solve the homogeneous equation \( \frac{di(t)}{dt} + \frac{R}{L} i(t) = 0 \):
+
+\[
+\frac{di(t)}{i(t)} = -\frac{R}{L} dt
+\]
+
+   Integrating both sides:
+
+\[
+\ln(i(t)) = -\frac{R}{L} t + C
+\]
+
+   Exponentiating both sides:
+
+\[
+i_h(t) = A e^{-t/\tau}
+\]
+
+   where \( A \) is a constant and \( \tau = \frac{L}{R} \) is the **time constant** of the RL circuit.
+
+2. **Particular Solution**: For the particular solution, assume \( i_p(t) = I \), a constant current. Substituting into the differential equation:
+
+\[
+0 = \frac{U_0}{L} - \frac{R}{L} \cdot I
+\]
+
+   Solving for \( I \):
+
+\[
+I = \frac{U_0}{R}
+\]
+
+   So, the particular solution is \( i_p(t) = \frac{U_0}{R} \).
+
+3. **General Solution**: The general solution is the sum of the homogeneous and particular solutions:
+
+\[
+i(t) = A e^{-t/\tau} + \frac{U_0}{R}
+\]
+
+4. **Applying Initial Condition**: The initial condition is \( i(0) = 0 \) (since the current through an inductor cannot change instantaneously). Substituting \( t = 0 \) into the general solution:
+
+\[
+0 = A e^{0} + \frac{U_0}{R}
+\]
+
+   Solving for \( A \):
+
+\[
+A = -\frac{U_0}{R}
+\]
+
+Thus, the complete solution for the current as a function of time is:
+
+\[
+i(t) = \frac{U_0}{R} \left( 1 - e^{-t/\tau} \right)
+\]
+
+where \( \tau = \frac{L}{R} \) is the time constant of the circuit.
+
+### 4. **Energy Balance**
+
+Now, let's analyze the energy in the circuit.
+
+- **Energy stored in the inductor**: The inductor stores energy in its magnetic field as current increases. The energy stored in the inductor at any time \( t \) is given by:
+
+\[
+E_L(t) = \frac{1}{2} L i(t)^2
+\]
+
+  Initially, when \( t = 0 \), the energy is zero because \( i(0) = 0 \). As time progresses and the current builds up, the inductor stores more energy.
+
+- **Energy dissipated in the resistor**: The resistor dissipates energy as heat. The power dissipated in the resistor is:
+
+\[
+P_R(t) = R \cdot i(t)^2
+\]
+
+  The total energy dissipated by the resistor over time is the integral of the power:
+
+\[
+E_R = \int_0^\infty P_R(t) dt
+\]
+
+- **Total energy supplied by the voltage source**: The total energy provided by the voltage source is:
+
+\[
+E_{\text{total}} = U_0 \cdot Q
+\]
+
+  where \( Q = \frac{U_0}{R} \) is the charge delivered.
+
+Initially, all the energy from the voltage source goes into building up the magnetic field of the inductor. Eventually, as the current stabilizes, all the energy is dissipated in the resistor.
+
+### Key Takeaways
+
+- The **differential equation** for the current is:
+
+\[
+L \frac{di(t)}{dt} + R i(t) = U_0
+\]
+
+- The **solution** is:
+
+\[
+i(t) = \frac{U_0}{R} \left( 1 - e^{-t/\tau} \right)
+\]
+
+  where \( \tau = \frac{L}{R} \) is the time constant, indicating how fast the current approaches its final steady-state value \( \frac{U_0}{R} \).
+
+- Initially, the inductor resists changes in current, so the current grows gradually. After several time constants, the current reaches a steady-state value of \( \frac{U_0}{R} \).
