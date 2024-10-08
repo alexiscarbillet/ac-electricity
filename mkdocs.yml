@@ -45,6 +45,8 @@ nav:
     - Tunnel: diodes/tunnel.md
     - Varactor: diodes/varactor.md
     - Zener: diodes/zener.md
+  - Electronic:
+    - electro/linear_system.md
   - Energy sources:
     - Biomass: energy_source/biomass.md
     - Coal: energy_source/coal.md
