@@ -135,7 +135,7 @@ nav:
     - Organic: semi_conductors/organic.md
     - Perovskite: semi_conductors/perovskite.md
     - Silicon: semi_conductors/silicon.md
-    - Silicon: semi_conductors/silicon_carbide.md
+    - Silicon carbide: semi_conductors/silicon_carbide.md
   - Tags: tags/tags.md
 
 copyright: Copyright &copy; 2024 Alexis Carbillet
