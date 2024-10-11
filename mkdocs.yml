@@ -46,7 +46,9 @@ nav:
     - Varactor: diodes/varactor.md
     - Zener: diodes/zener.md
   - Electronic:
-    - electronic/linear_system.md
+    - Linear system: electronic/linear_system.md
+    - Feedback: electronic/feedback.md
+    - Oscillators: electronic/oscillators.md
   - Energy sources:
     - Biomass: energy_source/biomass.md
     - Coal: energy_source/coal.md
@@ -133,6 +135,7 @@ nav:
     - Organic: semi_conductors/organic.md
     - Perovskite: semi_conductors/perovskite.md
     - Silicon: semi_conductors/silicon.md
+    - Silicon: semi_conductors/silicon_carbide.md
   - Tags: tags/tags.md
 
 copyright: Copyright &copy; 2024 Alexis Carbillet
