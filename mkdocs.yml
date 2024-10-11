@@ -46,8 +46,10 @@ nav:
     - Varactor: diodes/varactor.md
     - Zener: diodes/zener.md
   - Electronic:
-    - Linear system: electronic/linear_system.md
+    - Digital electronics:  electronic/digital_electronics.md
     - Feedback: electronic/feedback.md
+    - Linear system: electronic/linear_system.md
+    - Modulation-Demodulation: electronic/modulation-demodulation.md
     - Oscillators: electronic/oscillators.md
   - Energy sources:
     - Biomass: energy_source/biomass.md
@@ -181,10 +183,8 @@ extra_javascript:
 
 extra:
   social:
-    - icon: fontawesome/brands/github
-      link: https://github.com/alexiscarbillet
-    - icon: fontawesome/solid/puzzle-piece
-      link: https://addons.mozilla.org/fr/firefox/user/18481871/
+    - icon: fontawesome/solid/cat
+      link: https://all-about-cats.uk/
     - icon: fontawesome/solid/house
       link: https://alexis-carbillet.com/
     - icon: fontawesome/solid/code
