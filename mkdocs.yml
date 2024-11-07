@@ -183,9 +183,9 @@ extra_javascript:
 
 extra:
   social:
-    - icon: fontawesome/solid/cat
-      link: https://all-about-cats.uk/
     - icon: fontawesome/solid/house
       link: https://alexis-carbillet.com/
     - icon: fontawesome/solid/code
       link: https://ac-coding.com/
+    - icon: fontawesome/solid/cat
+      link: https://all-about-cats.uk/
