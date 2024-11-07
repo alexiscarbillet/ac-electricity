@@ -12,6 +12,8 @@ So far, there are several categories:
 
 - **diodes**: explains the different diodes used in the industry.
 
+- **electronic**: explains the science behind electronic.
+
 - **energy source**: about how electricity is produced.
 
 - **hardware**: explains how the different pieces of a computer work.
