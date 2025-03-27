@@ -53,7 +53,7 @@ I coded from scratch my other three websites.
 - The last one is [ac-serverhub.com](https://ac-serverhub.com/). It allows you to explore the latest and most powerful hardware components for servers.
 
 <center>
-<a href="https://alexis-carbillet.com/"><img src="assets/alexis_carbillet.png" style="width: 225px;height: 225px;border-radius: 200px;margin-bottom: 0; border: 7px solid #5e4da5;" alt="author picture"></a>
+<img src="assets/alexis_carbillet.png" style="width: 225px;height: 225px;border-radius: 200px;margin-bottom: 0; border: 7px solid #5e4da5;" alt="author picture">
 <h4 style="margin-top: 0; margin-bottom: 0;">Alexis Carbillet</h4>
 <p style="margin-top: 0px;">Electricity enthusiast</p>
 <a href="https://ac-programming.com/"><img src="https://raw.githubusercontent.com/squidfunk/mkdocs-material/master/material/templates/.icons/fontawesome/solid/code.svg" style="width: 25px;height: 25px;border-radius: 200px;margin-right: 10px;"></a><a href="https://all-about-cats.uk/"><img src="https://raw.githubusercontent.com/squidfunk/mkdocs-material/master/material/templates/.icons/fontawesome/solid/cat.svg" style="width: 25px;height: 25px;border-radius: 200px;margin-right: 10px;"></a><a href="https://ac-serverhub.com/"><img src="https://raw.githubusercontent.com/squidfunk/mkdocs-material/master/material/templates/.icons/fontawesome/solid/server.svg" style="width: 25px;height: 25px;border-radius: 200px;"></a>
