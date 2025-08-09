@@ -1,5 +1,4 @@
 <head>
-    <meta name="google-adsense-account" content="ca-pub-9364684337389377">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Welcome to ac-electricity! Here you will learn more about electricity, the different components used to make an electrical circuit as well as their features and use cases.">
