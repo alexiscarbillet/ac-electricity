@@ -1,8 +1,4 @@
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Welcome to ac-electricity! Here you will learn more about electricity, the different components used to make an electrical circuit as well as their features and use cases.">
-    <meta name="keywords" content="alexis carbillet, carbillet, electricity, capacitors, conductors, diodes, electronic, energy source, hardware, home appliances, inductors, insulators, resistors, semi-conductors">
-    <meta name="author" content="Alexis Carbillet ">
-</head>
+
 
 # Mica Capacitors
 
