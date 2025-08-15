@@ -1,0 +1,4272 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9364684337389377"
+     crossorigin="anonymous"></script>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta name="description" content="Welcome to ac-electricity! Here you will learn more about electricity, the different components used to make an electrical circuit as well as their features and use cases.">
+      <meta name="keywords" content="alexis carbillet, carbillet, electricity, capacitors, conductors, diodes, electronic, energy source, hardware, home appliances, inductors, insulators, resistors, semi-conductors">
+      <meta name="author" content="Alexis Carbillet ">
+      
+        <link rel="canonical" href="https://ac-electricity.com/electronic/linear_system/">
+      
+      
+        <link rel="prev" href="../feedback/">
+      
+      
+        <link rel="next" href="../modulation-demodulation/">
+      
+      
+      <link rel="icon" href="../../assets/logo.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.6.16">
+    
+    
+      
+        <title>Linear system - AC-Electricity</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.7e37652d.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="black" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#linear-system" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="AC-Electricity" class="md-header__button md-logo" aria-label="AC-Electricity" data-md-component="logo">
+      
+  <img src="../../assets/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            AC-Electricity
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Linear system
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="default" data-md-color-primary="black" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5M7 15a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3Z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3Z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="AC-Electricity" class="md-nav__button md-logo" aria-label="AC-Electricity" data-md-component="logo">
+      
+  <img src="../../assets/logo.png" alt="logo">
+
+    </a>
+    AC-Electricity
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    History of electricity
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Capacitors
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Capacitors
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../capacitors/ceramic/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Ceramic
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../capacitors/electrolytic/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Electrolytic
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../capacitors/film/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Film
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../capacitors/glass/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Glass
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../capacitors/mica/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Mica
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../capacitors/paper/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Paper
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../capacitors/polymer/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Polymer
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../capacitors/supercapacitors/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Supercapacitors
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../capacitors/tantalum/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Tantalum
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../capacitors/variable/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Variable
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Conductors
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Conductors
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_1" id="__nav_4_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Alloys
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_1">
+            <span class="md-nav__icon md-icon"></span>
+            Alloys
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../conductors/alloys/brass/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Brass
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../conductors/alloys/bronze/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Bronze
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../conductors/alloys/nichrome/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Nichrome
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../conductors/graphite/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Graphite
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_3" id="__nav_4_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Ionic
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_3">
+            <span class="md-nav__icon md-icon"></span>
+            Ionic
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../conductors/ionic/liquids/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Liquids
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../conductors/ionic/electrolyte_solutions/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Electrolyte solutions
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../conductors/ionic/solid-state_electrolytes/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Solid-state Electrolyte
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_4" id="__nav_4_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Metals
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_4">
+            <span class="md-nav__icon md-icon"></span>
+            Metals
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../conductors/metals/aluminium/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Aluminium
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../conductors/metals/copper/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Copper
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../conductors/metals/gold/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Gold
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../conductors/metals/iron/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Iron
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../conductors/metals/tin/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Tin
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../conductors/metals/silver/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Silver
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../conductors/plasma/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Plasma
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Diodes
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            Diodes
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../diodes/avalanche/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Avalanche
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../diodes/gold-doped/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Gold-doped
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../diodes/gunn/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Gunn
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../diodes/photodiode/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Photodiode
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../diodes/pin/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    PIN
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../diodes/rectifier/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Rectifier
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../diodes/schottky/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Schottky
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../diodes/step-recovery/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Step recovery
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../diodes/tunnel/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Tunnel
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../diodes/varactor/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Varactor
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../diodes/zener/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Zener
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Electronic
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            Electronic
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../digital_electronics/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Digital electronics
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../feedback/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Feedback
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Linear system
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Linear system
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#linear-time-invariant-system" class="md-nav__link">
+    <span class="md-ellipsis">
+      Linear Time-Invariant System
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Linear Time-Invariant System">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-definitions" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Definitions
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. Definitions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#operator" class="md-nav__link">
+    <span class="md-ellipsis">
+      Operator
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#linearity" class="md-nav__link">
+    <span class="md-ellipsis">
+      Linearity
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#time-invariance" class="md-nav__link">
+    <span class="md-ellipsis">
+      Time-Invariance
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-systems-governed-by-differential-equations" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Systems Governed by Differential Equations
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#conclusion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Conclusion
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#frequency-response-and-transfer-function" class="md-nav__link">
+    <span class="md-ellipsis">
+      Frequency response and transfer function
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Frequency response and transfer function">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-sinusoidal-steady-state-response-regime-sinusoidal-force" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Sinusoidal Steady-State Response (Régime sinusoïdal forcé)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-transfer-function-fonction-de-transfert" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Transfer Function (Fonction de transfert)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-equivalence-differential-equation-and-transfer-function" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Equivalence: Differential Equation and Transfer Function
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#conclusion_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Conclusion
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#stability" class="md-nav__link">
+    <span class="md-ellipsis">
+      Stability
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Stability">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-stability-criterion" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Stability Criterion
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. Stability Criterion">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#poles-and-stability" class="md-nav__link">
+    <span class="md-ellipsis">
+      Poles and Stability
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#routh-hurwitz-criterion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Routh-Hurwitz Criterion
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#nyquist-criterion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Nyquist Criterion
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-application-negative-resistance-oscillator" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Application: Negative Resistance Oscillator
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Application: Negative Resistance Oscillator">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#principle-of-negative-resistance" class="md-nav__link">
+    <span class="md-ellipsis">
+      Principle of Negative Resistance
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#negative-resistance-oscillator-design" class="md-nav__link">
+    <span class="md-ellipsis">
+      Negative Resistance Oscillator Design
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#stability-considerations-in-oscillator-design" class="md-nav__link">
+    <span class="md-ellipsis">
+      Stability Considerations in Oscillator Design
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#conclusion_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Conclusion
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../modulation-demodulation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Modulation-Demodulation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../oscillators/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Oscillators
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Energy sources
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            Energy sources
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../energy_source/biomass/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Biomass
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../energy_source/coal/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Coal
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../energy_source/geothermal/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Geothermal
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../energy_source/hydropower/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Hydropower
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../energy_source/natural_gas/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Natural gas
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../energy_source/nuclear/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Nuclear
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../energy_source/oil/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Oil
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../energy_source/solar/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Solar
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../energy_source/tydal/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Tydal
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../energy_source/wave/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Wave
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../energy_source/wind/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Wind
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Hardware
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            Hardware
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../hardware/battery/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Battery
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../hardware/gpu/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    GPU
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../hardware/keyboard/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Keyboard
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../hardware/motherboard/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Motherboard
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../hardware/processor/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Processor
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../hardware/ram/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    RAM
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../hardware/storage/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Storage
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../hardware/touchpad/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Touchpad
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" >
+        
+          
+          <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Home appliances
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_9">
+            <span class="md-nav__icon md-icon"></span>
+            Home appliances
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../home_appliances/air_conditioner/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Air conditioner
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../home_appliances/bulb/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Bulb
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../home_appliances/cfl_bulb/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    CFL Bulb
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../home_appliances/dishwasher/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Dishwasher
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../home_appliances/dryer/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Dryer
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../home_appliances/freezer/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Freezer
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../home_appliances/fridge/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Fridge
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../home_appliances/led/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    LED
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../home_appliances/microwave/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Microwave
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../home_appliances/oven/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Oven
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../home_appliances/television/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Television
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../home_appliances/toaster/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Toaster
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../home_appliances/speaker/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Speaker
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../home_appliances/stove/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Stove
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../home_appliances/vacuum/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Vacuum cleaner
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../home_appliances/washing_machine/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Washing machine
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_10" >
+        
+          
+          <label class="md-nav__link" for="__nav_10" id="__nav_10_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Inductors
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_10_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_10">
+            <span class="md-nav__icon md-icon"></span>
+            Inductors
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../inductors/air_core/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Air core
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../inductors/coupled/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Coupled
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../inductors/ferrite_core/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Ferrite core
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../inductors/iron_core/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Iron core
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../inductors/molded/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Molded
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../inductors/multilayer_chip/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Multilayer chip
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../inductors/rf_coil/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    RF coil
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../inductors/shielded/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Shielded
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../inductors/toroidal/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Toroidal
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../inductors/variable/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Variable
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_11" >
+        
+          
+          <label class="md-nav__link" for="__nav_11" id="__nav_11_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Insulators
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_11_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_11">
+            <span class="md-nav__icon md-icon"></span>
+            Insulators
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../insulators/ceramic/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Ceramic
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../insulators/cross-linked_polyethylene/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Cross-linked Polyethylene
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../insulators/epoxy_resine/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Epoxy resine
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../insulators/glass/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Glass
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../insulators/mica/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Mica
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../insulators/polyethylene/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Polyethylene
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../insulators/polypropylene/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Polypropylene
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../insulators/polyvinyl_chloride/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Polyvinyl chloride
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../insulators/silicon_rubber/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Silicon rubber
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../insulators/teflon/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Teflon
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_12" >
+        
+          
+          <label class="md-nav__link" for="__nav_12" id="__nav_12_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Physical signals
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_12_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_12">
+            <span class="md-nav__icon md-icon"></span>
+            Physical signals
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../physical_signals/quasistatic/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Quasistatic
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../physical_signals/1st_order/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    1st order
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../physical_signals/damped_oscillators/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Damped oscillators
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../physical_signals/linear_filtering/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Linear filtering
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_13" >
+        
+          
+          <label class="md-nav__link" for="__nav_13" id="__nav_13_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Resistors
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_13_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_13">
+            <span class="md-nav__icon md-icon"></span>
+            Resistors
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../resistors/carbon_composition/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Carbon composition
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../resistors/fixed/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Fixed
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../resistors/fusible/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Fusible
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../resistors/hybrid/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Hybrid
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../resistors/metal_film/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Metal film
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../resistors/photoresistor/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Photoresistor
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../resistors/thermistor/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Thermistor
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../resistors/variable/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Variable
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../resistors/varistor/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Varistor
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../resistors/wirewound/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Wirewound
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_14" >
+        
+          
+          <label class="md-nav__link" for="__nav_14" id="__nav_14_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Semi-conductors
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_14_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_14">
+            <span class="md-nav__icon md-icon"></span>
+            Semi-conductors
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../semi_conductors/cadmium/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Cadmium Telluride
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../semi_conductors/galium_arsenide/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Galium Arsenide
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../semi_conductors/galium_nitride/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Galium Nitride
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../semi_conductors/galium_nitride_on_silicon/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Galium Nitride on Silicon
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../semi_conductors/germanium/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Germanium
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../semi_conductors/indium/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Indium Phosphide
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../semi_conductors/organic/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Organic
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../semi_conductors/perovskite/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Perovskite
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../semi_conductors/silicon/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Silicon
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../semi_conductors/silicon_carbide/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Silicon carbide
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tags/tags/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Tags
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#linear-time-invariant-system" class="md-nav__link">
+    <span class="md-ellipsis">
+      Linear Time-Invariant System
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Linear Time-Invariant System">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-definitions" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Definitions
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. Definitions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#operator" class="md-nav__link">
+    <span class="md-ellipsis">
+      Operator
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#linearity" class="md-nav__link">
+    <span class="md-ellipsis">
+      Linearity
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#time-invariance" class="md-nav__link">
+    <span class="md-ellipsis">
+      Time-Invariance
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-systems-governed-by-differential-equations" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Systems Governed by Differential Equations
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#conclusion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Conclusion
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#frequency-response-and-transfer-function" class="md-nav__link">
+    <span class="md-ellipsis">
+      Frequency response and transfer function
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Frequency response and transfer function">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-sinusoidal-steady-state-response-regime-sinusoidal-force" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Sinusoidal Steady-State Response (Régime sinusoïdal forcé)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-transfer-function-fonction-de-transfert" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Transfer Function (Fonction de transfert)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-equivalence-differential-equation-and-transfer-function" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Equivalence: Differential Equation and Transfer Function
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#conclusion_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Conclusion
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#stability" class="md-nav__link">
+    <span class="md-ellipsis">
+      Stability
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Stability">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-stability-criterion" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Stability Criterion
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. Stability Criterion">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#poles-and-stability" class="md-nav__link">
+    <span class="md-ellipsis">
+      Poles and Stability
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#routh-hurwitz-criterion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Routh-Hurwitz Criterion
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#nyquist-criterion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Nyquist Criterion
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-application-negative-resistance-oscillator" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Application: Negative Resistance Oscillator
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Application: Negative Resistance Oscillator">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#principle-of-negative-resistance" class="md-nav__link">
+    <span class="md-ellipsis">
+      Principle of Negative Resistance
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#negative-resistance-oscillator-design" class="md-nav__link">
+    <span class="md-ellipsis">
+      Negative Resistance Oscillator Design
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#stability-considerations-in-oscillator-design" class="md-nav__link">
+    <span class="md-ellipsis">
+      Stability Considerations in Oscillator Design
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#conclusion_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Conclusion
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<pre><code>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+&lt;meta name="description" content="Welcome to ac-electricity! Here you will learn more about electricity, the different components used to make an electrical circuit as well as their features and use cases."&gt;
+&lt;meta name="keywords" content="alexis carbillet, carbillet, electricity, capacitors, conductors, diodes, electronic, energy source, hardware, home appliances, inductors, insulators, resistors, semi-conductors"&gt;
+&lt;meta name="author" content="Alexis Carbillet "&gt;
+</code></pre>
+<p></head></p>
+<h1 id="linear-system">Linear system</h1>
+<h2 id="linear-time-invariant-system">Linear Time-Invariant System</h2>
+<p>A <strong>Linear Time-Invariant System (LTI system)</strong> is a fundamental concept in electronics and control theory, describing systems whose behavior can be predicted using linear equations and whose properties do not change over time.</p>
+<h3 id="1-definitions">1. Definitions</h3>
+<h4 id="operator"><strong>Operator</strong></h4>
+<p>In the context of LTI systems, an operator refers to a mathematical entity that defines how a system transforms an input signal to produce an output. The most common operator in electronics is the <strong>differential operator</strong> <span class="arithmatex">\( \mathcal{D} \)</span>, which operates on a function to describe its derivatives:</p>
+<div class="arithmatex">\[
+\mathcal{D}x(t) = \frac{dx(t)}{dt}
+\]</div>
+<p>This operator is critical in systems governed by differential equations, such as electrical circuits or mechanical systems.</p>
+<h4 id="linearity"><strong>Linearity</strong></h4>
+<p>A system is <strong>linear</strong> if it satisfies two key properties:</p>
+<ol>
+<li><strong>Superposition (Additivity)</strong>: If an input signal <span class="arithmatex">\( x_1(t) \)</span> produces an output <span class="arithmatex">\( y_1(t) \)</span>, and an input <span class="arithmatex">\( x_2(t) \)</span> produces <span class="arithmatex">\( y_2(t) \)</span>, then for any two scalars <span class="arithmatex">\( \alpha \)</span> and <span class="arithmatex">\( \beta \)</span>, the system’s response to <span class="arithmatex">\( \alpha x_1(t) + \beta x_2(t) \)</span> is:</li>
+</ol>
+<div class="arithmatex">\[
+\alpha y_1(t) + \beta y_2(t)
+\]</div>
+<ol>
+<li><strong>Homogeneity (Scaling)</strong>: If an input <span class="arithmatex">\( x(t) \)</span> produces an output <span class="arithmatex">\( y(t) \)</span>, then for any scalar <span class="arithmatex">\( k \)</span>, the response to <span class="arithmatex">\( kx(t) \)</span> is <span class="arithmatex">\( ky(t) \)</span>.</li>
+</ol>
+<p>Thus, the system’s response to a combination of inputs is simply the combination of the individual responses.</p>
+<h4 id="time-invariance"><strong>Time-Invariance</strong></h4>
+<p>A system is <strong>time-invariant</strong> if its behavior does not change over time. This means that if a system responds to an input <span class="arithmatex">\( x(t) \)</span> with output <span class="arithmatex">\( y(t) \)</span>, then if the input is delayed by some time <span class="arithmatex">\( t_0 \)</span>, the output will also be delayed by the same amount:</p>
+<div class="arithmatex">\[
+x(t - t_0) \rightarrow y(t - t_0)
+\]</div>
+<p>This property ensures that the system’s characteristics remain the same regardless of when the input is applied.</p>
+<h3 id="2-systems-governed-by-differential-equations">2. <strong>Systems Governed by Differential Equations</strong></h3>
+<p>Many LTI systems, especially in electronics, are governed by <strong>linear differential equations</strong>. These equations describe the relationship between the input and output of the system, often involving derivatives of the input and/or output signals.</p>
+<p>A general form of a linear differential equation for an LTI system is:</p>
+<div class="arithmatex">\[
+a_n \frac{d^n y(t)}{dt^n} + a_{n-1} \frac{d^{n-1} y(t)}{dt^{n-1}} + \dots + a_1 \frac{dy(t)}{dt} + a_0 y(t) = b_m \frac{d^m x(t)}{dt^m} + b_{m-1} \frac{d^{m-1} x(t)}{dt^{m-1}} + \dots + b_1 \frac{dx(t)}{dt} + b_0 x(t)
+\]</div>
+<p>Here:</p>
+<ul>
+<li><span class="arithmatex">\( y(t) \)</span> is the output signal (response of the system),</li>
+<li><span class="arithmatex">\( x(t) \)</span> is the input signal,</li>
+<li><span class="arithmatex">\( a_0, a_1, \dots, a_n \)</span> are constants defining the system's response,</li>
+<li><span class="arithmatex">\( b_0, b_1, \dots, b_m \)</span> are constants related to the input signal.</li>
+</ul>
+<p>This equation reflects the <strong>causal relationship</strong> between the input and output of the system. For example, in an electrical circuit consisting of resistors, capacitors, and inductors, the system might be described by a second-order differential equation, as in the case of an RLC circuit:</p>
+<div class="arithmatex">\[
+L \frac{d^2 i(t)}{dt^2} + R \frac{di(t)}{dt} + \frac{i(t)}{C} = v(t)
+\]</div>
+<p>Where:</p>
+<ul>
+<li><span class="arithmatex">\( L \)</span> is the inductance,</li>
+<li><span class="arithmatex">\( R \)</span> is the resistance,</li>
+<li><span class="arithmatex">\( C \)</span> is the capacitance,</li>
+<li><span class="arithmatex">\( i(t) \)</span> is the current, and</li>
+<li><span class="arithmatex">\( v(t) \)</span> is the input voltage.</li>
+</ul>
+<p>This is a second-order linear differential equation, and its solution will describe how the current in the circuit evolves over time in response to the applied voltage.</p>
+<h3 id="conclusion">Conclusion</h3>
+<p>In summary:</p>
+<ul>
+<li><strong>Operator</strong> defines how inputs are transformed into outputs, often via differential equations.</li>
+<li><strong>Linearity</strong> ensures that the system’s response to combined inputs is the sum of the individual responses.</li>
+<li><strong>Time-invariance</strong> guarantees that the system's behavior is consistent over time.</li>
+</ul>
+<h2 id="frequency-response-and-transfer-function">Frequency response and transfer function</h2>
+<p>The <strong>frequency response</strong> and <strong>transfer function</strong> are key concepts in the analysis of Linear Time-Invariant (LTI) systems, providing insight into how these systems respond to sinusoidal inputs and how their behavior can be characterized mathematically.</p>
+<h3 id="1-sinusoidal-steady-state-response-regime-sinusoidal-force">1. <strong>Sinusoidal Steady-State Response (Régime sinusoïdal forcé)</strong></h3>
+<p>When an LTI system is subjected to a sinusoidal input in steady state (also called the <strong>forced sinusoidal regime</strong>), its output is also sinusoidal, but it may have a different amplitude and phase. This property is crucial because sinusoidal signals are fundamental in many practical applications, such as AC power systems, communications, and signal processing.</p>
+<p>For an LTI system with input:</p>
+<div class="arithmatex">\[
+x(t) = X_0 \cos(\omega t + \phi)
+\]</div>
+<p>where:</p>
+<ul>
+<li><span class="arithmatex">\( X_0 \)</span> is the amplitude,</li>
+<li><span class="arithmatex">\( \omega \)</span> is the angular frequency,</li>
+<li><span class="arithmatex">\( \phi \)</span> is the phase,</li>
+</ul>
+<p>the system's output will have the form:</p>
+<div class="arithmatex">\[
+y(t) = Y_0 \cos(\omega t + \phi + \theta)
+\]</div>
+<p>where:
+- <span class="arithmatex">\( Y_0 \)</span> is the output amplitude,
+- <span class="arithmatex">\( \theta \)</span> is the phase shift introduced by the system.</p>
+<p>The input and output have the same frequency, <span class="arithmatex">\( \omega \)</span>, but the output may be scaled (in amplitude) and delayed (in phase) depending on the system’s properties.</p>
+<p>This behavior can be analyzed using <strong>complex notation</strong>, which simplifies the math. The input can be written as:</p>
+<div class="arithmatex">\[
+x(t) = \Re\{ X e^{j\omega t} \}
+\]</div>
+<p>where <span class="arithmatex">\( X = X_0 e^{j\phi} \)</span> is the complex amplitude. The output will similarly be:</p>
+<div class="arithmatex">\[
+y(t) = \Re\{ Y e^{j\omega t} \}
+\]</div>
+<p>where <span class="arithmatex">\( Y = Y_0 e^{j(\phi + \theta)} \)</span>.</p>
+<h3 id="2-transfer-function-fonction-de-transfert">2. <strong>Transfer Function (Fonction de transfert)</strong></h3>
+<p>The <strong>transfer function</strong>, denoted <span class="arithmatex">\( H(s) \)</span>, is a fundamental concept in the analysis of LTI systems. It is defined as the ratio of the Laplace transform of the output to the Laplace transform of the input, assuming zero initial conditions. In the <strong>frequency domain</strong>, the transfer function relates the system's input and output as:</p>
+<div class="arithmatex">\[
+H(s) = \frac{Y(s)}{X(s)}
+\]</div>
+<p>where:</p>
+<ul>
+<li><span class="arithmatex">\( Y(s) \)</span> is the Laplace transform of the output <span class="arithmatex">\( y(t) \)</span>,</li>
+<li><span class="arithmatex">\( X(s) \)</span> is the Laplace transform of the input <span class="arithmatex">\( x(t) \)</span>,</li>
+<li><span class="arithmatex">\( s = \sigma + j\omega \)</span> is the complex frequency variable in the Laplace domain.</li>
+</ul>
+<p>For sinusoidal steady-state analysis, we are particularly interested in the <strong>frequency response</strong> of the system, which is obtained by evaluating the transfer function along the imaginary axis of the <span class="arithmatex">\( s \)</span>-plane, i.e., <span class="arithmatex">\( s = j\omega \)</span>. The frequency response is then given by:</p>
+<div class="arithmatex">\[
+H(j\omega) = \frac{Y(j\omega)}{X(j\omega)}
+\]</div>
+<p>This complex function describes how the system affects the amplitude and phase of sinusoidal inputs at different frequencies.</p>
+<ul>
+<li>The <strong>magnitude</strong> <span class="arithmatex">\( |H(j\omega)| \)</span> tells us how the system amplifies or attenuates signals at frequency <span class="arithmatex">\( \omega \)</span>.</li>
+<li>The <strong>phase</strong> <span class="arithmatex">\( \arg(H(j\omega)) \)</span> tells us how the system shifts the phase of signals at frequency <span class="arithmatex">\( \omega \)</span>.</li>
+</ul>
+<p>For example, for a simple RC circuit with transfer function:</p>
+<div class="arithmatex">\[
+H(j\omega) = \frac{1}{1 + j\omega RC}
+\]</div>
+<ul>
+<li>At low frequencies (<span class="arithmatex">\( \omega \ll \frac{1}{RC} \)</span>), <span class="arithmatex">\( |H(j\omega)| \approx 1 \)</span>, so the system passes low-frequency signals with little attenuation.</li>
+<li>At high frequencies (<span class="arithmatex">\( \omega \gg \frac{1}{RC} \)</span>), <span class="arithmatex">\( |H(j\omega)| \approx 0 \)</span>, so the system attenuates high-frequency signals (acting as a low-pass filter).</li>
+</ul>
+<h3 id="3-equivalence-differential-equation-and-transfer-function">3. <strong>Equivalence: Differential Equation and Transfer Function</strong></h3>
+<p>There is a direct equivalence between the <strong>differential equation</strong> governing an LTI system and its <strong>transfer function</strong> in the frequency (Laplace) domain.</p>
+<p>Consider an LTI system described by a linear differential equation:</p>
+<div class="arithmatex">\[
+a_n \frac{d^n y(t)}{dt^n} + a_{n-1} \frac{d^{n-1} y(t)}{dt^{n-1}} + \dots + a_1 \frac{dy(t)}{dt} + a_0 y(t) = b_m \frac{d^m x(t)}{dt^m} + b_{m-1} \frac{d^{m-1} x(t)}{dt^{m-1}} + \dots + b_0 x(t)
+\]</div>
+<p>Taking the Laplace transform of both sides (with zero initial conditions), we can transform the time-domain differential equation into an algebraic equation in the Laplace domain:</p>
+<div class="arithmatex">\[
+a_n s^n Y(s) + a_{n-1} s^{n-1} Y(s) + \dots + a_1 s Y(s) + a_0 Y(s) = b_m s^m X(s) + b_{m-1} s^{m-1} X(s) + \dots + b_0 X(s)
+\]</div>
+<p>This simplifies to:</p>
+<div class="arithmatex">\[
+\left( a_n s^n + a_{n-1} s^{n-1} + \dots + a_1 s + a_0 \right) Y(s) = \left( b_m s^m + b_{m-1} s^{m-1} + \dots + b_0 \right) X(s)
+\]</div>
+<p>Thus, the transfer function is:</p>
+<div class="arithmatex">\[
+H(s) = \frac{Y(s)}{X(s)} = \frac{b_m s^m + b_{m-1} s^{m-1} + \dots + b_0}{a_n s^n + a_{n-1} s^{n-1} + \dots + a_0}
+\]</div>
+<p>This shows that the transfer function can be directly derived from the differential equation by expressing it in terms of <span class="arithmatex">\( s \)</span>, with coefficients of the input and output's derivatives becoming the numerator and denominator polynomials.</p>
+<h3 id="conclusion_1">Conclusion</h3>
+<p>The <strong>frequency response</strong> describes how an LTI system responds to different input frequencies, while the <strong>transfer function</strong> provides a powerful tool for analyzing the system in the frequency domain. There is a clear equivalence between the time-domain description of a system via differential equations and its frequency-domain representation through the transfer function.</p>
+<h2 id="stability">Stability</h2>
+<p><strong>Stability</strong> is a fundamental property in the analysis and design of electrical circuits and control systems, especially in systems governed by differential equations and transfer functions. A system is considered stable if its response to any bounded input remains bounded over time, meaning it does not oscillate or diverge uncontrollably.</p>
+<h3 id="1-stability-criterion">1. <strong>Stability Criterion</strong></h3>
+<p>The stability of an LTI system can be analyzed using its <strong>transfer function</strong> <span class="arithmatex">\( H(s) \)</span> or its differential equation. Several criteria are used to determine stability, but all are based on the behavior of the system’s poles, which are the values of <span class="arithmatex">\( s \)</span> that cause the denominator of the transfer function to be zero.</p>
+<h4 id="poles-and-stability"><strong>Poles and Stability</strong></h4>
+<p>The general form of the transfer function is:</p>
+<div class="arithmatex">\[
+H(s) = \frac{N(s)}{D(s)}
+\]</div>
+<p>Where:</p>
+<ul>
+<li><span class="arithmatex">\( N(s) \)</span> is the numerator polynomial, </li>
+<li><span class="arithmatex">\( D(s) \)</span> is the denominator polynomial.</li>
+</ul>
+<p>The poles of the system are the roots of <span class="arithmatex">\( D(s) = 0 \)</span>. The stability of the system depends on the location of these poles in the <strong>complex plane</strong>:</p>
+<ul>
+<li><strong>Stable system</strong>: All poles have negative real parts (i.e., they are in the <strong>left half-plane</strong> of the complex plane). In this case, the system’s natural response will decay over time.</li>
+<li><strong>Unstable system</strong>: If any pole has a positive real part (i.e., it is in the <strong>right half-plane</strong>), the system is unstable, and its response will grow without bound.</li>
+<li><strong>Marginally stable system</strong>: Poles on the <strong>imaginary axis</strong> (i.e., with zero real part) indicate a marginally stable system, where the system may oscillate indefinitely without growing or decaying.</li>
+</ul>
+<h4 id="routh-hurwitz-criterion"><strong>Routh-Hurwitz Criterion</strong></h4>
+<p>A popular method for checking the stability of a system without solving for the poles explicitly is the <strong>Routh-Hurwitz criterion</strong>. It applies to the characteristic equation (the denominator of the transfer function) and provides a systematic way to determine whether any poles have positive real parts.</p>
+<p>Given the characteristic equation:</p>
+<div class="arithmatex">\[
+a_n s^n + a_{n-1} s^{n-1} + \dots + a_1 s + a_0 = 0
+\]</div>
+<p>The Routh-Hurwitz criterion creates a <strong>Routh array</strong> from the coefficients <span class="arithmatex">\( a_n \)</span>, <span class="arithmatex">\( a_{n-1} \)</span>, etc., and examines the signs of the first column in the array. If all entries in this column are positive, the system is stable. Any sign changes indicate the presence of poles in the right half-plane, meaning the system is unstable.</p>
+<h4 id="nyquist-criterion"><strong>Nyquist Criterion</strong></h4>
+<p>Another powerful tool for determining stability, particularly in frequency-domain analysis, is the <strong>Nyquist criterion</strong>. This method is based on plotting the <strong>Nyquist diagram</strong>, which is a plot of the transfer function <span class="arithmatex">\( H(j\omega) \)</span> in the complex plane as <span class="arithmatex">\( \omega \)</span> varies from <span class="arithmatex">\( -\infty \)</span> to <span class="arithmatex">\( \infty \)</span>. By analyzing how the plot encircles the critical point <span class="arithmatex">\(-1 + j0\)</span>, one can determine the stability of a closed-loop system.</p>
+<h3 id="2-application-negative-resistance-oscillator">2. <strong>Application: Negative Resistance Oscillator</strong></h3>
+<p>An interesting application of the stability criterion is the design and analysis of an <strong>oscillator with negative resistance</strong>. Oscillators are circuits that generate periodic signals without any external periodic input. They achieve this by operating at the edge of stability, where the system has poles on the imaginary axis, indicating <strong>sustained oscillations</strong>.</p>
+<h4 id="principle-of-negative-resistance"><strong>Principle of Negative Resistance</strong></h4>
+<p>An <strong>oscillator</strong> relies on positive feedback and requires a circuit component that compensates for energy losses, often modeled as a negative resistance. In such circuits, energy is provided by active components (e.g., transistors or tunnel diodes) that introduce negative resistance, which cancels out the natural losses of the circuit, allowing it to oscillate.</p>
+<p>For instance, consider a simple LC circuit, which has an inductance <span class="arithmatex">\( L \)</span> and capacitance <span class="arithmatex">\( C \)</span>. In a stable system, this circuit would oscillate briefly and then decay due to losses (resistance). If a negative resistance <span class="arithmatex">\( -R \)</span> is introduced, the total resistance <span class="arithmatex">\( R_{\text{total}} = R - R_{\text{neg}} \)</span> can be reduced to zero, preventing the oscillations from decaying.</p>
+<h4 id="negative-resistance-oscillator-design"><strong>Negative Resistance Oscillator Design</strong></h4>
+<p>A typical <strong>negative resistance oscillator</strong> is designed using a device like a <strong>tunnel diode</strong>, which exhibits a region of negative differential resistance in its current-voltage characteristics. In this region, an increase in voltage causes a decrease in current, effectively providing the negative resistance required for oscillation.</p>
+<p>The <strong>transfer function</strong> of such an oscillator can be analyzed as follows:</p>
+<div class="arithmatex">\[
+H(s) = \frac{1}{LC s^2 + \left(\frac{R_{\text{total}}}{L}\right) s + 1}
+\]</div>
+<p>If <span class="arithmatex">\( R_{\text{total}} = 0 \)</span>, the characteristic equation becomes:</p>
+<div class="arithmatex">\[
+s^2 + \frac{1}{LC} = 0
+\]</div>
+<p>The poles of this system are purely imaginary:</p>
+<div class="arithmatex">\[
+s = \pm j \sqrt{\frac{1}{LC}}
+\]</div>
+<p>This indicates that the system is <strong>marginally stable</strong> and will oscillate indefinitely with a natural frequency of:</p>
+<div class="arithmatex">\[
+\omega_0 = \frac{1}{\sqrt{LC}}
+\]</div>
+<p>This is the resonant frequency of the LC circuit, and the oscillator will produce a sinusoidal signal at this frequency.</p>
+<p>If <span class="arithmatex">\( R_{\text{total}} \)</span> becomes slightly negative (i.e., the negative resistance dominates), the system becomes unstable, and the oscillations grow until non-linear effects limit the amplitude, resulting in a stable oscillating waveform at <span class="arithmatex">\( \omega_0 \)</span>.</p>
+<h4 id="stability-considerations-in-oscillator-design"><strong>Stability Considerations in Oscillator Design</strong></h4>
+<p>The key challenge in designing such oscillators is to maintain the system on the boundary of stability. If the negative resistance is too large, the system becomes unstable, leading to uncontrolled oscillations. If it is too small, the oscillations decay, and the circuit stops functioning as an oscillator. Proper tuning of the feedback network and the negative resistance is crucial to ensure sustained, stable oscillations.</p>
+<h3 id="conclusion_2">Conclusion</h3>
+<p>Stability analysis is crucial in determining whether a system will behave predictably over time. The <strong>stability criterion</strong> can be applied using various methods, such as pole location, the Routh-Hurwitz criterion, or Nyquist plots. The <strong>negative resistance oscillator</strong> is a practical example where stability principles are used to create controlled oscillations. In such circuits, negative resistance compensates for natural losses, leading to sustained oscillations at a defined frequency.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2025 Alexis Carbillet
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://alexis-carbillet.com/" target="_blank" rel="noopener" title="alexis-carbillet.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M575.8 255.5c0 18-15 32.1-32 32.1h-32l.7 160.2c0 2.7-.2 5.4-.5 8.1V472c0 22.1-17.9 40-40 40h-16c-1.1 0-2.2 0-3.3-.1-1.4.1-2.8.1-4.2.1H392c-22.1 0-40-17.9-40-40v-88c0-17.7-14.3-32-32-32h-64c-17.7 0-32 14.3-32 32v88c0 22.1-17.9 40-40 40h-55.9c-1.5 0-3-.1-4.5-.2-1.2.1-2.4.2-3.6.2h-16c-22.1 0-40-17.9-40-40V360c0-.9 0-1.9.1-2.8v-69.6H32c-18 0-32-14-32-32.1 0-9 3-17 10-24L266.4 8c7-7 15-8 22-8s15 2 21 7l255.4 224.5c8 7 12 15 11 24z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://ac-coding.com/" target="_blank" rel="noopener" title="ac-coding.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M392.8 1.2c-17-4.9-34.7 5-39.6 22l-128 448c-4.9 17 5 34.7 22 39.6s34.7-5 39.6-22l128-448c4.9-17-5-34.7-22-39.6zm80.6 120.1c-12.5 12.5-12.5 32.8 0 45.3l89.3 89.4-89.4 89.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l112-112c12.5-12.5 12.5-32.8 0-45.3l-112-112c-12.5-12.5-32.8-12.5-45.3 0zm-306.7 0c-12.5-12.5-32.8-12.5-45.3 0l-112 112c-12.5 12.5-12.5 32.8 0 45.3l112 112c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256l89.4-89.4c12.5-12.5 12.5-32.8 0-45.3z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://all-about-cats.uk/" target="_blank" rel="noopener" title="all-about-cats.uk" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M320 192h17.1c22.1 38.3 63.5 64 110.9 64 11 0 21.8-1.4 32-4v228c0 17.7-14.3 32-32 32s-32-14.3-32-32V339.2L280 448h56c17.7 0 32 14.3 32 32s-14.3 32-32 32H192c-53 0-96-43-96-96V192.5c0-16.1-12-29.8-28-31.8l-7.9-1c-17.5-2.2-30-18.2-27.8-35.7S50.5 94 68 96.2l7.9 1c48 6 84.1 46.8 84.1 95.3v85.3c34.4-51.7 93.2-85.8 160-85.8zm160 26.5c-10 3.5-20.8 5.5-32 5.5-28.4 0-54-12.4-71.6-32-3.7-4.1-7-8.5-9.9-13.2C357.3 164 352 146.6 352 128V10.7C352 4.8 356.7.1 362.6 0h.2c3.3 0 6.4 1.6 8.4 4.2v.1l12.8 17 27.2 36.3L416 64h64l4.8-6.4L512 21.3l12.8-17v-.1c2-2.6 5.1-4.2 8.4-4.2h.2c5.9.1 10.6 4.8 10.6 10.7V128c0 17.3-4.6 33.6-12.6 47.6-11.3 19.8-29.6 35.2-51.4 42.9zM432 128a16 16 0 1 0-32 0 16 16 0 1 0 32 0zm48 16a16 16 0 1 0 0-32 16 16 0 1 0 0 32z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.05bf7199.min.js"></script>
+      
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>

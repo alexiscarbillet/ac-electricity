@@ -1,0 +1,4553 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9364684337389377"
+     crossorigin="anonymous"></script>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta name="description" content="Welcome to ac-electricity! Here you will learn more about electricity, the different components used to make an electrical circuit as well as their features and use cases.">
+      <meta name="keywords" content="alexis carbillet, carbillet, electricity, capacitors, conductors, diodes, electronic, energy source, hardware, home appliances, inductors, insulators, resistors, semi-conductors">
+      <meta name="author" content="Alexis Carbillet ">
+      
+        <link rel="canonical" href="https://ac-electricity.com/physical_signals/damped_oscillators/">
+      
+      
+        <link rel="prev" href="../1st_order/">
+      
+      
+        <link rel="next" href="../linear_filtering/">
+      
+      
+      <link rel="icon" href="../../assets/logo.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.6.16">
+    
+    
+      
+        <title>Damped oscillators - AC-Electricity</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.7e37652d.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="black" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#damped-oscillators" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="AC-Electricity" class="md-header__button md-logo" aria-label="AC-Electricity" data-md-component="logo">
+      
+  <img src="../../assets/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            AC-Electricity
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Damped oscillators
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="default" data-md-color-primary="black" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5M7 15a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3Z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3Z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="AC-Electricity" class="md-nav__button md-logo" aria-label="AC-Electricity" data-md-component="logo">
+      
+  <img src="../../assets/logo.png" alt="logo">
+
+    </a>
+    AC-Electricity
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    History of electricity
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Capacitors
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Capacitors
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../capacitors/ceramic/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Ceramic
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../capacitors/electrolytic/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Electrolytic
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../capacitors/film/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Film
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../capacitors/glass/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Glass
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../capacitors/mica/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Mica
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../capacitors/paper/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Paper
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../capacitors/polymer/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Polymer
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../capacitors/supercapacitors/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Supercapacitors
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../capacitors/tantalum/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Tantalum
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../capacitors/variable/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Variable
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Conductors
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Conductors
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_1" id="__nav_4_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Alloys
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_1">
+            <span class="md-nav__icon md-icon"></span>
+            Alloys
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../conductors/alloys/brass/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Brass
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../conductors/alloys/bronze/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Bronze
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../conductors/alloys/nichrome/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Nichrome
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../conductors/graphite/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Graphite
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_3" id="__nav_4_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Ionic
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_3">
+            <span class="md-nav__icon md-icon"></span>
+            Ionic
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../conductors/ionic/liquids/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Liquids
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../conductors/ionic/electrolyte_solutions/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Electrolyte solutions
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../conductors/ionic/solid-state_electrolytes/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Solid-state Electrolyte
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_4" id="__nav_4_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Metals
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_4">
+            <span class="md-nav__icon md-icon"></span>
+            Metals
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../conductors/metals/aluminium/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Aluminium
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../conductors/metals/copper/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Copper
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../conductors/metals/gold/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Gold
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../conductors/metals/iron/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Iron
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../conductors/metals/tin/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Tin
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../conductors/metals/silver/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Silver
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../conductors/plasma/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Plasma
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Diodes
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            Diodes
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../diodes/avalanche/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Avalanche
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../diodes/gold-doped/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Gold-doped
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../diodes/gunn/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Gunn
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../diodes/photodiode/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Photodiode
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../diodes/pin/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    PIN
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../diodes/rectifier/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Rectifier
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../diodes/schottky/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Schottky
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../diodes/step-recovery/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Step recovery
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../diodes/tunnel/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Tunnel
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../diodes/varactor/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Varactor
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../diodes/zener/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Zener
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Electronic
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            Electronic
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../electronic/digital_electronics/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Digital electronics
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../electronic/feedback/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Feedback
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../electronic/linear_system/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Linear system
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../electronic/modulation-demodulation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Modulation-Demodulation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../electronic/oscillators/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Oscillators
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Energy sources
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            Energy sources
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../energy_source/biomass/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Biomass
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../energy_source/coal/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Coal
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../energy_source/geothermal/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Geothermal
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../energy_source/hydropower/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Hydropower
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../energy_source/natural_gas/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Natural gas
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../energy_source/nuclear/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Nuclear
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../energy_source/oil/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Oil
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../energy_source/solar/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Solar
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../energy_source/tydal/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Tydal
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../energy_source/wave/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Wave
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../energy_source/wind/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Wind
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Hardware
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            Hardware
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../hardware/battery/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Battery
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../hardware/gpu/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    GPU
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../hardware/keyboard/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Keyboard
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../hardware/motherboard/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Motherboard
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../hardware/processor/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Processor
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../hardware/ram/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    RAM
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../hardware/storage/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Storage
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../hardware/touchpad/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Touchpad
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" >
+        
+          
+          <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Home appliances
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_9">
+            <span class="md-nav__icon md-icon"></span>
+            Home appliances
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../home_appliances/air_conditioner/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Air conditioner
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../home_appliances/bulb/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Bulb
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../home_appliances/cfl_bulb/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    CFL Bulb
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../home_appliances/dishwasher/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Dishwasher
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../home_appliances/dryer/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Dryer
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../home_appliances/freezer/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Freezer
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../home_appliances/fridge/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Fridge
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../home_appliances/led/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    LED
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../home_appliances/microwave/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Microwave
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../home_appliances/oven/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Oven
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../home_appliances/television/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Television
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../home_appliances/toaster/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Toaster
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../home_appliances/speaker/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Speaker
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../home_appliances/stove/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Stove
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../home_appliances/vacuum/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Vacuum cleaner
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../home_appliances/washing_machine/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Washing machine
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_10" >
+        
+          
+          <label class="md-nav__link" for="__nav_10" id="__nav_10_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Inductors
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_10_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_10">
+            <span class="md-nav__icon md-icon"></span>
+            Inductors
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../inductors/air_core/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Air core
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../inductors/coupled/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Coupled
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../inductors/ferrite_core/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Ferrite core
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../inductors/iron_core/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Iron core
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../inductors/molded/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Molded
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../inductors/multilayer_chip/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Multilayer chip
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../inductors/rf_coil/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    RF coil
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../inductors/shielded/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Shielded
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../inductors/toroidal/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Toroidal
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../inductors/variable/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Variable
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_11" >
+        
+          
+          <label class="md-nav__link" for="__nav_11" id="__nav_11_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Insulators
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_11_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_11">
+            <span class="md-nav__icon md-icon"></span>
+            Insulators
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../insulators/ceramic/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Ceramic
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../insulators/cross-linked_polyethylene/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Cross-linked Polyethylene
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../insulators/epoxy_resine/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Epoxy resine
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../insulators/glass/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Glass
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../insulators/mica/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Mica
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../insulators/polyethylene/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Polyethylene
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../insulators/polypropylene/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Polypropylene
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../insulators/polyvinyl_chloride/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Polyvinyl chloride
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../insulators/silicon_rubber/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Silicon rubber
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../insulators/teflon/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Teflon
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_12" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_12" id="__nav_12_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Physical signals
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_12_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_12">
+            <span class="md-nav__icon md-icon"></span>
+            Physical signals
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../quasistatic/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Quasistatic
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../1st_order/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    1st order
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Damped oscillators
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Damped oscillators
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#presentation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Presentation
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Presentation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-electric-oscillator-rlc-series-circuit" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Electric Oscillator: RLC Series Circuit
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. Electric Oscillator: RLC Series Circuit">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#solution-to-the-differential-equation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Solution to the Differential Equation
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-energy-analysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Energy Analysis
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-phase-portraits" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Phase Portraits
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Phase Portraits">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#phase-portrait-example" class="md-nav__link">
+    <span class="md-ellipsis">
+      Phase Portrait Example
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      Summary
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#theoretical-study-of-the-damped-electric-oscillator" class="md-nav__link">
+    <span class="md-ellipsis">
+      Theoretical study of the damped electric oscillator
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Theoretical study of the damped electric oscillator">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-differential-equation-for-the-damped-oscillator" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Differential Equation for the Damped Oscillator
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-solving-the-differential-equation" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Solving the Differential Equation
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Solving the Differential Equation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#case-1-under-damped-oscillator" class="md-nav__link">
+    <span class="md-ellipsis">
+      Case 1: Under-damped Oscillator
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#case-2-critically-damped-oscillator" class="md-nav__link">
+    <span class="md-ellipsis">
+      Case 2: Critically Damped Oscillator
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#case-3-overdamped-oscillator" class="md-nav__link">
+    <span class="md-ellipsis">
+      Case 3: Overdamped Oscillator
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#forced-sinusoidal-regime" class="md-nav__link">
+    <span class="md-ellipsis">
+      Forced sinusoidal regime
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Forced sinusoidal regime">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-example-rlc-series-circuit" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Example: RLC Series Circuit
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-complex-representation-of-sinusoidal-quantities" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Complex Representation of Sinusoidal Quantities
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-complex-impedances" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Complex Impedances
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Complex Impedances">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#impedance-of-an-ohmic-resistor" class="md-nav__link">
+    <span class="md-ellipsis">
+      Impedance of an Ohmic Resistor
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#impedance-of-an-inductor" class="md-nav__link">
+    <span class="md-ellipsis">
+      Impedance of an Inductor
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#impedance-of-a-capacitor" class="md-nav__link">
+    <span class="md-ellipsis">
+      Impedance of a Capacitor
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-electrokinetic-laws-in-sinusoidal-forced-regime" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Electrokinetic Laws in Sinusoidal Forced Regime
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-example-complex-impedance-of-a-real-inductor" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. Example: Complex Impedance of a Real Inductor
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#summary_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Summary
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#oscillator-subjected-to-sinusoidal-excitation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Oscillator subjected to sinusoidal excitation
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Oscillator subjected to sinusoidal excitation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-voltage-resonance-across-the-capacitor" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Voltage Resonance Across the Capacitor
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. Voltage Resonance Across the Capacitor">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#impedance-in-the-rlc-circuit" class="md-nav__link">
+    <span class="md-ellipsis">
+      Impedance in the RLC Circuit
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#voltage-across-the-capacitor" class="md-nav__link">
+    <span class="md-ellipsis">
+      Voltage Across the Capacitor
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-study-of-resonance-in-current" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Study of Resonance in Current
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Study of Resonance in Current">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#current-in-the-circuit" class="md-nav__link">
+    <span class="md-ellipsis">
+      Current in the Circuit
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#quality-factor-q" class="md-nav__link">
+    <span class="md-ellipsis">
+      Quality Factor (Q)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#summary_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Summary
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../linear_filtering/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Linear filtering
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_13" >
+        
+          
+          <label class="md-nav__link" for="__nav_13" id="__nav_13_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Resistors
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_13_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_13">
+            <span class="md-nav__icon md-icon"></span>
+            Resistors
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../resistors/carbon_composition/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Carbon composition
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../resistors/fixed/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Fixed
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../resistors/fusible/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Fusible
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../resistors/hybrid/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Hybrid
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../resistors/metal_film/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Metal film
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../resistors/photoresistor/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Photoresistor
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../resistors/thermistor/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Thermistor
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../resistors/variable/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Variable
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../resistors/varistor/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Varistor
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../resistors/wirewound/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Wirewound
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_14" >
+        
+          
+          <label class="md-nav__link" for="__nav_14" id="__nav_14_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Semi-conductors
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_14_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_14">
+            <span class="md-nav__icon md-icon"></span>
+            Semi-conductors
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../semi_conductors/cadmium/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Cadmium Telluride
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../semi_conductors/galium_arsenide/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Galium Arsenide
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../semi_conductors/galium_nitride/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Galium Nitride
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../semi_conductors/galium_nitride_on_silicon/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Galium Nitride on Silicon
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../semi_conductors/germanium/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Germanium
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../semi_conductors/indium/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Indium Phosphide
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../semi_conductors/organic/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Organic
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../semi_conductors/perovskite/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Perovskite
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../semi_conductors/silicon/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Silicon
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../semi_conductors/silicon_carbide/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Silicon carbide
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tags/tags/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Tags
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#presentation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Presentation
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Presentation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-electric-oscillator-rlc-series-circuit" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Electric Oscillator: RLC Series Circuit
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. Electric Oscillator: RLC Series Circuit">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#solution-to-the-differential-equation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Solution to the Differential Equation
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-energy-analysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Energy Analysis
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-phase-portraits" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Phase Portraits
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Phase Portraits">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#phase-portrait-example" class="md-nav__link">
+    <span class="md-ellipsis">
+      Phase Portrait Example
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      Summary
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#theoretical-study-of-the-damped-electric-oscillator" class="md-nav__link">
+    <span class="md-ellipsis">
+      Theoretical study of the damped electric oscillator
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Theoretical study of the damped electric oscillator">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-differential-equation-for-the-damped-oscillator" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Differential Equation for the Damped Oscillator
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-solving-the-differential-equation" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Solving the Differential Equation
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Solving the Differential Equation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#case-1-under-damped-oscillator" class="md-nav__link">
+    <span class="md-ellipsis">
+      Case 1: Under-damped Oscillator
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#case-2-critically-damped-oscillator" class="md-nav__link">
+    <span class="md-ellipsis">
+      Case 2: Critically Damped Oscillator
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#case-3-overdamped-oscillator" class="md-nav__link">
+    <span class="md-ellipsis">
+      Case 3: Overdamped Oscillator
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#forced-sinusoidal-regime" class="md-nav__link">
+    <span class="md-ellipsis">
+      Forced sinusoidal regime
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Forced sinusoidal regime">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-example-rlc-series-circuit" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Example: RLC Series Circuit
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-complex-representation-of-sinusoidal-quantities" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Complex Representation of Sinusoidal Quantities
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-complex-impedances" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Complex Impedances
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Complex Impedances">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#impedance-of-an-ohmic-resistor" class="md-nav__link">
+    <span class="md-ellipsis">
+      Impedance of an Ohmic Resistor
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#impedance-of-an-inductor" class="md-nav__link">
+    <span class="md-ellipsis">
+      Impedance of an Inductor
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#impedance-of-a-capacitor" class="md-nav__link">
+    <span class="md-ellipsis">
+      Impedance of a Capacitor
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-electrokinetic-laws-in-sinusoidal-forced-regime" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Electrokinetic Laws in Sinusoidal Forced Regime
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-example-complex-impedance-of-a-real-inductor" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. Example: Complex Impedance of a Real Inductor
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#summary_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Summary
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#oscillator-subjected-to-sinusoidal-excitation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Oscillator subjected to sinusoidal excitation
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Oscillator subjected to sinusoidal excitation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-voltage-resonance-across-the-capacitor" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Voltage Resonance Across the Capacitor
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. Voltage Resonance Across the Capacitor">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#impedance-in-the-rlc-circuit" class="md-nav__link">
+    <span class="md-ellipsis">
+      Impedance in the RLC Circuit
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#voltage-across-the-capacitor" class="md-nav__link">
+    <span class="md-ellipsis">
+      Voltage Across the Capacitor
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-study-of-resonance-in-current" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Study of Resonance in Current
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Study of Resonance in Current">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#current-in-the-circuit" class="md-nav__link">
+    <span class="md-ellipsis">
+      Current in the Circuit
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#quality-factor-q" class="md-nav__link">
+    <span class="md-ellipsis">
+      Quality Factor (Q)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#summary_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Summary
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<pre><code>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+&lt;meta name="description" content="Welcome to ac-electricity! Here you will learn more about electricity, the different components used to make an electrical circuit as well as their features and use cases."&gt;
+&lt;meta name="keywords" content="alexis carbillet, carbillet, electricity, capacitors, conductors, diodes, electronic, energy source, hardware, home appliances, inductors, insulators, resistors, semi-conductors"&gt;
+&lt;meta name="author" content="Alexis Carbillet "&gt;
+</code></pre>
+<p></head></p>
+<h1 id="damped-oscillators">Damped oscillators</h1>
+<p>A damped oscillator is a system in which an oscillating motion decreases in amplitude over time due to energy loss, typically from friction or resistance.</p>
+<h2 id="presentation">Presentation</h2>
+<h3 id="1-electric-oscillator-rlc-series-circuit">1. Electric Oscillator: RLC Series Circuit</h3>
+<p>An RLC series circuit consists of a resistor (R), an inductor (L), and a capacitor (C) connected in series. The behavior of this circuit can be described by the following differential equation:</p>
+<div class="arithmatex">\[
+L \frac{d^2i(t)}{dt^2} + R \frac{di(t)}{dt} + \frac{1}{C} i(t) = 0
+\]</div>
+<p>Where:
+- <span class="arithmatex">\(i(t)\)</span> is the current as a function of time.
+- <span class="arithmatex">\(R\)</span> is the resistance (in ohms).
+- <span class="arithmatex">\(L\)</span> is the inductance (in henries).
+- <span class="arithmatex">\(C\)</span> is the capacitance (in farads).</p>
+<h4 id="solution-to-the-differential-equation">Solution to the Differential Equation</h4>
+<p>The solution to this equation depends on the damping condition, which can be classified as:
+- <strong>Underdamped</strong> (<span class="arithmatex">\(R &lt; 2\sqrt{\frac{L}{C}}\)</span>): The system oscillates with a gradually decreasing amplitude.
+- <strong>Critically damped</strong> (<span class="arithmatex">\(R = 2\sqrt{\frac{L}{C}}\)</span>): The system returns to equilibrium as quickly as possible without oscillating.
+- <strong>Overdamped</strong> (<span class="arithmatex">\(R &gt; 2\sqrt{\frac{L}{C}}\)</span>): The system returns to equilibrium slowly without oscillating.</p>
+<p>For an underdamped oscillator, the solution can be expressed as:</p>
+<div class="arithmatex">\[
+i(t) = I_0 e^{-\frac{R}{2L}t} \cos(\omega_d t + \phi)
+\]</div>
+<p>Where:
+- <span class="arithmatex">\(I_0\)</span> is the initial amplitude.
+- <span class="arithmatex">\(\omega_d = \sqrt{\frac{1}{LC} - \left(\frac{R}{2L}\right)^2}\)</span> is the damped angular frequency.
+- <span class="arithmatex">\(\phi\)</span> is the phase constant.</p>
+<h3 id="2-energy-analysis">2. Energy Analysis</h3>
+<p>The total energy <span class="arithmatex">\(E\)</span> in an RLC circuit consists of:
+- <strong>Electrical energy</strong> stored in the capacitor (<span class="arithmatex">\(E_C = \frac{1}{2} C V^2\)</span>).
+- <strong>Magnetic energy</strong> stored in the inductor (<span class="arithmatex">\(E_L = \frac{1}{2} L I^2\)</span>).</p>
+<p>As the system oscillates, energy is transferred between the capacitor and the inductor. In a damped oscillator, some energy is lost as heat in the resistor, which can be described as follows:</p>
+<div class="arithmatex">\[
+E(t) = E_0 e^{-\frac{R}{L} t}
+\]</div>
+<p>Where <span class="arithmatex">\(E_0\)</span> is the initial total energy. The energy decreases exponentially over time due to damping.</p>
+<h3 id="3-phase-portraits">3. Phase Portraits</h3>
+<p>A phase portrait represents the trajectory of a system in a state space (typically with position on one axis and momentum or velocity on the other). For a damped oscillator:</p>
+<ul>
+<li>
+<p><strong>Under-damped:</strong> The trajectories are spirals that move inward towards the equilibrium point. The system oscillates while losing energy.</p>
+</li>
+<li>
+<p><strong>Critically damped:</strong> The trajectory approaches the equilibrium point without oscillating, exhibiting a smooth return to rest.</p>
+</li>
+<li>
+<p><strong>Overdamped:</strong> The trajectory approaches equilibrium slowly, and there are no oscillations.</p>
+</li>
+</ul>
+<p>In a phase portrait, we can illustrate the behavior of the system based on the damping condition:</p>
+<h4 id="phase-portrait-example">Phase Portrait Example</h4>
+<ul>
+<li><strong>Underdamped:</strong> <img alt="Underdamped Phase Portrait" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Damped_oscillator.svg/500px-Damped_oscillator.svg.png" /></li>
+<li><strong>Critically damped:</strong> Approaches the origin directly without oscillation.</li>
+<li><strong>Overdamped:</strong> Slower approach to the origin, no oscillation.</li>
+</ul>
+<h3 id="summary">Summary</h3>
+<p>A damped oscillator, such as an RLC series circuit, showcases how oscillations decrease in amplitude due to energy loss. Understanding its energy dynamics and visualizing its behavior through phase portraits provides valuable insights into the system's response to disturbances. </p>
+<h2 id="theoretical-study-of-the-damped-electric-oscillator">Theoretical study of the damped electric oscillator</h2>
+<h3 id="1-differential-equation-for-the-damped-oscillator">1. Differential Equation for the Damped Oscillator</h3>
+<p>In an RLC series circuit, which consists of a resistor (R), an inductor (L), and a capacitor (C), we can describe the behavior of the voltage across the capacitor (<span class="arithmatex">\(u_C\)</span>) as it oscillates with damping. The governing differential equation for the charge (<span class="arithmatex">\(q\)</span>) on the capacitor can be written as:</p>
+<div class="arithmatex">\[
+L \frac{d^2q(t)}{dt^2} + R \frac{dq(t)}{dt} + \frac{1}{C} q(t) = 0
+\]</div>
+<p>This equation represents a second-order linear homogeneous differential equation. The voltage across the capacitor (<span class="arithmatex">\(u_C\)</span>) can be expressed in terms of charge <span class="arithmatex">\(q(t)\)</span> as follows:</p>
+<div class="arithmatex">\[
+u_C(t) = \frac{q(t)}{C}
+\]</div>
+<h3 id="2-solving-the-differential-equation">2. Solving the Differential Equation</h3>
+<p>To solve the differential equation, we first assume a solution of the form:</p>
+<div class="arithmatex">\[
+q(t) = e^{\lambda t}
+\]</div>
+<p>where <span class="arithmatex">\(\lambda\)</span> is a constant to be determined. Substituting this into the differential equation yields:</p>
+<div class="arithmatex">\[
+L \lambda^2 e^{\lambda t} + R \lambda e^{\lambda t} + \frac{1}{C} e^{\lambda t} = 0
+\]</div>
+<p>Factoring out <span class="arithmatex">\(e^{\lambda t}\)</span> (which is never zero), we get:</p>
+<div class="arithmatex">\[
+L \lambda^2 + R \lambda + \frac{1}{C} = 0
+\]</div>
+<p>This is a quadratic equation in <span class="arithmatex">\(\lambda\)</span>. We can solve it using the quadratic formula:</p>
+<div class="arithmatex">\[
+\lambda = \frac{-R \pm \sqrt{R^2 - 4L\cdot\frac{1}{C}}}{2L}
+\]</div>
+<p>The term <span class="arithmatex">\(D = R^2 - 4L\cdot\frac{1}{C}\)</span> is called the discriminant and determines the nature of the solutions:</p>
+<ol>
+<li><strong>Under-damped (<span class="arithmatex">\(R^2 &lt; 4L/C\)</span>)</strong>: Two complex conjugate roots.</li>
+<li><strong>Critically damped (<span class="arithmatex">\(R^2 = 4L/C\)</span>)</strong>: A repeated real root.</li>
+<li><strong>Overdamped (<span class="arithmatex">\(R^2 &gt; 4L/C\)</span>)</strong>: Two distinct real roots.</li>
+</ol>
+<h4 id="case-1-under-damped-oscillator">Case 1: Under-damped Oscillator</h4>
+<p>For the under-damped case, the roots are complex:</p>
+<div class="arithmatex">\[
+\lambda = -\frac{R}{2L} \pm j\sqrt{\frac{1}{LC} - \left(\frac{R}{2L}\right)^2}
+\]</div>
+<p>Let's denote:</p>
+<ul>
+<li><span class="arithmatex">\(\alpha = -\frac{R}{2L}\)</span></li>
+<li><span class="arithmatex">\(\omega_d = \sqrt{\frac{1}{LC} - \left(\frac{R}{2L}\right)^2}\)</span></li>
+</ul>
+<p>The general solution for <span class="arithmatex">\(q(t)\)</span> is:</p>
+<div class="arithmatex">\[
+q(t) = e^{\alpha t} \left( A \cos(\omega_d t) + B \sin(\omega_d t) \right)
+\]</div>
+<p>Where <span class="arithmatex">\(A\)</span> and <span class="arithmatex">\(B\)</span> are constants determined by initial conditions.</p>
+<p>Substituting back to find <span class="arithmatex">\(u_C(t)\)</span>:</p>
+<div class="arithmatex">\[
+u_C(t) = \frac{q(t)}{C} = \frac{1}{C} e^{\alpha t} \left( A \cos(\omega_d t) + B \sin(\omega_d t) \right)
+\]</div>
+<h4 id="case-2-critically-damped-oscillator">Case 2: Critically Damped Oscillator</h4>
+<p>For the critically damped case, the roots are real and repeated:</p>
+<div class="arithmatex">\[
+\lambda = -\frac{R}{2L}
+\]</div>
+<p>The general solution is:</p>
+<div class="arithmatex">\[
+q(t) = \left( A + Bt \right) e^{-\frac{R}{2L} t}
+\]</div>
+<p>And for the voltage across the capacitor:</p>
+<div class="arithmatex">\[
+u_C(t) = \frac{1}{C} \left( A + Bt \right) e^{-\frac{R}{2L} t}
+\]</div>
+<h4 id="case-3-overdamped-oscillator">Case 3: Overdamped Oscillator</h4>
+<p>For the overdamped case, the roots are real and distinct:</p>
+<div class="arithmatex">\[
+\lambda_1, \lambda_2 = \frac{-R \pm \sqrt{R^2 - 4L\cdot\frac{1}{C}}}{2L}
+\]</div>
+<p>The general solution is:</p>
+<div class="arithmatex">\[
+q(t) = A e^{\lambda_1 t} + B e^{\lambda_2 t}
+\]</div>
+<p>And for the capacitor voltage:</p>
+<div class="arithmatex">\[
+u_C(t) = \frac{1}{C} \left( A e^{\lambda_1 t} + B e^{\lambda_2 t} \right)
+\]</div>
+<h2 id="forced-sinusoidal-regime">Forced sinusoidal regime</h2>
+<p>The "forced sinusoidal regime" refers to a situation in electrical circuits where an external sinusoidal voltage or current source drives the system. This is particularly relevant for RLC circuits, where resistors, inductors, and capacitors interact with the alternating current (AC) source.</p>
+<h3 id="1-example-rlc-series-circuit">1. Example: RLC Series Circuit</h3>
+<p>In a series RLC circuit, we have a resistor <span class="arithmatex">\(R\)</span>, an inductor <span class="arithmatex">\(L\)</span>, and a capacitor <span class="arithmatex">\(C\)</span> connected in series with a sinusoidal voltage source <span class="arithmatex">\(V_s(t) = V_0 \cos(\omega t + \phi)\)</span>, where:
+- <span class="arithmatex">\(V_0\)</span> is the amplitude of the voltage.
+- <span class="arithmatex">\(\omega\)</span> is the angular frequency of the source.
+- <span class="arithmatex">\(\phi\)</span> is the phase angle.</p>
+<p>The differential equation governing the current <span class="arithmatex">\(i(t)\)</span> in the circuit can be derived from Kirchhoff’s voltage law:</p>
+<div class="arithmatex">\[
+V_s(t) = V_R(t) + V_L(t) + V_C(t)
+\]</div>
+<p>Where:
+- <span class="arithmatex">\(V_R(t) = Ri(t)\)</span> is the voltage across the resistor.
+- <span class="arithmatex">\(V_L(t) = L \frac{di(t)}{dt}\)</span> is the voltage across the inductor.
+- <span class="arithmatex">\(V_C(t) = \frac{1}{C} \int i(t) dt\)</span> is the voltage across the capacitor.</p>
+<h3 id="2-complex-representation-of-sinusoidal-quantities">2. Complex Representation of Sinusoidal Quantities</h3>
+<p>To analyze sinusoidal signals more conveniently, we use complex numbers and phasors. A sinusoidal function can be represented in its complex form:</p>
+<div class="arithmatex">\[
+X(t) = X_0 e^{j(\omega t + \phi)}
+\]</div>
+<p>Where:
+- <span class="arithmatex">\(X_0\)</span> is the amplitude.
+- <span class="arithmatex">\(j\)</span> is the imaginary unit.
+- <span class="arithmatex">\(\phi\)</span> is the phase angle.</p>
+<p>Using this representation, we can simplify calculations involving the addition and subtraction of sinusoidal quantities.</p>
+<h3 id="3-complex-impedances">3. Complex Impedances</h3>
+<p><strong>Impedance</strong> (<span class="arithmatex">\(Z\)</span>) is a measure of how much a circuit resists the flow of alternating current. It is a complex quantity defined as:</p>
+<div class="arithmatex">\[
+Z = R + jX
+\]</div>
+<p>Where:
+- <span class="arithmatex">\(R\)</span> is the resistance.
+- <span class="arithmatex">\(X\)</span> is the reactance.</p>
+<h4 id="impedance-of-an-ohmic-resistor">Impedance of an Ohmic Resistor</h4>
+<p>For a pure resistor:</p>
+<div class="arithmatex">\[
+Z_R = R
+\]</div>
+<h4 id="impedance-of-an-inductor">Impedance of an Inductor</h4>
+<p>For a pure inductor, the reactance is given by:</p>
+<div class="arithmatex">\[
+Z_L = j\omega L
+\]</div>
+<p>Where:
+- <span class="arithmatex">\(\omega = 2\pi f\)</span> (with <span class="arithmatex">\(f\)</span> being the frequency in hertz).</p>
+<h4 id="impedance-of-a-capacitor">Impedance of a Capacitor</h4>
+<p>For a pure capacitor, the reactance is:</p>
+<div class="arithmatex">\[
+Z_C = -\frac{j}{\omega C}
+\]</div>
+<h3 id="4-electrokinetic-laws-in-sinusoidal-forced-regime">4. Electrokinetic Laws in Sinusoidal Forced Regime</h3>
+<p>In a sinusoidal regime, Ohm's law can be extended to AC circuits using complex impedances:</p>
+<div class="arithmatex">\[
+V = IZ
+\]</div>
+<p>Where:
+- <span class="arithmatex">\(V\)</span> is the voltage across the component (complex).
+- <span class="arithmatex">\(I\)</span> is the current through the component (complex).
+- <span class="arithmatex">\(Z\)</span> is the impedance of the component (complex).</p>
+<p>Using this, we can analyze the entire circuit by combining the impedances of each component. The total impedance <span class="arithmatex">\(Z_{total}\)</span> for a series RLC circuit is:</p>
+<div class="arithmatex">\[
+Z_{total} = Z_R + Z_L + Z_C = R + j\left(\omega L - \frac{1}{\omega C}\right)
+\]</div>
+<h3 id="5-example-complex-impedance-of-a-real-inductor">5. Example: Complex Impedance of a Real Inductor</h3>
+<p>For a real inductor, the impedance is modified to account for resistance in the inductor itself. The impedance can be expressed as:</p>
+<div class="arithmatex">\[
+Z_L = R_L + j\omega L
+\]</div>
+<p>Where:
+- <span class="arithmatex">\(R_L\)</span> is the equivalent series resistance (ESR) of the inductor.
+- <span class="arithmatex">\(\omega L\)</span> is the inductive reactance.</p>
+<p>This means the overall impedance of a real inductor is a combination of its resistive and reactive components, represented as:</p>
+<div class="arithmatex">\[
+Z_L = R_L + j\omega L
+\]</div>
+<h3 id="summary_1">Summary</h3>
+<p>In summary, the forced sinusoidal regime in an RLC series circuit involves the interaction of resistors, inductors, and capacitors under the influence of a sinusoidal voltage source. By representing sinusoidal quantities as complex numbers and using the concept of impedance, we can efficiently analyze and solve the circuit's behavior.</p>
+<h2 id="oscillator-subjected-to-sinusoidal-excitation">Oscillator subjected to sinusoidal excitation</h2>
+<p>An "oscillator subjected to sinusoidal excitation" refers to a system, such as an RLC circuit, where an external sinusoidal voltage or current source causes oscillations.</p>
+<h3 id="1-voltage-resonance-across-the-capacitor">1. Voltage Resonance Across the Capacitor</h3>
+<p>In an RLC series circuit driven by a sinusoidal voltage source <span class="arithmatex">\(V_s(t) = V_0 \cos(\omega t + \phi)\)</span>, we can analyze the voltage resonance that occurs across the capacitor.</p>
+<h4 id="impedance-in-the-rlc-circuit">Impedance in the RLC Circuit</h4>
+<p>The total impedance <span class="arithmatex">\(Z_{total}\)</span> of the circuit is given by:</p>
+<div class="arithmatex">\[
+Z_{total} = R + j\left(\omega L - \frac{1}{\omega C}\right)
+\]</div>
+<p>Where:
+- <span class="arithmatex">\(R\)</span> is the resistance.
+- <span class="arithmatex">\(\omega L\)</span> is the inductive reactance.
+- <span class="arithmatex">\(-\frac{1}{\omega C}\)</span> is the capacitive reactance.</p>
+<p>At resonance, the condition is such that the inductive and capacitive reactances cancel each other out:</p>
+<div class="arithmatex">\[
+\omega L = \frac{1}{\omega C} \quad \Rightarrow \quad \omega^2 = \frac{1}{LC} \quad \Rightarrow \quad \omega = \frac{1}{\sqrt{LC}}
+\]</div>
+<p>This frequency is known as the <strong>resonant frequency</strong> (<span class="arithmatex">\(\omega_0\)</span>) of the circuit.</p>
+<h4 id="voltage-across-the-capacitor">Voltage Across the Capacitor</h4>
+<p>The voltage across the capacitor (<span class="arithmatex">\(V_C\)</span>) can be expressed using Ohm's law as:</p>
+<div class="arithmatex">\[
+V_C = I \cdot Z_C
+\]</div>
+<p>Where <span class="arithmatex">\(I\)</span> is the current through the circuit and <span class="arithmatex">\(Z_C = -\frac{j}{\omega C}\)</span> is the impedance of the capacitor. The current <span class="arithmatex">\(I\)</span> can be expressed in terms of the source voltage and the total impedance:</p>
+<div class="arithmatex">\[
+I = \frac{V_s}{Z_{total}}
+\]</div>
+<p>Thus, substituting for <span class="arithmatex">\(V_C\)</span>:</p>
+<div class="arithmatex">\[
+V_C = \frac{V_s}{Z_{total}} \cdot Z_C
+\]</div>
+<p>The maximum voltage across the capacitor occurs at resonance due to the fact that the impedance of the circuit is minimized, leading to maximum current:</p>
+<div class="arithmatex">\[
+V_{C,max} = I_{max} \cdot Z_C
+\]</div>
+<p>At resonance, the impedance <span class="arithmatex">\(Z_{total}\)</span> becomes purely resistive:</p>
+<div class="arithmatex">\[
+Z_{total, res} = R
+\]</div>
+<h3 id="2-study-of-resonance-in-current">2. Study of Resonance in Current</h3>
+<p><strong>Current Resonance</strong> refers to the maximum current that flows through the circuit at the resonant frequency. As previously noted, at resonance, the impedance is minimized, allowing maximum current to flow.</p>
+<h4 id="current-in-the-circuit">Current in the Circuit</h4>
+<p>Using the expression for current from the voltage source, we can analyze the current at the resonant frequency:</p>
+<div class="arithmatex">\[
+I_{max} = \frac{V_0}{R}
+\]</div>
+<p>Where:
+- <span class="arithmatex">\(V_0\)</span> is the amplitude of the source voltage.
+- <span class="arithmatex">\(R\)</span> is the resistance in the circuit.</p>
+<p>At resonance, the total current through the circuit reaches its peak value, which can be much higher than at other frequencies due to the resonance effect. This is especially important in applications like radio transmission and signal processing, where selective amplification of specific frequencies is desired.</p>
+<h4 id="quality-factor-q">Quality Factor (Q)</h4>
+<p>The <strong>Quality Factor</strong> (<span class="arithmatex">\(Q\)</span>) is a dimensionless parameter that describes how underdamped an oscillator is, and it is defined as:</p>
+<div class="arithmatex">\[
+Q = \frac{\omega_0 L}{R}
+\]</div>
+<p>A higher <span class="arithmatex">\(Q\)</span> indicates a sharper resonance peak, meaning that the circuit will respond more strongly at the resonant frequency compared to other frequencies.</p>
+<h3 id="summary_2">Summary</h3>
+<p>In summary, when an RLC circuit is subjected to sinusoidal excitation, resonance occurs at a specific frequency where the impedance of the circuit is minimized. This results in maximum voltage across the capacitor and maximum current in the circuit. Understanding resonance is crucial for designing circuits that effectively utilize sinusoidal signals.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2025 Alexis Carbillet
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://alexis-carbillet.com/" target="_blank" rel="noopener" title="alexis-carbillet.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M575.8 255.5c0 18-15 32.1-32 32.1h-32l.7 160.2c0 2.7-.2 5.4-.5 8.1V472c0 22.1-17.9 40-40 40h-16c-1.1 0-2.2 0-3.3-.1-1.4.1-2.8.1-4.2.1H392c-22.1 0-40-17.9-40-40v-88c0-17.7-14.3-32-32-32h-64c-17.7 0-32 14.3-32 32v88c0 22.1-17.9 40-40 40h-55.9c-1.5 0-3-.1-4.5-.2-1.2.1-2.4.2-3.6.2h-16c-22.1 0-40-17.9-40-40V360c0-.9 0-1.9.1-2.8v-69.6H32c-18 0-32-14-32-32.1 0-9 3-17 10-24L266.4 8c7-7 15-8 22-8s15 2 21 7l255.4 224.5c8 7 12 15 11 24z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://ac-coding.com/" target="_blank" rel="noopener" title="ac-coding.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M392.8 1.2c-17-4.9-34.7 5-39.6 22l-128 448c-4.9 17 5 34.7 22 39.6s34.7-5 39.6-22l128-448c4.9-17-5-34.7-22-39.6zm80.6 120.1c-12.5 12.5-12.5 32.8 0 45.3l89.3 89.4-89.4 89.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l112-112c12.5-12.5 12.5-32.8 0-45.3l-112-112c-12.5-12.5-32.8-12.5-45.3 0zm-306.7 0c-12.5-12.5-32.8-12.5-45.3 0l-112 112c-12.5 12.5-12.5 32.8 0 45.3l112 112c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256l89.4-89.4c12.5-12.5 12.5-32.8 0-45.3z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://all-about-cats.uk/" target="_blank" rel="noopener" title="all-about-cats.uk" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M320 192h17.1c22.1 38.3 63.5 64 110.9 64 11 0 21.8-1.4 32-4v228c0 17.7-14.3 32-32 32s-32-14.3-32-32V339.2L280 448h56c17.7 0 32 14.3 32 32s-14.3 32-32 32H192c-53 0-96-43-96-96V192.5c0-16.1-12-29.8-28-31.8l-7.9-1c-17.5-2.2-30-18.2-27.8-35.7S50.5 94 68 96.2l7.9 1c48 6 84.1 46.8 84.1 95.3v85.3c34.4-51.7 93.2-85.8 160-85.8zm160 26.5c-10 3.5-20.8 5.5-32 5.5-28.4 0-54-12.4-71.6-32-3.7-4.1-7-8.5-9.9-13.2C357.3 164 352 146.6 352 128V10.7C352 4.8 356.7.1 362.6 0h.2c3.3 0 6.4 1.6 8.4 4.2v.1l12.8 17 27.2 36.3L416 64h64l4.8-6.4L512 21.3l12.8-17v-.1c2-2.6 5.1-4.2 8.4-4.2h.2c5.9.1 10.6 4.8 10.6 10.7V128c0 17.3-4.6 33.6-12.6 47.6-11.3 19.8-29.6 35.2-51.4 42.9zM432 128a16 16 0 1 0-32 0 16 16 0 1 0 32 0zm48 16a16 16 0 1 0 0-32 16 16 0 1 0 0 32z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.05bf7199.min.js"></script>
+      
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>
