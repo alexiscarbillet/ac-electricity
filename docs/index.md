@@ -37,6 +37,10 @@ You can find some explanations about [how electricity was discovered and then us
 
 Hello, I am Alexis Carbillet and this is my third website. I thought it would be fun to talk about electricity while using mkdocs, so here we are.
 
+I have another website using mkdocs: [ac-serverhub.com](https://ac-serverhub.com/). 
+
+It allows you to explore the latest and most powerful hardware components for servers.
+
 I coded from scratch my other websites.
 
 - The First one is [ac-programming.com](https://ac-programming.com/), which is related to different fields of IT and contains most of my personnal projects in this field.
@@ -44,8 +48,6 @@ I coded from scratch my other websites.
 - The second one is [all-about-cats.uk](https://all-about-cats.uk/), which is about cats and their features.
 
 - The third one, [alexis-carbillet.com](https://alexis-carbillet.com/), contains all the links to my work available online as well as a summary of my professional experiences.
-
-- The last one is [ac-serverhub.com](https://ac-serverhub.com/). It allows you to explore the latest and most powerful hardware components for servers.
 
 <center>
 <img src="assets/alexis_carbillet.png" style="width: 225px;height: 225px;border-radius: 200px;margin-bottom: 0; border: 7px solid #5e4da5;" alt="author picture">
