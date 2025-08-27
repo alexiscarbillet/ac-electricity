@@ -147,6 +147,11 @@ theme:
   custom_dir: overrides
   logo: assets/logo.png
   favicon: assets/logo.png
+  features:
+  - header.search
+  - search.suggest
+  - search.highlight
+  - palette.toggle
   palette:
   - media: "(prefers-color-scheme: dark)"
     scheme: default
@@ -190,3 +195,5 @@ extra:
       link: https://ac-coding.com/
     - icon: fontawesome/solid/cat
       link: https://all-about-cats.uk/
+    - icon: fontawesome/solid/server
+      link: https://ac-serverhub.com/
