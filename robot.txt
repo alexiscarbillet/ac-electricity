@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /overrides/
+Disallow: /docs/
+
+Sitemap: https://ac-electricity.com/sitemap.xml
