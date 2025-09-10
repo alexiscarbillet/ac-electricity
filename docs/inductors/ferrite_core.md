@@ -1,3 +1,7 @@
+---
+tags:
+  - inductors
+---
 
 
 # Ferrite core
