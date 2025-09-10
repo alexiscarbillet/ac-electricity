@@ -1,3 +1,7 @@
+---
+tags:
+  - capacitors
+---
 
 
 # Paper Capacitors
