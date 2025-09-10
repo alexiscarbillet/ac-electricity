@@ -1,4 +1,7 @@
-
+---
+tags:
+  - physical signals
+---
 
 # First order linear circuit
 
