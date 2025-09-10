@@ -1,3 +1,7 @@
+---
+tags:
+  - resistors
+---
 
 
 # Fixed resistor
