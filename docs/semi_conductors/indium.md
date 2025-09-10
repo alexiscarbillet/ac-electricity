@@ -1,3 +1,7 @@
+---
+tags:
+  - semiconductor
+---
 
 
 # Indium Phosphide
