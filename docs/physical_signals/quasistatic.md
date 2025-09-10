@@ -1,4 +1,7 @@
-
+---
+tags:
+  - physical signals
+---
 
 # Electrical circuits in the quasistatic approximation
 
