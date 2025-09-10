@@ -1,4 +1,7 @@
-
+---
+tags:
+  - inductors
+---
 
 # Air core
 
