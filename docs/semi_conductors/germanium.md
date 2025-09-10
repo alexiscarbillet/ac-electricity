@@ -1,4 +1,8 @@
 
+---
+tags:
+  - semiconductor
+---
 
 # Germanium
 
