@@ -1,3 +1,7 @@
+---
+tags:
+  - capacitors
+---
 
 
 # Glass Capacitors
