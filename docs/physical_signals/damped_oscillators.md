@@ -1,4 +1,7 @@
-
+---
+tags:
+  - physical signals
+---
 
 # Damped oscillators
 
