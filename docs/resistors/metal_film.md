@@ -1,4 +1,7 @@
-
+---
+tags:
+  - resistors
+---
 
 # Metal Film
 
