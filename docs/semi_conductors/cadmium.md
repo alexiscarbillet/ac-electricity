@@ -1,4 +1,7 @@
-
+---
+tags:
+  - semiconductor
+---
 
 # Cadmium Telluride
 
