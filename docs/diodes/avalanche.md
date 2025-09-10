@@ -1,3 +1,7 @@
+---
+tags:
+  - diodes
+---
 
 
 # Avalanche
