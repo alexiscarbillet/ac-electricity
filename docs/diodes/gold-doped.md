@@ -1,4 +1,7 @@
-
+---
+tags:
+  - diodes
+---
 
 # Gold-doped
 
