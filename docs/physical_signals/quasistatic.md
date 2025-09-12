@@ -1,6 +1,7 @@
 ---
 tags:
   - physical signals
+  - theory
 ---
 
 # Electrical circuits in the quasistatic approximation

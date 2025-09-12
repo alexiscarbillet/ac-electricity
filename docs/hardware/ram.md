@@ -1,4 +1,7 @@
-
+---
+tags:
+  - hardware
+---
 
 # RAM
 

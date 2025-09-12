@@ -1,6 +1,7 @@
 ---
 tags:
   - physical signals
+  - theory
 ---
 
 # Damped oscillators

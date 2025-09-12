@@ -1,4 +1,7 @@
-
+---
+tags:
+  - energy sources
+---
 
 # Natural gas
 

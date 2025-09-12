@@ -1,4 +1,7 @@
-
+---
+tags:
+  - home appliances
+---
 
 # Dryer
 

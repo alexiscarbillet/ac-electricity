@@ -1,3 +1,8 @@
+---
+tags:
+  - home appliances
+---
+
 # Air conditioner
 
 ## History

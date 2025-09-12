@@ -1,6 +1,7 @@
 ---
 tags:
   - physical signals
+  - theory
 ---
 
 # First order linear circuit

@@ -1,3 +1,8 @@
+---
+tags:
+  - home appliances
+---
+
 # Dishwasher
 
 ## History
