@@ -3,90 +3,74 @@ tags:
   - energy sources
 ---
 
-# Wave energy
+# Wave Energy
 
 ## History
 
-Wave energy has been explored for centuries, but its utilization for electricity generation is a more recent development. Here are some historical facts about the journey of wave energy towards electricity generation:
+Wave energy has fascinated inventors for centuries, but its practical use for generating electricity is relatively recent. Below is a summary of key milestones in its evolution.
 
-**Early Concepts and Experimentation:**
+**Early Concepts and Experiments**
 
-   - The idea of harnessing wave energy dates back to the 18th century when various inventors and engineers began conceptualizing devices to capture the power of ocean waves.
+- The idea of harnessing wave energy emerged in the 18th century, when engineers began imagining ways to capture the immense power of the sea.
+- During the 19th century, several small-scale experiments and prototypes were built to use wave motion for tasks such as pumping water and driving mechanical systems.
 
-   - In the 19th century, several prototypes and small-scale experiments were conducted to capture wave energy for various purposes, including pumping water and generating mechanical power for industrial applications.
+**First Patents and Designs**
 
-**First Patents and Designs:**
+- The late 19th and early 20th centuries saw a surge in patents for wave energy devices. Concepts included oscillating water columns, floating mechanisms, and shoreline-based systems.
+- One of the earliest patents, granted in **1799** to French engineer **Girard**, described a *wave-powered water pump* — a pioneering step toward modern wave energy conversion.
 
-   - The late 19th and early 20th centuries saw the filing of several patents for wave energy devices. Engineers and inventors proposed various designs, including oscillating water columns, floating devices, and shoreline-based systems.
+**Modern Development**
 
-   - One of the earliest patents related to wave energy conversion was granted to French engineer Girard in 1799 for a wave-powered water pump.
+- The modern phase of wave energy research began in the mid-20th century with growing global interest in renewable energy.
+- In the **1970s and 1980s**, countries like the **United States**, **United Kingdom**, **Japan**, and **Norway** launched extensive R&D programs to assess the feasibility of wave-powered electricity.
+- Several experimental devices were deployed in open water during this time, producing valuable data that informed future designs.
 
-**Modern Development:**
+**Advances in Technology**
 
-   - The modern era of wave energy development began in the mid-20th century with renewed interest in renewable energy sources.
+- The late 20th and early 21st centuries brought significant technological improvements, including more efficient energy converters and a deeper understanding of ocean wave behavior.
+- Various converter types emerged — **oscillating water columns**, **point absorbers**, **attenuators**, and **oscillating wave surge converters** — each using different mechanisms to extract energy from waves.
 
-   - In the 1970s and 1980s, significant research and development efforts were initiated in countries like the United States, the United Kingdom, Japan, and Norway to explore the feasibility of wave energy conversion for electricity generation.
+**Commercial Projects and Pilots**
 
-   - During this period, several experimental wave energy devices were deployed and tested in real-world conditions, providing valuable data and insights for further development.
+- Despite notable progress, large-scale commercialization has been slowed by technical, economic, and regulatory challenges.
+- However, numerous **pilot projects and small-scale farms** have proven the concept’s viability and potential as a renewable source.
+- Countries such as **Scotland**, **Portugal**, **Australia**, and the **United States** continue to lead in testing and deploying wave energy systems in real-world marine environments.
 
-**Advancements in Technology:**
+## How It Works
 
-   - The late 20th and early 21st centuries witnessed advancements in wave energy technologies, including the development of more efficient wave energy converters and improved understanding of wave dynamics.
+Wave energy is produced by converting the kinetic and potential energy of ocean waves into electricity. Various technologies achieve this through different mechanical principles.
 
-   - Various types of wave energy converters emerged, such as oscillating water columns, point absorbers, attenuators, and oscillating wave surge converters, each with its unique mechanism for harnessing wave energy.
+**Wave Energy Capture**
 
-**Commercial Deployment and Pilot Projects:**
+- **Wave Energy Converters (WECs)** are specialized devices that capture the motion of waves. They can be placed near the shore or offshore depending on the design.
+- Common types include **oscillating water columns**, **point absorbers**, **attenuators**, and **oscillating wave surge converters**.
 
-   - Despite significant progress, the commercialization of wave energy has been challenging due to technical, economic, and regulatory factors.
+**Oscillating Water Columns (OWCs)**
 
-   - Nonetheless, several pilot projects and small-scale wave energy farms have been deployed around the world to demonstrate the feasibility and potential of wave energy as a renewable energy source.
+- OWCs consist of a partially submerged chamber with an air cavity above the water.
+- As waves move in and out, the water column inside rises and falls, compressing and decompressing the air.
+- The changing air pressure drives a **turbine**, which powers a **generator** to produce electricity.
 
-   - Countries like Scotland, Portugal, Australia, and the United States have been at the forefront of testing and deploying wave energy technologies in real-world marine environments.
+**Point Absorbers**
 
-## How it works
+- Point absorbers are **floating buoys** anchored to the seabed that move up and down with wave motion.
+- This vertical motion drives a **mechanical or hydraulic system**, which turns a generator either on the buoy or onshore via an underwater cable.
 
-Certainly! Wave energy works by capturing the kinetic energy present in ocean waves and converting it into electricity through various technologies. Here's a detailed explanation of how wave energy conversion typically works:
+**Attenuators**
 
-**Wave Energy Capture:**
+- Attenuators are **long, flexible floating structures** aligned with the direction of incoming waves.
+- As waves pass along them, the device bends at its joints. This motion is converted into hydraulic or mechanical energy, which then powers a generator.
 
-   - Wave energy converters (WECs) are devices designed to capture the energy of ocean waves. These devices are deployed either near the shoreline or offshore, depending on the specific design and location considerations.
+**Oscillating Wave Surge Converters (OWSCs)**
 
-   - There are several types of WECs, each employing different mechanisms to harness wave energy. Common types include oscillating water columns, point absorbers, attenuators, and oscillating wave surge converters.
+- OWSCs capture the **horizontal** motion of waves. These semi-submerged panels or flaps move back and forth as waves pass.
+- The motion drives **hydraulic pistons or mechanical linkages**, which in turn generate electricity.
 
-**Oscillating Water Columns (OWCs):**
+**Electricity Transmission**
 
-   - OWCs are one of the most widely used types of WECs. They consist of a partially submerged structure with an air chamber above the water level.
+- The electricity produced by WECs is transmitted to shore through **underwater cables** or, in some designs, stored temporarily in **onboard battery systems**.
+- Once onshore, it is fed into the **electrical grid** or used locally to power coastal facilities and communities.
 
-   - As waves pass by the structure, they cause the water level inside the chamber to rise and fall. This movement of water creates a fluctuating air pressure within the chamber.
+---
 
-   - The fluctuating air pressure drives a turbine or an air turbine installed at the top of the chamber. As the turbine rotates, it generates mechanical power, which is then converted into electricity by a generator.
-
-**Point Absorbers:**
-
-   - Point absorbers are buoyant devices that float on the water's surface and are tethered to the seabed. They move up and down with the motion of the waves.
-
-   - Inside the buoyant device, there is typically a mechanical or hydraulic system that converts the vertical motion of the buoy into rotational motion.
-
-   - This rotational motion drives a generator located either onboard the buoy or onshore through an underwater cable, producing electricity.
-
-**Attenuators:**
-
-   - Attenuators are long, floating structures that align perpendicular to the direction of wave propagation. They consist of multiple segments or floats connected by hinges or flexible joints.
-
-   - As waves pass through the attenuator, it flexes and bends with the motion of the waves. This flexing motion is converted into mechanical power using hydraulic or mechanical systems.
-
-   - The mechanical power is then used to drive a generator, which produces electricity.
-
-**Oscillating Wave Surge Converters (OWSCs):**
-
-   - OWSCs are designed to harness the horizontal movement of waves rather than vertical motion. They typically consist of a floating or semi-submerged structure that moves back and forth with the waves.
-
-   - As the structure oscillates, it drives hydraulic pistons or other mechanical systems, which in turn drive generators to produce electricity.
-
-**Electricity Transmission:**
-
-   - The electricity generated by wave energy converters is typically transmitted to shore through underwater cables or stored in onboard battery systems for later use.
-
-   - Onshore, the electricity is integrated into the existing power grid or used locally to power nearby facilities or communities.
-
-Overall, wave energy conversion systems utilize the mechanical motion of ocean waves to generate electricity, providing a renewable and potentially abundant source of clean energy. Ongoing research and development aim to improve the efficiency, reliability, and cost-effectiveness of wave energy technologies to enable wider deployment and commercialization.
+Wave energy offers a **clean, predictable, and abundant** source of renewable power. Ongoing research aims to enhance the **efficiency, reliability, and cost-effectiveness** of wave energy technologies — paving the way for their broader adoption as a key component of the global sustainable energy portfolio.
