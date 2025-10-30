@@ -3,142 +3,154 @@ site_url: https://ac-electricity.com/
 
 nav:
   - Home: index.md
-  - History of electricity: history.md
-  - Capacitors:
-    - Ceramic: capacitors/ceramic.md
-    - Electrolytic: capacitors/electrolytic.md
-    - Film: capacitors/film.md
-    - Glass: capacitors/glass.md
-    - Mica: capacitors/mica.md
-    - Paper: capacitors/paper.md
-    - Polymer: capacitors/polymer.md
-    - Supercapacitors: capacitors/supercapacitors.md
-    - Tantalum: capacitors/tantalum.md
-    - Variable: capacitors/variable.md
-  - Conductors:
-    - Alloys:
-      - Brass: conductors/alloys/brass.md
-      - Bronze: conductors/alloys/bronze.md
-      - Nichrome: conductors/alloys/nichrome.md
-    - Graphite: conductors/graphite.md
-    - Ionic: 
-      - Liquids: conductors/ionic/liquids.md
-      - Electrolyte solutions: conductors/ionic/electrolyte_solutions.md
-      - Solid-state Electrolyte: conductors/ionic/solid-state_electrolytes.md
-    - Metals: 
-      - Aluminium: conductors/metals/aluminium.md
-      - Copper: conductors/metals/copper.md
-      - Gold: conductors/metals/gold.md
-      - Iron: conductors/metals/iron.md
-      - Tin: conductors/metals/tin.md
-      - Silver: conductors/metals/silver.md
-    - Plasma: conductors/plasma.md
-  - Diodes:
-    - Avalanche: diodes/avalanche.md
-    - Gold-doped: diodes/gold-doped.md
-    - Gunn: diodes/gunn.md
-    - Photodiode: diodes/photodiode.md
-    - PIN: diodes/pin.md
-    - Rectifier: diodes/rectifier.md
-    - Schottky: diodes/schottky.md
-    - Step recovery: diodes/step-recovery.md
-    - Tunnel: diodes/tunnel.md
-    - Varactor: diodes/varactor.md
-    - Zener: diodes/zener.md
-  - Electronic:
-    - Digital electronics:  electronic/digital_electronics.md
-    - Feedback: electronic/feedback.md
-    - Linear system: electronic/linear_system.md
-    - Modulation-Demodulation: electronic/modulation-demodulation.md
-    - Oscillators: electronic/oscillators.md
-  - Energy sources:
-    - Biomass: energy_source/biomass.md
-    - Coal: energy_source/coal.md
-    - Geothermal: energy_source/geothermal.md
-    - Hydropower: energy_source/hydropower.md
-    - Natural gas: energy_source/natural_gas.md
-    - Nuclear: energy_source/nuclear.md
-    - Oil: energy_source/oil.md
-    - Solar: energy_source/solar.md
-    - Tydal: energy_source/tydal.md
-    - Wave: energy_source/wave.md
-    - Wind: energy_source/wind.md
-  - Hardware:
-    - Battery: hardware/battery.md
-    - GPU: hardware/gpu.md
-    - Keyboard: hardware/keyboard.md
-    - Motherboard: hardware/motherboard.md
-    - Processor: hardware/processor.md
-    - RAM: hardware/ram.md
-    - Storage: hardware/storage.md
-    - Touchpad: hardware/touchpad.md
-  - Home appliances:
-    - Air conditioner: home_appliances/air_conditioner.md
-    - Bulb: home_appliances/bulb.md
-    - CFL Bulb: home_appliances/cfl_bulb.md
-    - Dishwasher: home_appliances/dishwasher.md
-    - Dryer: home_appliances/dryer.md
-    - Freezer: home_appliances/freezer.md
-    - Fridge: home_appliances/fridge.md
-    - LED: home_appliances/led.md
-    - Microwave: home_appliances/microwave.md
-    - Oven: home_appliances/oven.md
-    - Television: home_appliances/television.md
-    - Toaster: home_appliances/toaster.md
-    - Speaker: home_appliances/speaker.md
-    - Stove: home_appliances/stove.md
-    - Vacuum cleaner: home_appliances/vacuum.md
-    - Washing machine: home_appliances/washing_machine.md
-  - Inductors:
-    - Air core: inductors/air_core.md
-    - Coupled: inductors/coupled.md
-    - Ferrite core: inductors/ferrite_core.md
-    - Iron core: inductors/iron_core.md
-    - Molded: inductors/molded.md
-    - Multilayer chip: inductors/multilayer_chip.md
-    - RF coil: inductors/rf_coil.md
-    - Shielded: inductors/shielded.md
-    - Toroidal: inductors/toroidal.md
-    - Variable: inductors/variable.md
-  - Insulators:
-    - Ceramic: insulators/ceramic.md
-    - Cross-linked Polyethylene: insulators/cross-linked_polyethylene.md
-    - Epoxy resine: insulators/epoxy_resine.md
-    - Glass: insulators/glass.md
-    - Mica: insulators/mica.md
-    - Polyethylene: insulators/polyethylene.md
-    - Polypropylene: insulators/polypropylene.md
-    - Polyvinyl chloride: insulators/polyvinyl_chloride.md
-    - Silicon rubber: insulators/silicon_rubber.md
-    - Teflon: insulators/teflon.md
-  - Physical signals:
-    - Quasistatic: physical_signals/quasistatic.md
-    - 1st order: physical_signals/1st_order.md
-    - Damped oscillators: physical_signals/damped_oscillators.md
-    - Linear filtering: physical_signals/linear_filtering.md
-  - Resistors:
-    - Carbon composition: resistors/carbon_composition.md
-    - Fixed: resistors/fixed.md
-    - Fusible: resistors/fusible.md
-    - Hybrid: resistors/hybrid.md
-    - Metal film: resistors/metal_film.md
-    - Photoresistor: resistors/photoresistor.md
-    - Thermistor: resistors/thermistor.md
-    - Variable: resistors/variable.md
-    - Varistor: resistors/varistor.md
-    - Wirewound: resistors/wirewound.md
-  - Semi-conductors:
-    - Cadmium Telluride: semi_conductors/cadmium.md
-    - Galium Arsenide: semi_conductors/galium_arsenide.md
-    - Galium Nitride: semi_conductors/galium_nitride.md
-    - Galium Nitride on Silicon: semi_conductors/galium_nitride_on_silicon.md
-    - Germanium: semi_conductors/germanium.md
-    - Indium Phosphide: semi_conductors/indium.md
-    - Organic: semi_conductors/organic.md
-    - Perovskite: semi_conductors/perovskite.md
-    - Silicon: semi_conductors/silicon.md
-    - Silicon carbide: semi_conductors/silicon_carbide.md
+  - Fundamentals:
+      - History of electricity: history.md
+      - Physical signals:
+          - Quasistatic: physical_signals/quasistatic.md
+          - 1st order: physical_signals/1st_order.md
+          - Damped oscillators: physical_signals/damped_oscillators.md
+          - Linear filtering: physical_signals/linear_filtering.md
+      - Electronic principles:
+          - Digital electronics: electronic/digital_electronics.md
+          - Feedback: electronic/feedback.md
+          - Linear system: electronic/linear_system.md
+          - Modulation & Demodulation: electronic/modulation-demodulation.md
+          - Oscillators: electronic/oscillators.md
+
+  - Components:
+      - Passive components:
+          - Capacitors:
+              - Ceramic: capacitors/ceramic.md
+              - Electrolytic: capacitors/electrolytic.md
+              - Film: capacitors/film.md
+              - Glass: capacitors/glass.md
+              - Mica: capacitors/mica.md
+              - Paper: capacitors/paper.md
+              - Polymer: capacitors/polymer.md
+              - Supercapacitors: capacitors/supercapacitors.md
+              - Tantalum: capacitors/tantalum.md
+              - Variable: capacitors/variable.md
+          - Inductors:
+              - Air core: inductors/air_core.md
+              - Coupled: inductors/coupled.md
+              - Ferrite core: inductors/ferrite_core.md
+              - Iron core: inductors/iron_core.md
+              - Molded: inductors/molded.md
+              - Multilayer chip: inductors/multilayer_chip.md
+              - RF coil: inductors/rf_coil.md
+              - Shielded: inductors/shielded.md
+              - Toroidal: inductors/toroidal.md
+              - Variable: inductors/variable.md
+          - Resistors:
+              - Carbon composition: resistors/carbon_composition.md
+              - Fixed: resistors/fixed.md
+              - Fusible: resistors/fusible.md
+              - Hybrid: resistors/hybrid.md
+              - Metal film: resistors/metal_film.md
+              - Photoresistor: resistors/photoresistor.md
+              - Thermistor: resistors/thermistor.md
+              - Variable: resistors/variable.md
+              - Varistor: resistors/varistor.md
+              - Wirewound: resistors/wirewound.md
+      - Active components:
+          - Diodes:
+              - Avalanche: diodes/avalanche.md
+              - Gold-doped: diodes/gold-doped.md
+              - Gunn: diodes/gunn.md
+              - Photodiode: diodes/photodiode.md
+              - PIN: diodes/pin.md
+              - Rectifier: diodes/rectifier.md
+              - Schottky: diodes/schottky.md
+              - Step recovery: diodes/step-recovery.md
+              - Tunnel: diodes/tunnel.md
+              - Varactor: diodes/varactor.md
+              - Zener: diodes/zener.md
+          - Semi-conductors:
+              - Cadmium Telluride: semi_conductors/cadmium.md
+              - Gallium Arsenide: semi_conductors/galium_arsenide.md
+              - Gallium Nitride: semi_conductors/galium_nitride.md
+              - GaN on Silicon: semi_conductors/galium_nitride_on_silicon.md
+              - Germanium: semi_conductors/germanium.md
+              - Indium Phosphide: semi_conductors/indium.md
+              - Organic: semi_conductors/organic.md
+              - Perovskite: semi_conductors/perovskite.md
+              - Silicon: semi_conductors/silicon.md
+              - Silicon carbide: semi_conductors/silicon_carbide.md
+      - Materials:
+          - Conductors:
+              - Alloys:
+                  - Brass: conductors/alloys/brass.md
+                  - Bronze: conductors/alloys/bronze.md
+                  - Nichrome: conductors/alloys/nichrome.md
+              - Graphite: conductors/graphite.md
+              - Ionic:
+                  - Liquids: conductors/ionic/liquids.md
+                  - Electrolyte solutions: conductors/ionic/electrolyte_solutions.md
+                  - Solid-state Electrolyte: conductors/ionic/solid-state_electrolytes.md
+              - Metals:
+                  - Aluminium: conductors/metals/aluminium.md
+                  - Copper: conductors/metals/copper.md
+                  - Gold: conductors/metals/gold.md
+                  - Iron: conductors/metals/iron.md
+                  - Tin: conductors/metals/tin.md
+                  - Silver: conductors/metals/silver.md
+              - Plasma: conductors/plasma.md
+          - Insulators:
+              - Ceramic: insulators/ceramic.md
+              - Cross-linked Polyethylene: insulators/cross-linked_polyethylene.md
+              - Epoxy resin: insulators/epoxy_resine.md
+              - Glass: insulators/glass.md
+              - Mica: insulators/mica.md
+              - Polyethylene: insulators/polyethylene.md
+              - Polypropylene: insulators/polypropylene.md
+              - PVC: insulators/polyvinyl_chloride.md
+              - Silicon rubber: insulators/silicon_rubber.md
+              - Teflon: insulators/teflon.md
+
+  - Systems & Hardware:
+      - Hardware components:
+          - Battery: hardware/battery.md
+          - GPU: hardware/gpu.md
+          - Keyboard: hardware/keyboard.md
+          - Motherboard: hardware/motherboard.md
+          - Processor: hardware/processor.md
+          - RAM: hardware/ram.md
+          - Storage: hardware/storage.md
+          - Touchpad: hardware/touchpad.md
+      - Home appliances:
+          - Air conditioner: home_appliances/air_conditioner.md
+          - Bulb: home_appliances/bulb.md
+          - CFL Bulb: home_appliances/cfl_bulb.md
+          - Dishwasher: home_appliances/dishwasher.md
+          - Dryer: home_appliances/dryer.md
+          - Freezer: home_appliances/freezer.md
+          - Fridge: home_appliances/fridge.md
+          - LED: home_appliances/led.md
+          - Microwave: home_appliances/microwave.md
+          - Oven: home_appliances/oven.md
+          - Television: home_appliances/television.md
+          - Toaster: home_appliances/toaster.md
+          - Speaker: home_appliances/speaker.md
+          - Stove: home_appliances/stove.md
+          - Vacuum cleaner: home_appliances/vacuum.md
+          - Washing machine: home_appliances/washing_machine.md
+
+  - Energy:
+      - Sources:
+          - Biomass: energy_source/biomass.md
+          - Coal: energy_source/coal.md
+          - Geothermal: energy_source/geothermal.md
+          - Hydropower: energy_source/hydropower.md
+          - Natural gas: energy_source/natural_gas.md
+          - Nuclear: energy_source/nuclear.md
+          - Oil: energy_source/oil.md
+          - Solar: energy_source/solar.md
+          - Tidal: energy_source/tydal.md
+          - Wave: energy_source/wave.md
+          - Wind: energy_source/wind.md
+
   - Tags: tags/tags.md
+
 
 copyright: Copyright &copy; 2025 Alexis Carbillet
 
