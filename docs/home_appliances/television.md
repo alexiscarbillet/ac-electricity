@@ -7,42 +7,73 @@ tags:
 
 ## History
 
-The history of television is a fascinating journey that spans over a century of technological advancements and cultural transformations. Here's an overview of key milestones in the history of television:
+The history of television spans more than a century and reflects breakthroughs in science, engineering, culture, and communication.
 
-**Early Mechanical Television (Late 19th Century - Early 20th Century)**: The concept of television dates back to the late 19th century, with inventors experimenting with mechanical systems for transmitting and displaying images. Pioneers such as Paul Nipkow, John Logie Baird, and Charles Francis Jenkins developed early mechanical television systems based on rotating disks and scanning mechanisms.
+**Early Mechanical Television (Late 19th – Early 20th Century)**  
+Inventors such as Paul Nipkow, John Logie Baird, and Charles Francis Jenkins experimented with mechanical scanning systems that used rotating disks to capture and display images. These early devices laid the foundation for electronic television.
 
-**Electronic Television (1920s - 1930s)**: The development of electronic television systems marked a significant breakthrough in the evolution of television technology. In 1927, Philo Farnsworth demonstrated the first fully functional electronic television system, using cathode ray tubes (CRTs) to capture and display images. Meanwhile, Vladimir Zworykin, working for RCA, developed a similar electronic television system known as the Iconoscope.
+**Electronic Television (1920s–1930s)**  
+The transition to electronic systems revolutionized television. In 1927, Philo Farnsworth demonstrated the first fully electronic television using cathode ray tubes (CRTs). Around the same time, Vladimir Zworykin developed the Iconoscope, another key early electronic camera tube.
 
-**First Television Broadcasts (1930s)**: The 1930s saw the first experimental television broadcasts, with stations such as BBC in the UK and NBC in the US airing regular television programming. These early broadcasts featured a variety of content, including news, sports, entertainment, and educational programs.
+**First Television Broadcasts (1930s)**  
+The 1930s saw experimental broadcasting from organizations like the BBC (UK) and NBC (US). These broadcasts included news, entertainment, sports, and educational content.
 
-**World War II and Postwar Expansion (1940s - 1950s)**: Television experienced rapid growth and expansion following World War II, as improvements in technology and infrastructure made television more accessible to the general public. Television sets became more affordable, and programming diversified to include sitcoms, dramas, variety shows, and live events such as sports and award ceremonies.
+**World War II and Postwar Expansion (1940s–1950s)**  
+After World War II, television adoption skyrocketed. Improved manufacturing, decreased costs, and expanding broadcast networks brought TV into millions of homes. Programming diversified into sitcoms, dramas, game shows, and live events.
 
-**Color Television (1950s - 1960s)**: The introduction of color television in the 1950s revolutionized the viewing experience, providing more vibrant and lifelike images. The first color television broadcasts began in the United States in the early 1950s, with networks gradually transitioning from black-and-white to color programming over the following decades.
+**Color Television (1950s–1960s)**  
+Color broadcasting dramatically improved the viewing experience. The United States led the rollout in the early 1950s, and global networks gradually transitioned from black-and-white to full color.
 
-**Cable Television and Satellite Broadcasting (1960s - 1970s)**: The 1960s and 1970s saw the rise of cable television and satellite broadcasting, which offered viewers access to a wider range of channels and programming. Cable networks such as HBO and CNN emerged, providing specialized content and 24-hour news coverage. Satellite technology enabled the distribution of television signals globally, leading to the globalization of television.
+**Cable and Satellite Television (1960s–1970s)**  
+Cable TV broadened viewing options, enabling clearer reception and more channels. Networks like HBO and CNN introduced premium content and 24-hour news. Satellite technology enabled global transmission and the rise of international broadcasting.
 
-**Digital Television and High Definition (1990s - 2000s)**: The transition from analog to digital television in the late 20th and early 21st centuries marked another major milestone in television technology. Digital television offered improved picture and sound quality, as well as additional features such as electronic program guides and interactive services. High-definition (HD) television further enhanced the viewing experience, providing sharper and more detailed images.
+**Digital Television and High Definition (1990s–2000s)**  
+The transition from analog to digital brought higher picture quality, clearer audio, and new features like electronic program guides. High-definition (HD) technology further enhanced detail, contrast, and realism.
 
-**Internet and Streaming Services (2000s - Present)**: The proliferation of high-speed internet and digital streaming services has transformed the television landscape in recent years. Platforms such as Netflix, Hulu, Amazon Prime Video, and YouTube offer on-demand access to a vast library of content, including original programming, movies, and TV shows, revolutionizing how audiences consume television.
+**Streaming and Internet Television (2000s–Present)**  
+High-speed internet and digital platforms such as Netflix, Amazon Prime Video, Hulu, and YouTube reshaped media consumption. On-demand viewing, binge-watching culture, and original streaming content have transformed the television landscape.
 
-## How it works
+---
 
-A television works by converting electrical signals into visual and auditory information that is displayed on the screen and heard through the speakers. Here's a simplified explanation of the process:
+## How It Works
 
-1. **Power Source**: Like most electronic devices, a television is connected to a power source, typically a standard electrical outlet providing AC (alternating current) power.
+Modern televisions convert electrical signals into moving images and sound through a series of coordinated systems.
 
-2. **Power Supply**: The incoming AC power is converted to DC (direct current) power by the television's power supply unit. This DC power is used to operate various components within the TV.
+1. **Power Source**  
+   The TV connects to an AC power outlet, supplying energy for all internal components.
 
-3. **Tuner**: If the television receives signals from an antenna or cable connection, these signals are first processed by the tuner. The tuner selects the desired channel and converts the radio frequency (RF) signals into a format that can be processed by the television's internal circuitry.
+2. **Power Supply Unit**  
+   The AC power is converted to DC power, which drives the TV’s circuits, processors, and display.
 
-4. **Signal Processing**: The processed signals are then sent to various circuits within the television for further processing. This includes video processing circuits for image enhancement, color correction, and other adjustments, as well as audio processing circuits for sound decoding and amplification.
+3. **Tuner (for antenna/cable input)**  
+   The tuner extracts the selected channel from incoming RF signals and converts it into a format suitable for internal processing.
 
-5. **Display Panel**: In modern televisions, the display panel is typically an LCD (liquid crystal display), OLED (organic light-emitting diode), or similar technology. Each pixel on the display panel consists of subpixels that can be individually controlled to produce different colors and brightness levels.
+4. **Signal Processing**  
+   Video processors handle image scaling, color correction, noise reduction, and motion enhancement. Audio processors decode and amplify sound data.
 
-6. **Backlighting** (for LCD TVs): In LCD televisions, a backlight provides the illumination behind the display panel. This backlight can be provided by fluorescent lamps or LED (light-emitting diode) arrays. The brightness of the backlight can be adjusted dynamically to achieve the desired image quality.
+5. **Display Panel**  
+   Modern TVs use LCD, LED-LCD, QLED, OLED, MicroLED, or similar technology. Each pixel (and its subpixels) adjusts color and brightness to form the image.
 
-7. **Sound System**: The television's sound system consists of speakers and audio amplifiers. The audio signals processed by the television are sent to the speakers, where they are converted into sound waves that can be heard by the viewer.
+6. **Backlighting (LCD-based displays)**  
+   LCD panels require a backlight, traditionally from fluorescent lamps but now mostly from LEDs. Brightness and contrast are dynamically controlled for better picture quality.
 
-8. **User Interface**: The television may also include various user interface components, such as buttons, remote controls, and on-screen menus. These allow the viewer to control the television, select channels, adjust settings, and access additional features.
+7. **Sound System**  
+   Built-in speakers convert processed audio signals into sound waves. Some TVs include multiple drivers, virtual surround systems, or support for external soundbars.
 
-Overall, a television converts electrical signals into visual images and sound through a combination of signal processing, display technology, and audio systems.
+8. **User Interface**  
+   Remote controls, on-screen menus, voice control, and smart OS platforms (Android TV, Roku, webOS, Tizen, etc.) allow users to navigate apps, settings, and inputs.
+
+A television integrates display technology, audio systems, and digital processing to present synchronized moving images and sound.
+
+---
+
+## Advantages and Disadvantages
+
+| **Advantages** | **Disadvantages** |
+|----------------|-------------------|
+| **Wide variety of content** — news, entertainment, streaming, and live events. | **Potentially high cost** for premium large-screen or OLED models. |
+| **High-quality visuals** — HD, 4K, 8K, HDR, and advanced color processing. | **Energy consumption** increases with screen size and brightness. |
+| **Smart features** — apps, streaming, voice assistants, and connectivity. | **Input lag** may affect gaming performance on some models. |
+| **Large screen sizes** enhance immersion for movies and gaming. | **Screen degradation** (e.g., OLED burn-in) may occur over long periods. |
+| **Versatile connectivity** — HDMI, Wi-Fi, Bluetooth, casting. | **Dependence on internet** for streaming and smart features. |
+| **Improved audio options** — built-in enhancements or easy external audio pairing. | |

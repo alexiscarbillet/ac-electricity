@@ -7,42 +7,73 @@ tags:
 
 ## History
 
-The stove has a long and fascinating history, evolving over centuries to become an essential appliance in households worldwide. Here's a brief overview of the history of the stove:
+The stove has evolved over thousands of years, reflecting advancements in technology and human cooking practices.
 
-**Ancient Stoves**: The use of stoves for cooking can be traced back to ancient civilizations. Early stoves were simple hearths or fire pits, typically made from clay, stone, or brick. These early stoves provided a controlled area for cooking food over an open flame.
+**Ancient Stoves**  
+Early societies used simple hearths or fire pits made from clay, stone, or brick. These primitive stoves provided a controlled space for open-flame cooking, forming the foundation of later stove designs.
 
-**Roman Hypocaust**: The ancient Romans developed a sophisticated heating system called the hypocaust, which was used to heat buildings and cook food. The hypocaust consisted of a series of raised floors and channels through which hot air and smoke from a furnace were circulated. This allowed for more efficient heating and cooking compared to open fires.
+**Roman Hypocaust**  
+The Romans created the hypocaust, an advanced heating system featuring raised floors and channels that circulated hot air and smoke from a furnace. This innovation improved heating efficiency and allowed for more controlled cooking than traditional open fires.
 
-**Medieval Stoves**: During the Middle Ages, advancements in stove design led to the development of enclosed stoves with chimneys. These stoves, often made from brick or metal, allowed for more efficient combustion of fuel and better control of cooking temperatures. They were commonly used in castles, monasteries, and wealthy households.
+**Medieval Stoves**  
+During the Middle Ages, enclosed stoves with chimneys became common in castles, monasteries, and wealthy homes. These brick or metal stoves enabled better combustion and temperature control while keeping smoke out of living spaces.
 
-**Franklin Stove**: In the late 18th century, American inventor Benjamin Franklin designed the Franklin stove, an early form of the modern fireplace insert. The Franklin stove featured a cast iron enclosure with a tall, open front and a flue for venting smoke. It was designed to improve the efficiency of traditional open fireplaces by radiating heat more effectively into the room.
+**Franklin Stove (18th Century)**  
+Benjamin Franklin introduced the Franklin stove, a cast-iron heating appliance designed to improve fireplace efficiency. Its vented design radiated more heat into a room and inspired later stove innovations.
 
-**Industrial Revolution**: The Industrial Revolution brought significant advancements in stove technology, including the development of cast iron stoves for home use. Cast iron stoves became popular in the 19th century, offering improved efficiency, durability, and versatility compared to earlier stove designs. These stoves were fueled by wood, coal, or later, gas.
+**Industrial Revolution (18th–19th Century)**  
+Cast iron stoves emerged as durable, efficient, and versatile cooking appliances. Fueled by wood, coal, and eventually gas, these stoves spread widely across Europe and North America.
 
-**Gas Stoves**: The invention of the gas stove in the 19th century revolutionized cooking by providing a cleaner, more convenient alternative to wood and coal stoves. Gas stoves used natural gas or propane as fuel and featured burners with adjustable flames for precise temperature control. Gas stoves quickly became popular in urban areas where piped gas was available.
+**Gas Stoves (19th Century)**  
+The invention of the gas stove offered cleaner, more controllable cooking with adjustable flames. Gas stoves became popular in areas with access to piped natural gas or propane.
 
-**Electric Stoves**: Electric stoves were developed in the late 19th and early 20th centuries as an alternative to gas stoves. Early electric stoves featured heating elements embedded in metal coils or plates, which generated heat when electricity passed through them. Electric stoves offered the advantages of clean operation and easy temperature control but initially faced challenges due to limited electricity infrastructure.
+**Electric Stoves (Late 19th–20th Century)**  
+Electric stoves introduced resistive heating elements in coils or plates. They offered smoke-free, easy-to-control cooking but initially faced adoption challenges due to limited electrical infrastructure.
 
-**Modern Stove Designs**: Today, stoves come in a wide range of designs and configurations to suit different cooking preferences and lifestyles. Modern stoves include gas, electric, and induction models, offering features such as convection ovens, self-cleaning functions, and touchscreen controls. Advances in materials and technology continue to improve the efficiency, safety, and convenience of stoves for cooking.
+**Modern Stove Designs**  
+Today’s stoves include gas, electric, and induction models, often paired with ovens. Modern features include convection systems, self-cleaning modes, digital touch controls, and improved safety features. Innovations continue to enhance convenience, energy efficiency, and cooking precision.
 
-## How it works
+---
 
-An electric stove, also known as an electric range or cooker, operates by using electricity to generate heat for cooking. Here's how it works :
+## How It Works
 
-1. **Power Supply**: The electric stove is connected to a power source, typically a standard electrical outlet in a household.
+An electric stove (electric range or cooker) heats food by converting electrical energy into thermal energy using resistive heating elements.
 
-2. **Control Panel**: The stove is equipped with a control panel that allows the user to select the desired cooking temperature or power level for each cooking element (burner).
+1. **Power Supply**  
+   The stove connects to a dedicated household electrical circuit, supplying the power needed for high-temperature cooking.
 
-3. **Cooking Elements (Burners)**: Each burner on the electric stove contains a coiled heating element made of a resistive material such as nichrome wire. When electricity flows through these heating elements, they generate heat due to their resistance to the flow of electrical current.
+2. **Control Panel**  
+   User controls—knobs, switches, or touch panels—allow adjustment of cooking temperatures or power levels for each burner.
 
-4. **Switches and Controls**: When the user turns on a burner using the control panel, it activates a switch that completes the electrical circuit, allowing electricity to flow through the heating element. The user can adjust the heat output by varying the temperature or power level using the control panel.
+3. **Cooking Elements (Burners)**  
+   Each burner contains a coiled resistive heating element, typically made of nichrome. When electricity flows through the coil, it generates heat due to electrical resistance.
 
-5. **Thermal Regulation**: Some electric stoves are equipped with temperature sensors or thermostats that monitor the temperature of the cooking surface. These sensors help regulate the heat output to maintain the desired cooking temperature.
+4. **Switches and Controls**  
+   Activating a burner completes the electrical circuit, allowing current to flow through the heating element. Heat output increases or decreases based on the selected power level.
 
-6. **Cookware**: The cooking surface of the electric stove heats up, transferring heat to the cookware placed on top of the burners. The heat generated by the heating elements is conducted through the cookware to cook food.
+5. **Thermal Regulation**  
+   Many stoves include thermostats or temperature sensors that help maintain consistent heat on the cooking surface.
 
-7. **Safety Features**: Modern electric stoves often include safety features such as automatic shut-off mechanisms to prevent overheating or electrical hazards.
+6. **Cookware Interaction**  
+   The burner heats the cookware placed on top, transferring heat through conduction to cook the food.
 
-8. **Indicator Lights**: Many electric stoves have indicator lights that illuminate when a burner is in use, helping users to know which burners are active.
+7. **Safety Features**  
+   Modern stoves often include automatic shut-off mechanisms, surface temperature sensors, and overheat protection.
 
-Overall, an electric stove works by converting electrical energy into heat energy using resistive heating elements, providing a controlled and efficient means of cooking various types of food.
+8. **Indicator Lights**  
+   Visual indicators show which burners are active or still hot, improving user safety.
+
+Electric stoves provide a controlled, smoke-free, and reliable method for cooking a wide variety of foods.
+
+---
+
+## Advantages and Disadvantages
+
+| **Advantages** | **Disadvantages** |
+|----------------|-------------------|
+| **Clean operation** — no flames, smoke, or soot. | **Slower heating** compared to gas or induction stoves. |
+| **Even, consistent heat** — good for simmering and baking. | **Higher energy consumption** relative to gas in some regions. |
+| **Easy to use** — simple controls and predictable temperature settings. | **Heat retention** — burners stay hot long after being turned off. |
+| **Wide availability** — compatible with most household electrical setups. | **Less precise temperature control** compared to gas. |
+| **Safer surface** — fewer fire risks without open flames. | **Not suitable for all cookware** — some materials work less effectively. |
+| **Low maintenance** — few moving parts and easy cleaning. | |

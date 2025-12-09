@@ -33,10 +33,7 @@ The history of the refrigerator tracks the evolution from unreliable natural coo
 
 ## ⚡ How It Works: Electrical and Mechanical Interaction
 
-The refrigerator operates via the **Vapor-Compression Cycle** 
-
-[Image of the vapor-compression refrigeration cycle diagram]
-, powered by electricity to continuously move heat from inside the cabinet to the outside air.
+The refrigerator operates via the **Vapor-Compression Cycle**, powered by electricity to continuously move heat from inside the cabinet to the outside air.
 
 ### Key Electrical Components
 1.  **Compressor Motor:** The largest load; this **induction motor** is the pump that compresses and circulates the refrigerant.

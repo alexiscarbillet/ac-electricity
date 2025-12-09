@@ -35,10 +35,7 @@ The history of the freezer is intrinsically linked to the development of mechani
 
 ## ⚡ How It Works: The Vapor-Compression Cycle
 
-A freezer operates using the **vapor-compression refrigeration cycle** 
-
-[Image of the vapor-compression refrigeration cycle diagram]
-, which requires continuous electrical power to move heat from the cold interior to the warm exterior.
+A freezer operates using the **vapor-compression refrigeration cycle** , which requires continuous electrical power to move heat from the cold interior to the warm exterior.
 
 ### 1. Power and Control
 * **Compressor:** The $\mathbf{AC}$ system's primary electrical load is the **hermetic compressor motor**. This motor provides the necessary mechanical work (pressure) to drive the refrigerant.

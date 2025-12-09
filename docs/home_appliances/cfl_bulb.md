@@ -1,6 +1,6 @@
 ---
 tags:
-  - home appliances
+  - home appliances
 ---
 
 # 💡 Bulb: Compact Fluorescent Lamp (CFL)
