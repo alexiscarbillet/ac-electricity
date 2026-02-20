@@ -37,9 +37,9 @@ You can find some explanations about [how electricity was discovered and then us
 
 Hello, I am Alexis Carbillet and this is my third website. I thought it would be fun to talk about electricity while using mkdocs, so here we are.
 
-I have another website using mkdocs: [ac-serverhub.com](https://ac-serverhub.com/). 
+I have other websites using mkdocs: [ac-serverhub.com](https://ac-serverhub.com/) and [blog.alexis-carbillet.com](https://blog.alexis-carbillet.com/).
 
-It allows you to explore the latest and most powerful hardware components for servers.
+ac-serverhub.com allows you to explore the latest and most powerful hardware components for servers.
 
 I coded from scratch my other websites.
 
@@ -53,5 +53,5 @@ I coded from scratch my other websites.
 <img src="assets/alexis_carbillet.png" style="width: 225px;height: 225px;border-radius: 200px;margin-bottom: 0; border: 7px solid #5e4da5;" alt="author picture">
 <h4 style="margin-top: 0; margin-bottom: 0;">Alexis Carbillet</h4>
 <p style="margin-top: 0px;">Electricity enthusiast</p>
-<a href="https://ac-programming.com/"><img src="https://raw.githubusercontent.com/squidfunk/mkdocs-material/master/material/templates/.icons/fontawesome/solid/code.svg" style="width: 25px;height: 25px;border-radius: 200px;margin-right: 10px;"></a><a href="https://alexis-carbillet.com/"><img src="https://raw.githubusercontent.com/squidfunk/mkdocs-material/master/material/templates/.icons/fontawesome/solid/house.svg" style="width: 25px;height: 25px;border-radius: 200px;margin-right: 10px;"></a><a href="https://all-about-cats.uk/"><img src="https://raw.githubusercontent.com/squidfunk/mkdocs-material/master/material/templates/.icons/fontawesome/solid/cat.svg" style="width: 25px;height: 25px;border-radius: 200px;margin-right: 10px;"></a><a href="https://ac-serverhub.com/"><img src="https://raw.githubusercontent.com/squidfunk/mkdocs-material/master/material/templates/.icons/fontawesome/solid/server.svg" style="width: 25px;height: 25px;border-radius: 200px;"></a>
+<a href="https://ac-programming.com/"><img src="https://raw.githubusercontent.com/squidfunk/mkdocs-material/master/material/templates/.icons/fontawesome/solid/code.svg" style="width: 25px;height: 25px;border-radius: 200px;margin-right: 10px;"></a><a href="https://blog.alexis-carbillet.com/"><img src="https://raw.githubusercontent.com/squidfunk/mkdocs-material/master/material/templates/.icons/fontawesome/solid/newspaper.svg" style="width: 25px;height: 25px;border-radius: 200px;margin-right: 10px;"></a><a href="https://alexis-carbillet.com/"><img src="https://raw.githubusercontent.com/squidfunk/mkdocs-material/master/material/templates/.icons/fontawesome/solid/house.svg" style="width: 25px;height: 25px;border-radius: 200px;margin-right: 10px;"></a><a href="https://all-about-cats.uk/"><img src="https://raw.githubusercontent.com/squidfunk/mkdocs-material/master/material/templates/.icons/fontawesome/solid/cat.svg" style="width: 25px;height: 25px;border-radius: 200px;margin-right: 10px;"></a><a href="https://ac-serverhub.com/"><img src="https://raw.githubusercontent.com/squidfunk/mkdocs-material/master/material/templates/.icons/fontawesome/solid/server.svg" style="width: 25px;height: 25px;border-radius: 200px;"></a>
 </center>
