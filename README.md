@@ -27,5 +27,3 @@ So far, there are several categories:
 - **resistors**: explains the different kind of electrical resistors and their use.
 
 - **semi-conductors**: about their proprieties and how they are used.
-
-You can find some explanations about [how electricity was discovered and then used through time](history.md).
