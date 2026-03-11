@@ -85,8 +85,10 @@ nav:
               - Graphite: conductors/graphite.md
               - Ionic:
                   - Liquids: conductors/ionic/liquids.md
-                  - Electrolyte solutions: conductors/ionic/electrolyte_solutions.md
-                  - Solid-state Electrolyte: conductors/ionic/solid-state_electrolytes.md
+                  - Electrolyte solutions: 
+                      conductors/ionic/electrolyte_solutions.md
+                  - Solid-state Electrolyte: 
+                      conductors/ionic/solid-state_electrolytes.md
               - Metals:
                   - Aluminium: conductors/metals/aluminium.md
                   - Copper: conductors/metals/copper.md
@@ -97,7 +99,8 @@ nav:
               - Plasma: conductors/plasma.md
           - Insulators:
               - Ceramic: insulators/ceramic.md
-              - Cross-linked Polyethylene: insulators/cross-linked_polyethylene.md
+              - Cross-linked Polyethylene: 
+                  insulators/cross-linked_polyethylene.md
               - Epoxy resin: insulators/epoxy_resine.md
               - Glass: insulators/glass.md
               - Mica: insulators/mica.md
@@ -148,10 +151,11 @@ nav:
           - Tidal: energy_source/tydal.md
           - Wave: energy_source/wave.md
           - Wind: energy_source/wind.md
-    
+
   - Market & Buying Guides: []
 
-  - Future Tech & Smart Home: []
+  - Future Tech & Smart Home:
+      - '```markdown': smart_home/markdown.md
 
   - Projects & DIY: []
 
@@ -160,31 +164,31 @@ nav:
 
 copyright: Copyright &copy; 2025 Alexis Carbillet
 
-theme: 
+theme:
   name: material
   custom_dir: overrides
   logo: assets/logo.png
   favicon: assets/logo.png
   features:
-  - header.search
-  - search.suggest
-  - search.highlight
-  - palette.toggle
+    - header.search
+    - search.suggest
+    - search.highlight
+    - palette.toggle
   palette:
-  - media: "(prefers-color-scheme: dark)"
-    scheme: default
-    primary: black
-    accent: indigo
-    toggle:
-      icon: material/toggle-switch-off
-      name: Switch to light mode
-  - media: "(prefers-color-scheme: light)"
-    scheme: slate
-    primary: indigo
-    accent: indigo
-    toggle:
-      icon: material/toggle-switch
-      name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: default
+      primary: black
+      accent: indigo
+      toggle:
+        icon: material/toggle-switch-off
+        name: Switch to light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to dark mode
 
 plugins:
   - blog:
