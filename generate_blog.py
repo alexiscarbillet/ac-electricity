@@ -37,7 +37,7 @@ def get_new_content():
     category = random.choice(ALLOWED_CATEGORIES)
     
     prompt = f"""
-    Write a technical but accessible markdown article about Electricity.
+    Write a technical but accessible markdown article about Electricity (a specific aspect), a specific electrical component or provider, etc.
     Category: {category}
     Avoid these previous topics: {', '.join(history[-10:])}
     
