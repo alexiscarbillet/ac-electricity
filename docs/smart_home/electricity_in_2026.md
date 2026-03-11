@@ -1,4 +1,3 @@
-```markdown
 # Electrifying Tomorrow: Electricity in 2026
 
 Electricity, the lifeblood of our modern world, is constantly evolving. By 2026, advancements in generation, distribution, and consumption will reshape our homes and cities, pushing us towards a smarter, more sustainable future. This article explores key trends transforming electricity and its role in future tech and smart homes.
