@@ -157,7 +157,9 @@ nav:
   - Future Tech & Smart Home:
       - Electricity in 2026: smart_home/markdown.md
 
-  - Projects & DIY: []
+  - Projects & DIY:
+      - Electricity Powering Your 2026 and Beyond!: 
+          projects/electricity_powering_your_2026_and_beyond.md
 
   - Tags: tags/tags.md
 
