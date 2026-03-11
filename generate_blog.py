@@ -42,9 +42,8 @@ def get_new_content():
     Avoid these previous topics: {', '.join(history[-10:])}
     
     Requirements:
-    - Use a catchy H1 title.
+    - Use a descriptive H1 title.
     - Include a 'Comparison' or 'Technical Specs' table.
-    - Focus on 2026 trends (e.g., Solid-state batteries, V2H charging).
     - Output ONLY the markdown content. Do not wrap in ```markdown fences.
     """
 
