@@ -153,9 +153,12 @@ nav:
           - Wind: energy_source/wind.md
 
   - Market & Buying Guides:
-      - Understanding Surge Protectors Protecting Your Electronics from Power Surges: 
+      - Understanding Surge Protectors Protecting Your Electronics from Power 
+          Surges: 
           market/understanding_surge_protectors_protecting_your_electronics_from_power_surges.md
 
+      - Understanding Programmable Logic Controllers (PLCs) for Home Automation: 
+          market/understanding_programmable_logic_controllers_plcs_for_home_automation.md
   - Future Tech & Smart Home:
       - Electricity in 2026: smart_home/markdown.md
 
