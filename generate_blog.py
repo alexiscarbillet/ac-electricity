@@ -8,23 +8,25 @@ from ruamel.yaml import YAML
 
 # 1. Configuration & Client Setup
 client = genai.Client(api_key=os.environ["GEMINI_API_KEY"])
+
+# Initialize YAML with strict formatting to prevent line-breaks
 yaml = YAML()
 yaml.preserve_quotes = True
+yaml.width = 4096  # CRITICAL: Prevents breaking long lines
 yaml.indent(mapping=2, sequence=4, offset=2)
+yaml.allow_unicode = True
 
 CONFIG_PATH = 'mkdocs.yml'
 HISTORY_PATH = 'topic_history.json'
 ALLOWED_CATEGORIES = ["Market & Buying Guides", "Future Tech & Smart Home", "Projects & DIY"]
 
 def sanitize_title(title_text):
-    """Removes colons and hashes to prevent YAML parsing errors."""
-    return title_text.replace(':', '').replace('#', '').strip()
+    """Removes hashes and colons; MkDocs handles quotes if we use yaml.dump properly."""
+    return title_text.replace('#', '').replace(':', '').strip()
 
 def slugify(text):
     """Creates an alphanumeric + underscore filename."""
-    # Convert to lowercase and replace spaces/hyphens with underscores
     temp = text.lower().replace(" ", "_").replace("-", "_")
-    # Keep only alphanumeric and underscores
     return re.sub(r'[^a-z0-9_]', '', temp)
 
 def get_new_content():
@@ -54,18 +56,16 @@ def get_new_content():
     
     raw_content = response.text.strip()
     
-    # Remove markdown code fences if the AI ignored instructions
-    if raw_content.startswith("```markdown"):
-        raw_content = raw_content.replace("```markdown", "", 1).replace("```", "", -1).strip()
-    elif raw_content.startswith("```"):
-         raw_content = raw_content.strip("`").strip()
+    # Clean up accidental fences
+    if raw_content.startswith("```"):
+        raw_content = re.sub(r'^```[a-z]*\n', '', raw_content)
+        raw_content = re.sub(r'\n```$', '', raw_content)
 
     # Extract and Clean Title
     lines = raw_content.split('\n')
     raw_title = lines[0].replace('# ', '').strip()
     clean_title = sanitize_title(raw_title)
     
-    # Re-inject the clean H1 at the very top
     lines[0] = f"# {clean_title}"
     final_content = "\n".join(lines)
     
@@ -74,7 +74,7 @@ def get_new_content():
     return category, filename, final_content, clean_title
 
 def update_nav(category_name, file_path, title):
-    with open(CONFIG_PATH, 'r') as f:
+    with open(CONFIG_PATH, 'r', encoding='utf-8') as f:
         config = yaml.load(f)
 
     nav = config.get('nav', [])
@@ -84,11 +84,12 @@ def update_nav(category_name, file_path, title):
             if not isinstance(item[category_name], list):
                 item[category_name] = []
             
-            # Append the new page using the sanitized title
+            # Use the original ruamel.yaml logic to add the entry
+            # The yaml.width setting will handle the long string formatting
             item[category_name].append({title: file_path})
             break
 
-    with open(CONFIG_PATH, 'w') as f:
+    with open(CONFIG_PATH, 'w', encoding='utf-8') as f:
         yaml.dump(config, f)
 
 # --- Execution ---
@@ -103,7 +104,7 @@ folder = folder_map[cat]
 os.makedirs(f"docs/{folder}", exist_ok=True)
 
 full_path = f"docs/{folder}/{fname}"
-with open(full_path, "w") as f:
+with open(full_path, "w", encoding='utf-8') as f:
     f.write(content)
 
 update_nav(cat, f"{folder}/{fname}", title)

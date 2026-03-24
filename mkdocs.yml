@@ -16,7 +16,6 @@ nav:
           - Linear system: electronic/linear_system.md
           - Modulation & Demodulation: electronic/modulation-demodulation.md
           - Oscillators: electronic/oscillators.md
-
   - Components:
       - Passive components:
           - Capacitors:
@@ -85,10 +84,8 @@ nav:
               - Graphite: conductors/graphite.md
               - Ionic:
                   - Liquids: conductors/ionic/liquids.md
-                  - Electrolyte solutions: 
-                      conductors/ionic/electrolyte_solutions.md
-                  - Solid-state Electrolyte: 
-                      conductors/ionic/solid-state_electrolytes.md
+                  - Electrolyte solutions: conductors/ionic/electrolyte_solutions.md
+                  - Solid-state Electrolyte: conductors/ionic/solid-state_electrolytes.md
               - Metals:
                   - Aluminium: conductors/metals/aluminium.md
                   - Copper: conductors/metals/copper.md
@@ -99,8 +96,7 @@ nav:
               - Plasma: conductors/plasma.md
           - Insulators:
               - Ceramic: insulators/ceramic.md
-              - Cross-linked Polyethylene: 
-                  insulators/cross-linked_polyethylene.md
+              - "Cross-linked Polyethylene": insulators/cross-linked_polyethylene.md
               - Epoxy resin: insulators/epoxy_resine.md
               - Glass: insulators/glass.md
               - Mica: insulators/mica.md
@@ -109,7 +105,6 @@ nav:
               - PVC: insulators/polyvinyl_chloride.md
               - Silicon rubber: insulators/silicon_rubber.md
               - Teflon: insulators/teflon.md
-
   - Systems & Hardware:
       - Hardware components:
           - Battery: hardware/battery.md
@@ -137,7 +132,6 @@ nav:
           - Stove: home_appliances/stove.md
           - Vacuum cleaner: home_appliances/vacuum.md
           - Washing machine: home_appliances/washing_machine.md
-
   - Energy:
       - Sources:
           - Biomass: energy_source/biomass.md
@@ -151,27 +145,19 @@ nav:
           - Tidal: energy_source/tydal.md
           - Wave: energy_source/wave.md
           - Wind: energy_source/wind.md
-
   - Market & Buying Guides:
-      - Understanding Surge Protectors Protecting Your Electronics from Power Surges: 
-          market/understanding_surge_protectors_protecting_your_electronics_from_power_surges.md
-      - Decoding Current Transformers A Guide for Energy Monitoring and Protection: 
-          market/decoding_current_transformers_a_guide_for_energy_monitoring_and_protection.md
-      - Understanding and Choosing the Right Power Inverter for Your Needs: 
-          market/understanding_and_choosing_the_right_power_inverter_for_your_needs.md
+      - "Understanding Surge Protectors Protecting Your Electronics from Power Surges": market/understanding_surge_protectors_protecting_your_electronics_from_power_surges.md
+      - "Decoding Current Transformers A Guide for Energy Monitoring and Protection": market/decoding_current_transformers_a_guide_for_energy_monitoring_and_protection.md
+      - "Understanding and Choosing the Right Power Inverter for Your Needs": market/understanding_and_choosing_the_right_power_inverter_for_your_needs.md
   - Future Tech & Smart Home:
       - Electricity in 2026: smart_home/markdown.md
-      - Understanding Electricity The Invisible Force Powering Our World: 
-          smart_home/understanding_electricity_the_invisible_force_powering_our_world.md
+      - "Understanding Electricity The Invisible Force Powering Our World": smart_home/understanding_electricity_the_invisible_force_powering_our_world.md
   - Projects & DIY:
-      - Electricity Powering Your 2026 and Beyond!: 
-          projects/electricity_powering_your_2026_and_beyond.md
-      - Choosing the Right Gauge Wire for Your DIY Project A Practical Guide: 
-          projects/choosing_the_right_gauge_wire_for_your_diy_project_a_practical_guide.md
-      - Demystifying the ESP32 A Maker's Guide to Wireless Microcontrollers: 
-          projects/demystifying_the_esp32_a_makers_guide_to_wireless_microcontrollers.md
+      - "Electricity Powering Your 2026 and Beyond!": projects/electricity_powering_your_2026_and_beyond.md
+      - "Choosing the Right Gauge Wire for Your DIY Project A Practical Guide": projects/choosing_the_right_gauge_wire_for_your_diy_project_a_practical_guide.md
+      - "Demystifying the ESP32 A Maker's Guide to Wireless Microcontrollers": projects/demystifying_the_esp32_a_makers_guide_to_wireless_microcontrollers.md
+      - "Understanding and Implementing Buck Converters in Your DIY Projects": projects/understanding_and_implementing_buck_converters_in_your_diy_projects.md
   - Tags: tags/tags.md
-
 
 copyright: Copyright &copy; 2025 Alexis Carbillet
 
