@@ -153,11 +153,9 @@ nav:
           - Wind: energy_source/wind.md
 
   - Market & Buying Guides:
-      - Understanding Surge Protectors Protecting Your Electronics from Power 
-          Surges: 
+      - Understanding Surge Protectors Protecting Your Electronics from Power Surges: 
           market/understanding_surge_protectors_protecting_your_electronics_from_power_surges.md
-      - Decoding Current Transformers A Guide for Energy Monitoring and 
-          Protection: 
+      - Decoding Current Transformers A Guide for Energy Monitoring and Protection: 
           market/decoding_current_transformers_a_guide_for_energy_monitoring_and_protection.md
       - Understanding and Choosing the Right Power Inverter for Your Needs: 
           market/understanding_and_choosing_the_right_power_inverter_for_your_needs.md
