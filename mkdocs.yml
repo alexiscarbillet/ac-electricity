@@ -150,14 +150,12 @@ nav:
       - "Decoding Current Transformers A Guide for Energy Monitoring and Protection": market/decoding_current_transformers_a_guide_for_energy_monitoring_and_protection.md
       - "Understanding and Choosing the Right Power Inverter for Your Needs": market/understanding_and_choosing_the_right_power_inverter_for_your_needs.md
   - Future Tech & Smart Home:
-      - Electricity in 2026: smart_home/markdown.md
       - "Understanding Electricity The Invisible Force Powering Our World": smart_home/understanding_electricity_the_invisible_force_powering_our_world.md
       - Understanding Bidirectional EV Chargers Powering Your Home and Beyond: smart_home/understanding_bidirectional_ev_chargers_powering_your_home_and_beyond.md
   - Projects & DIY:
       - "Electricity Powering Your 2026 and Beyond!": projects/electricity_powering_your_2026_and_beyond.md
       - "Choosing the Right Gauge Wire for Your DIY Project A Practical Guide": projects/choosing_the_right_gauge_wire_for_your_diy_project_a_practical_guide.md
       - "Demystifying the ESP32 A Maker's Guide to Wireless Microcontrollers": projects/demystifying_the_esp32_a_makers_guide_to_wireless_microcontrollers.md
-      - "Understanding and Implementing Buck Converters in Your DIY Projects": projects/understanding_and_implementing_buck_converters_in_your_diy_projects.md
   - Tags: tags/tags.md
 
 copyright: Copyright &copy; 2025 Alexis Carbillet
