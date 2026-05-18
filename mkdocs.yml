@@ -149,14 +149,20 @@ nav:
       - "Understanding Surge Protectors Protecting Your Electronics from Power Surges": market/understanding_surge_protectors_protecting_your_electronics_from_power_surges.md
       - "Decoding Current Transformers A Guide for Energy Monitoring and Protection": market/decoding_current_transformers_a_guide_for_energy_monitoring_and_protection.md
       - "Understanding and Choosing the Right Power Inverter for Your Needs": market/understanding_and_choosing_the_right_power_inverter_for_your_needs.md
+      - Selecting the Right MCB A Guide to Miniature Circuit Breakers: market/selecting_the_right_mcb_a_guide_to_miniature_circuit_breakers.md
+      - Solar Panel Efficiency Understanding the Key Metric for Renewable Energy: market/solar_panel_efficiency_understanding_the_key_metric_for_renewable_energy.md
   - Future Tech & Smart Home:
       - "Understanding Electricity The Invisible Force Powering Our World": smart_home/understanding_electricity_the_invisible_force_powering_our_world.md
       - Understanding Bidirectional EV Chargers Powering Your Home and Beyond: smart_home/understanding_bidirectional_ev_chargers_powering_your_home_and_beyond.md
       - Wireless Power Transfer The Resonant Revolution in Smart Home Tech: smart_home/wireless_power_transfer_the_resonant_revolution_in_smart_home_tech.md
+      - Gallium Nitride (GaN) Chargers A Smaller, More Efficient Future for Power Delivery: smart_home/gallium_nitride_gan_chargers_a_smaller_more_efficient_future_for_power_delivery.md
+      - Smart Circuit Breakers Revolutionizing Home Electrical Safety and Energy Management: smart_home/smart_circuit_breakers_revolutionizing_home_electrical_safety_and_energy_management.md
   - Projects & DIY:
       - "Electricity Powering Your 2026 and Beyond!": projects/electricity_powering_your_2026_and_beyond.md
       - "Choosing the Right Gauge Wire for Your DIY Project A Practical Guide": projects/choosing_the_right_gauge_wire_for_your_diy_project_a_practical_guide.md
       - "Demystifying the ESP32 A Maker's Guide to Wireless Microcontrollers": projects/demystifying_the_esp32_a_makers_guide_to_wireless_microcontrollers.md
+      - Building Your Own DIY Adjustable Voltage Bench Power Supply A Practical Guide: projects/building_your_own_diy_adjustable_voltage_bench_power_supply_a_practical_guide.md
+      - Understanding Rotary Dimmer Switches A Guide for DIY Home Lighting: projects/understanding_rotary_dimmer_switches_a_guide_for_diy_home_lighting.md
   - Tags: tags/tags.md
 
 copyright: Copyright &copy; 2025 Alexis Carbillet
